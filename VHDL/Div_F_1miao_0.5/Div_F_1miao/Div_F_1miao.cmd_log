@@ -1,0 +1,22 @@
+xst -ise "D:/XC3S500/Div_F_1miao/Div_F_1miao/Div_F_1miao.ise" -intstyle ise -ifn Div_F_1miao.xst -ofn Div_F_1miao.syr
+ngdbuild -ise "D:/XC3S500/Div_F_1miao/Div_F_1miao/Div_F_1miao.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "Div_F_1miao.ngc" Div_F_1miao.ngd
+map -ise "D:/XC3S500/Div_F_1miao/Div_F_1miao/Div_F_1miao.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o Div_F_1miao_map.ncd Div_F_1miao.ngd Div_F_1miao.pcf
+par -ise "D:/XC3S500/Div_F_1miao/Div_F_1miao/Div_F_1miao.ise" -w -intstyle ise -ol std -t 1 Div_F_1miao_map.ncd Div_F_1miao.ncd Div_F_1miao.pcf
+trce -ise "D:/XC3S500/Div_F_1miao/Div_F_1miao/Div_F_1miao.ise" -intstyle ise -e 3 -s 4 -xml Div_F_1miao Div_F_1miao.ncd -o Div_F_1miao.twr Div_F_1miao.pcf
+xst -ise "D:/XC3S500/Div_F_1miao_0.5/Div_F_1miao/Div_F_1miao.ise" -intstyle ise -ifn Div_F_1miao.xst -ofn Div_F_1miao.syr
+ngdbuild -ise "D:/XC3S500/Div_F_1miao_0.5/Div_F_1miao/Div_F_1miao.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "Div_F_1miao.ngc" Div_F_1miao.ngd
+map -ise "D:/XC3S500/Div_F_1miao_0.5/Div_F_1miao/Div_F_1miao.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o Div_F_1miao_map.ncd Div_F_1miao.ngd Div_F_1miao.pcf
+par -ise "D:/XC3S500/Div_F_1miao_0.5/Div_F_1miao/Div_F_1miao.ise" -w -intstyle ise -ol std -t 1 Div_F_1miao_map.ncd Div_F_1miao.ncd Div_F_1miao.pcf
+trce -ise "D:/XC3S500/Div_F_1miao_0.5/Div_F_1miao/Div_F_1miao.ise" -intstyle ise -e 3 -s 4 -xml Div_F_1miao Div_F_1miao.ncd -o Div_F_1miao.twr Div_F_1miao.pcf
+xst -ise "D:/XC3S500/Div_F_1miao_0.5/Div_F_1miao/Div_F_1miao.ise" -intstyle ise -ifn Div_F_1miao.xst -ofn Div_F_1miao.syr
+ngdbuild -ise "D:/XC3S500/Div_F_1miao_0.5/Div_F_1miao/Div_F_1miao.ise" -intstyle ise -dd _ngo -nt timestamp -uc "Div_F_1miao.ucf" -p xc3s500e-pq208-4 "Div_F_1miao.ngc" Div_F_1miao.ngd
+map -ise "D:/XC3S500/Div_F_1miao_0.5/Div_F_1miao/Div_F_1miao.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o Div_F_1miao_map.ncd Div_F_1miao.ngd Div_F_1miao.pcf
+par -ise "D:/XC3S500/Div_F_1miao_0.5/Div_F_1miao/Div_F_1miao.ise" -w -intstyle ise -ol std -t 1 Div_F_1miao_map.ncd Div_F_1miao.ncd Div_F_1miao.pcf
+trce -ise "D:/XC3S500/Div_F_1miao_0.5/Div_F_1miao/Div_F_1miao.ise" -intstyle ise -e 3 -s 4 -xml Div_F_1miao Div_F_1miao.ncd -o Div_F_1miao.twr Div_F_1miao.pcf -ucf Div_F_1miao.ucf
+bitgen -ise "D:/XC3S500/Div_F_1miao_0.5/Div_F_1miao/Div_F_1miao.ise" -intstyle ise -f Div_F_1miao.ut Div_F_1miao.ncd
+xst -intstyle ise -ifn "D:/X9/v/Div_F_1miao_0.5/Div_F_1miao/Div_F_1miao.xst" -ofn "D:/X9/v/Div_F_1miao_0.5/Div_F_1miao/Div_F_1miao.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Div_F_1miao.ucf -p xc6slx9-tqg144-2 Div_F_1miao.ngc Div_F_1miao.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Div_F_1miao_map.ncd Div_F_1miao.ngd Div_F_1miao.pcf 
+par -w -intstyle ise -ol high -mt off Div_F_1miao_map.ncd Div_F_1miao.ncd Div_F_1miao.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml Div_F_1miao.twx Div_F_1miao.ncd -o Div_F_1miao.twr Div_F_1miao.pcf -ucf Div_F_1miao.ucf 
+bitgen -intstyle ise -f Div_F_1miao.ut Div_F_1miao.ncd 

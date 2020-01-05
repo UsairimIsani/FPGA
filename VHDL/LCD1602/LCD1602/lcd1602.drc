@@ -1,0 +1,8 @@
+Release 14.3 Drc P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Wed May 07 21:16:59 2014
+
+drc -z LCD1602.ncd LCD1602.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,187 @@
+iMPACT Version: 
+iMPACT log file Started on Wed Oct 13 21:59:46 2010
+
+// *** BATCH CMD : loadProjectFile -file"D:\XC3S500\KEY_LED\KEY_LED/KEY_LED.ipf"
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.0.0. WinDriver v8.10 Jungo (c) 1997 - 2006 Build Date: Aug 15 2006 X86 32bit SYS14:21:34, version = 810.
+ LPT base address = 0378h.
+ ECP base address = FFFFFFFFh.
+Cable connection established.
+'1': Loading file 'D:/XC3S500/KEY_LED/KEY_LED/key_led.bit' ...
+done.
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx91i/spartan3e/data/xc3s500e.bsd...
+INFO:iMPACT:501 - '1': Added Device xc3s500e successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.0.0. WinDriver v8.10 Jungo (c) 1997 - 2006 Build Date: Aug 15 2006 X86 32bit SYS14:21:34, version = 810.
+ LPT base address = 0378h.
+ ECP base address = FFFFFFFFh.
+Cable connection established.
+INFO:iMPACT:501 - '1': Added Device m25p80 successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'1': Loading file 'D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.mcs' ...
+INFO:iMPACT - Elapsed time =      0 sec.
+done.
+'1': Loading file 'D:/XC3S500/KEY_LED/KEY_LED/key_led.bit' ...
+INFO:iMPACT - Elapsed time =      0 sec.
+done.
+WARNING:iMPACT:2257 - Startup Clock has been changed to 'Cclk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+Dumping bit file D:/XC3S500/KEY_LED/KEY_LED/key_led_cclktemp.bit...
+INFO:iMPACT:501 - '1': Added Device xc3s500e successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'1': Added Device 8M successfully.
+----------------------------------------------------------------------
+Active mode is SPI
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+------------------------  GUI: PFFView Wizard Data Report ------------------------
+SubMode: PFF_SERIAL
+MB Master Device: 
+MB Mode: 
+MB Chain: 
+getMultiBootSelected(): FALSE
+getSPISelected(): TRUE
+------------------------  GUI: End PFFView Report  ------------------------
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+// *** BATCH CMD : setSubmode -pffparallel
+// *** BATCH CMD : setAttribute -configdevice -attr spiSelected -value "TRUE"
+// *** BATCH CMD : deletePromDevice -position 1
+// *** BATCH CMD : addPromDevice -p 1 -size 1024 -name 8M
+'1': Added Device 8M successfully.
+----------------------------------------------------------------------
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.0.0. WinDriver v8.10 Jungo (c) 1997 - 2006 Build Date: Aug 15 2006 X86 32bit SYS14:21:34, version = 810.
+ LPT base address = 0378h.
+ ECP base address = FFFFFFFFh.
+Cable connection established.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : Program -p 1 -defaultVersion 0 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Reading status register contents...
+CRC error                                         :         0
+Decryptor security set                            :         0
+DCM locked                                        :         0
+DCI matched                                       :         0
+legacy input error                                :         0
+status of GTS_CFG_B                               :         0
+status of GWE                                     :         0
+status of GHIGH                                   :         0
+value of MODE pin M0                              :         0
+value of MODE pin M1                              :         0
+value of MODE pin M2                              :         0
+value of CFG_RDY (INIT_B)                         :         0
+DONEIN input from DONE pin                        :         0
+IDCODE not validated while trying to write FDRI   :         0
+write FDRI issued before or after decrypt operation:         0
+Decryptor keys not used in proper sequence        :         0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0000 0000 0000 0000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     11 sec.
+// *** BATCH CMD : saveProjectFile -file"D:\XC3S500\KEY_LED\KEY_LED/KEY_LED.ipf"
+// *** BATCH CMD : saveProjectFile -file"D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ipf"
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : deletePromDevice -position 1
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+// *** BATCH CMD : deleteDesign -version 0
+// *** BATCH CMD : setCurrentDesign -version -1
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffparallel
+// *** BATCH CMD : setAttribute -configdevice -attr spiSelected -value "TRUE"
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -bs

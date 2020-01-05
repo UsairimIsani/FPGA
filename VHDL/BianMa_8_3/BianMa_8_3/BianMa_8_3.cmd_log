@@ -1,0 +1,36 @@
+xst -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -ifn BianMa_8_3.xst -ofn BianMa_8_3.syr
+ngdbuild -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "BianMa_8_3.ngc" BianMa_8_3.ngd
+map -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o BianMa_8_3_map.ncd BianMa_8_3.ngd BianMa_8_3.pcf
+par -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -w -intstyle ise -ol std -t 1 BianMa_8_3_map.ncd BianMa_8_3.ncd BianMa_8_3.pcf
+trce -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -e 3 -s 4 -xml BianMa_8_3 BianMa_8_3.ncd -o BianMa_8_3.twr BianMa_8_3.pcf
+xst -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -ifn BianMa_8_3.xst -ofn BianMa_8_3.syr
+ngdbuild -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "BianMa_8_3.ngc" BianMa_8_3.ngd
+map -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o BianMa_8_3_map.ncd BianMa_8_3.ngd BianMa_8_3.pcf
+par -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -w -intstyle ise -ol std -t 1 BianMa_8_3_map.ncd BianMa_8_3.ncd BianMa_8_3.pcf
+trce -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -e 3 -s 4 -xml BianMa_8_3 BianMa_8_3.ncd -o BianMa_8_3.twr BianMa_8_3.pcf
+xst -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -ifn BianMa_8_3.xst -ofn BianMa_8_3.syr
+ngdbuild -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "BianMa_8_3.ngc" BianMa_8_3.ngd
+map -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o BianMa_8_3_map.ncd BianMa_8_3.ngd BianMa_8_3.pcf
+par -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -w -intstyle ise -ol std -t 1 BianMa_8_3_map.ncd BianMa_8_3.ncd BianMa_8_3.pcf
+trce -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -e 3 -s 4 -xml BianMa_8_3 BianMa_8_3.ncd -o BianMa_8_3.twr BianMa_8_3.pcf
+bitgen -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -f BianMa_8_3.ut BianMa_8_3.ncd
+xst -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -ifn BianMa_8_3.xst -ofn BianMa_8_3.syr
+ngdbuild -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "BianMa_8_3.ngc" BianMa_8_3.ngd
+map -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o BianMa_8_3_map.ncd BianMa_8_3.ngd BianMa_8_3.pcf
+par -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -w -intstyle ise -ol std -t 1 BianMa_8_3_map.ncd BianMa_8_3.ncd BianMa_8_3.pcf
+trce -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -e 3 -s 4 -xml BianMa_8_3 BianMa_8_3.ncd -o BianMa_8_3.twr BianMa_8_3.pcf
+bitgen -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -f BianMa_8_3.ut BianMa_8_3.ncd
+ngdbuild -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -dd _ngo -nt timestamp -uc "BianMa_8_3.ucf" -p xc3s500e-pq208-4 "BianMa_8_3.ngc" BianMa_8_3.ngd
+map -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o BianMa_8_3_map.ncd BianMa_8_3.ngd BianMa_8_3.pcf
+par -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -w -intstyle ise -ol std -t 1 BianMa_8_3_map.ncd BianMa_8_3.ncd BianMa_8_3.pcf
+trce -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -e 3 -s 4 -xml BianMa_8_3 BianMa_8_3.ncd -o BianMa_8_3.twr BianMa_8_3.pcf -ucf BianMa_8_3.ucf
+bitgen -ise "D:/XC3S500/BianMa_8_3/BianMa_8_3/BianMa_8_3.ise" -intstyle ise -f BianMa_8_3.ut BianMa_8_3.ncd
+xst -intstyle ise -ifn "D:/X9/v/BianMa_8_3/BianMa_8_3/BianMa_8_3.xst" -ofn "D:/X9/v/BianMa_8_3/BianMa_8_3/BianMa_8_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BianMa_8_3.ucf -p xc6slx9-tqg144-2 BianMa_8_3.ngc BianMa_8_3.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BianMa_8_3_map.ncd BianMa_8_3.ngd BianMa_8_3.pcf 
+xst -intstyle ise -ifn "D:/X9/v/BianMa_8_3/BianMa_8_3/BianMa_8_3.xst" -ofn "D:/X9/v/BianMa_8_3/BianMa_8_3/BianMa_8_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BianMa_8_3.ucf -p xc6slx9-tqg144-2 BianMa_8_3.ngc BianMa_8_3.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BianMa_8_3_map.ncd BianMa_8_3.ngd BianMa_8_3.pcf 
+par -w -intstyle ise -ol high -mt off BianMa_8_3_map.ncd BianMa_8_3.ncd BianMa_8_3.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml BianMa_8_3.twx BianMa_8_3.ncd -o BianMa_8_3.twr BianMa_8_3.pcf -ucf BianMa_8_3.ucf 
+bitgen -intstyle ise -f BianMa_8_3.ut BianMa_8_3.ncd 

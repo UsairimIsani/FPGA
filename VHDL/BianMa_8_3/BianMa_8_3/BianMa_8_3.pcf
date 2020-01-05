@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Wed May 07 20:18:43 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "data_out<0>" LOCATE = SITE "P44" LEVEL 1;
+COMP "data_out<1>" LOCATE = SITE "P45" LEVEL 1;
+COMP "data_out<2>" LOCATE = SITE "P46" LEVEL 1;
+COMP "data_in<0>" LOCATE = SITE "P16" LEVEL 1;
+COMP "data_in<1>" LOCATE = SITE "P17" LEVEL 1;
+COMP "data_in<2>" LOCATE = SITE "P21" LEVEL 1;
+COMP "data_in<3>" LOCATE = SITE "P22" LEVEL 1;
+COMP "data_in<4>" LOCATE = SITE "P23" LEVEL 1;
+COMP "data_in<5>" LOCATE = SITE "P24" LEVEL 1;
+COMP "data_in<6>" LOCATE = SITE "P26" LEVEL 1;
+COMP "data_in<7>" LOCATE = SITE "P27" LEVEL 1;
+SCHEMATIC END;
+

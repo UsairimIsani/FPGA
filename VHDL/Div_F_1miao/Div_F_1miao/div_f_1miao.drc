@@ -1,0 +1,8 @@
+Release 14.3 Drc P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Wed May 07 20:50:10 2014
+
+drc -z Div_F_1miao.ncd Div_F_1miao.pcf
+
+DRC detected 0 errors and 0 warnings.

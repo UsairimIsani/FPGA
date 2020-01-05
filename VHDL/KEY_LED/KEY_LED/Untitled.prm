@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator J.30
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o D:\XC3S500\KEY_LED\KEY_LED\//Untitled -u 0 D:/XC3S500/KEY_LED/KEY_LED/key_led.bit -s 1024 -spi 
+
+PROM D:\XC3S500\KEY_LED\KEY_LED\//Untitled.prm map: Tue Aug 31 21:50:16 2010
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          1024K
+PROM start    0000:0000
+PROM end      000f:ffff
+PROM checksum 0ba04b6f
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0004:547f     Aug 31 21:49:18 2010 D:/XC3S500/KEY_LED/KEY_LED/key_led.bit

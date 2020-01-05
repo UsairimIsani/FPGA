@@ -1,0 +1,8 @@
+Release 14.3 Drc P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Wed May 07 20:45:18 2014
+
+drc -z Decoder3_8.ncd Decoder3_8.pcf
+
+DRC detected 0 errors and 0 warnings.

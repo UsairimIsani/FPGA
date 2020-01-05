@@ -1,0 +1,246 @@
+--------------------------------------------------------------------------------
+Release 14.3 Trace  (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+E:\Xilinx\14.3\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -e 3 -s 2 -n
+3 -xml BianMa_8_3.twx BianMa_8_3.ncd -o BianMa_8_3.twr BianMa_8_3.pcf -ucf
+BianMa_8_3.ucf
+
+Design file:              BianMa_8_3.ncd
+Physical constraint file: BianMa_8_3.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2012-10-12)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock data_in<0> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+data_out<0> |        12.616(F)|      SLOW  |         5.230(F)|      FAST  |data_out_0_G      |   0.000|
+data_out<1> |        12.058(F)|      SLOW  |         5.588(F)|      FAST  |data_out_1_G      |   0.000|
+data_out<2> |        11.954(F)|      SLOW  |         5.566(F)|      FAST  |data_out_2_G      |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock data_in<1> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+data_out<0> |        12.106(F)|      SLOW  |         5.180(F)|      FAST  |data_out_0_G      |   0.000|
+data_out<1> |        12.309(F)|      SLOW  |         5.666(F)|      FAST  |data_out_1_G      |   0.000|
+data_out<2> |        12.297(F)|      SLOW  |         5.674(F)|      FAST  |data_out_2_G      |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock data_in<2> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+data_out<0> |        12.284(F)|      SLOW  |         5.406(F)|      FAST  |data_out_0_G      |   0.000|
+data_out<1> |        11.215(F)|      SLOW  |         5.098(F)|      FAST  |data_out_1_G      |   0.000|
+data_out<2> |        11.976(F)|      SLOW  |         5.558(F)|      FAST  |data_out_2_G      |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock data_in<3> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+data_out<0> |        12.208(F)|      SLOW  |         4.751(F)|      FAST  |data_out_0_G      |   0.000|
+data_out<1> |        11.129(F)|      SLOW  |         5.055(F)|      FAST  |data_out_1_G      |   0.000|
+data_out<2> |        11.655(F)|      SLOW  |         5.120(F)|      FAST  |data_out_2_G      |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock data_in<4> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+data_out<0> |        12.092(F)|      SLOW  |         5.409(F)|      FAST  |data_out_0_G      |   0.000|
+data_out<1> |        12.130(F)|      SLOW  |         5.594(F)|      FAST  |data_out_1_G      |   0.000|
+data_out<2> |        11.212(F)|      SLOW  |         4.985(F)|      FAST  |data_out_2_G      |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock data_in<5> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+data_out<0> |        12.542(F)|      SLOW  |         4.984(F)|      FAST  |data_out_0_G      |   0.000|
+data_out<1> |        12.208(F)|      SLOW  |         5.403(F)|      FAST  |data_out_1_G      |   0.000|
+data_out<2> |        11.511(F)|      SLOW  |         5.271(F)|      FAST  |data_out_2_G      |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock data_in<6> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+data_out<0> |        11.006(F)|      SLOW  |         4.367(F)|      FAST  |data_out_0_G      |   0.000|
+data_out<1> |        10.566(F)|      SLOW  |         4.563(F)|      FAST  |data_out_1_G      |   0.000|
+data_out<2> |        10.217(F)|      SLOW  |         4.528(F)|      FAST  |data_out_2_G      |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock data_in<7> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+data_out<0> |        11.021(F)|      SLOW  |         4.321(F)|      FAST  |data_out_0_G      |   0.000|
+data_out<1> |        10.273(F)|      SLOW  |         4.524(F)|      FAST  |data_out_1_G      |   0.000|
+data_out<2> |        10.130(F)|      SLOW  |         4.430(F)|      FAST  |data_out_2_G      |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock data_in<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<0>     |         |         |    2.542|    2.542|
+data_in<1>     |         |         |    1.543|    1.543|
+data_in<2>     |         |         |    2.210|    2.210|
+data_in<3>     |         |         |    1.399|    1.399|
+data_in<4>     |         |         |    2.018|    2.018|
+data_in<5>     |         |         |    1.733|    1.733|
+data_in<6>     |         |         |    0.197|    0.197|
+data_in<7>     |         |         |    0.212|    0.212|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock data_in<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<0>     |         |         |    2.508|    2.508|
+data_in<1>     |         |         |    1.410|    1.410|
+data_in<2>     |         |         |    2.176|    2.176|
+data_in<3>     |         |         |    1.365|    1.365|
+data_in<4>     |         |         |    1.984|    1.984|
+data_in<5>     |         |         |    1.699|    1.699|
+data_in<6>     |         |         |    0.163|    0.163|
+data_in<7>     |         |         |    0.178|    0.178|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock data_in<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<0>     |         |         |    2.235|    2.235|
+data_in<1>     |         |         |    2.410|    2.410|
+data_in<2>     |         |         |    1.903|    1.903|
+data_in<3>     |         |         |    1.226|    1.226|
+data_in<4>     |         |         |    2.231|    2.231|
+data_in<5>     |         |         |    2.190|    2.190|
+data_in<6>     |         |         |    0.548|    0.548|
+data_in<7>     |         |         |    0.374|    0.374|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock data_in<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<0>     |         |         |    3.191|    3.191|
+data_in<1>     |         |         |    2.381|    2.381|
+data_in<2>     |         |         |    2.859|    2.859|
+data_in<3>     |         |         |    2.048|    2.048|
+data_in<4>     |         |         |    2.667|    2.667|
+data_in<5>     |         |         |    2.382|    2.382|
+data_in<6>     |         |         |    0.846|    0.846|
+data_in<7>     |         |         |    0.861|    0.861|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock data_in<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<0>     |         |         |    2.169|    2.169|
+data_in<1>     |         |         |    2.512|    2.512|
+data_in<2>     |         |         |    2.191|    2.191|
+data_in<3>     |         |         |    1.937|    1.937|
+data_in<4>     |         |         |    1.616|    1.616|
+data_in<5>     |         |         |    1.793|    1.793|
+data_in<6>     |         |         |    0.499|    0.499|
+data_in<7>     |         |         |    0.412|    0.412|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock data_in<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<0>     |         |         |    2.835|    2.835|
+data_in<1>     |         |         |    1.951|    1.951|
+data_in<2>     |         |         |    2.503|    2.503|
+data_in<3>     |         |         |    1.692|    1.692|
+data_in<4>     |         |         |    2.311|    2.311|
+data_in<5>     |         |         |    2.026|    2.026|
+data_in<6>     |         |         |    0.490|    0.490|
+data_in<7>     |         |         |    0.505|    0.505|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock data_in<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<0>     |         |         |    4.008|    4.008|
+data_in<1>     |         |         |    3.330|    3.330|
+data_in<2>     |         |         |    3.676|    3.676|
+data_in<3>     |         |         |    2.865|    2.865|
+data_in<4>     |         |         |    3.484|    3.484|
+data_in<5>     |         |         |    3.199|    3.199|
+data_in<6>     |         |         |    1.663|    1.663|
+data_in<7>     |         |         |    1.678|    1.678|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock data_in<7>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<0>     |         |         |    3.993|    3.993|
+data_in<1>     |         |         |    3.380|    3.380|
+data_in<2>     |         |         |    3.661|    3.661|
+data_in<3>     |         |         |    2.850|    2.850|
+data_in<4>     |         |         |    3.469|    3.469|
+data_in<5>     |         |         |    3.184|    3.184|
+data_in<6>     |         |         |    1.648|    1.648|
+data_in<7>     |         |         |    1.663|    1.663|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed May 07 20:19:04 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 147 MB
+
+
+

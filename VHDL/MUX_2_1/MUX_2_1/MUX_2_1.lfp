@@ -1,0 +1,5 @@
+# begin LFP file D:\XC3S500\MUX_2_1\MUX_2_1\MUX_2_1.lfp
+designfile MUX_2_1.vhd
+parttype xc3s500e-4-pq208
+bus_delimiter 0;
+set_busdelim_onsave 1;

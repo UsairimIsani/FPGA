@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.40xd
+# Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.40xd
+DATE            05/07/2014 - 22:30
+SOURCE          D:\X9\digital_clock\timer_spi.mcs
+DEVICE          2048K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x1AC01C19
+START_ADDRESS   0x00000000 END_ADDRESS 0x0005327B DIRECTION_UP   "D:/X9/digital_clock/digital_clock_cclktemp.bit" 6slx9tqg144

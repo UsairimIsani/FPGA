@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Wed May 07 22:23:16 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "VS" LOCATE = SITE "P97" LEVEL 1;
+COMP "RED<2>" LOCATE = SITE "P100" LEVEL 1;
+COMP "CTL<0>" LOCATE = SITE "P112" LEVEL 1;
+COMP "CTL<1>" LOCATE = SITE "P114" LEVEL 1;
+COMP "HS" LOCATE = SITE "P95" LEVEL 1;
+COMP "BLUE<1>" LOCATE = SITE "P98" LEVEL 1;
+COMP "GREEN<2>" LOCATE = SITE "P99" LEVEL 1;
+COMP "CLK" LOCATE = SITE "P126" LEVEL 1;
+SCHEMATIC END;
+

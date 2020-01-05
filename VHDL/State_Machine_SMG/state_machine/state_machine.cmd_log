@@ -1,0 +1,16 @@
+xst -ise "D:/XC3S500/State_Machine/state_machine/state_machine.ise" -intstyle ise -ifn state_machine.xst -ofn state_machine.syr
+ngdbuild -ise "D:/XC3S500/State_Machine/state_machine/state_machine.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "state_machine.ngc" state_machine.ngd
+map -ise "D:/XC3S500/State_Machine/state_machine/state_machine.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o state_machine_map.ncd state_machine.ngd state_machine.pcf
+par -ise "D:/XC3S500/State_Machine/state_machine/state_machine.ise" -w -intstyle ise -ol std -t 1 state_machine_map.ncd state_machine.ncd state_machine.pcf
+trce -ise "D:/XC3S500/State_Machine/state_machine/state_machine.ise" -intstyle ise -e 3 -s 4 -xml state_machine state_machine.ncd -o state_machine.twr state_machine.pcf
+ngdbuild -ise "D:/XC3S500/State_Machine_SMG/state_machine/state_machine.ise" -intstyle ise -dd _ngo -nt timestamp -uc "state_machine.ucf" -p xc3s500e-pq208-4 "state_machine.ngc" state_machine.ngd
+map -ise "D:/XC3S500/State_Machine_SMG/state_machine/state_machine.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o state_machine_map.ncd state_machine.ngd state_machine.pcf
+par -ise "D:/XC3S500/State_Machine_SMG/state_machine/state_machine.ise" -w -intstyle ise -ol std -t 1 state_machine_map.ncd state_machine.ncd state_machine.pcf
+trce -ise "D:/XC3S500/State_Machine_SMG/state_machine/state_machine.ise" -intstyle ise -e 3 -s 4 -xml state_machine state_machine.ncd -o state_machine.twr state_machine.pcf -ucf state_machine.ucf
+bitgen -ise "D:/XC3S500/State_Machine_SMG/state_machine/state_machine.ise" -intstyle ise -f state_machine.ut state_machine.ncd
+xst -intstyle ise -ifn "D:/X9/v/State_Machine_SMG/state_machine/state_machine.xst" -ofn "D:/X9/v/State_Machine_SMG/state_machine/state_machine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc state_machine.ucf -p xc6slx9-tqg144-2 state_machine.ngc state_machine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o state_machine_map.ncd state_machine.ngd state_machine.pcf 
+par -w -intstyle ise -ol high -mt off state_machine_map.ncd state_machine.ncd state_machine.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml state_machine.twx state_machine.ncd -o state_machine.twr state_machine.pcf -ucf state_machine.ucf 
+bitgen -intstyle ise -f state_machine.ut state_machine.ncd 

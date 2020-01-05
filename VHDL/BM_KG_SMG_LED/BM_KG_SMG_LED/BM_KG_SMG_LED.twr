@@ -1,0 +1,108 @@
+--------------------------------------------------------------------------------
+Release 14.3 Trace  (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+E:\Xilinx\14.3\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -e 3 -s 2 -n
+3 -xml BM_KG_SMG_LED.twx BM_KG_SMG_LED.ncd -o BM_KG_SMG_LED.twr
+BM_KG_SMG_LED.pcf -ucf BM_KG_SMG_LED.ucf
+
+Design file:              BM_KG_SMG_LED.ncd
+Physical constraint file: BM_KG_SMG_LED.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2012-10-12)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+BM_KG_data<0>  |LED7S<0>       |   10.706|
+BM_KG_data<0>  |LED7S<1>       |   11.345|
+BM_KG_data<0>  |LED7S<2>       |   11.713|
+BM_KG_data<0>  |LED7S<3>       |   12.260|
+BM_KG_data<0>  |LED7S<4>       |   13.706|
+BM_KG_data<0>  |LED7S<5>       |   13.360|
+BM_KG_data<0>  |LED7S<6>       |   13.081|
+BM_KG_data<1>  |LED7S<0>       |   10.750|
+BM_KG_data<1>  |LED7S<1>       |   11.211|
+BM_KG_data<1>  |LED7S<2>       |   10.835|
+BM_KG_data<1>  |LED7S<3>       |   12.304|
+BM_KG_data<1>  |LED7S<4>       |   13.750|
+BM_KG_data<1>  |LED7S<5>       |   13.404|
+BM_KG_data<1>  |LED7S<6>       |   13.125|
+BM_KG_data<2>  |LED7S<0>       |   10.377|
+BM_KG_data<2>  |LED7S<1>       |   11.227|
+BM_KG_data<2>  |LED7S<2>       |   10.390|
+BM_KG_data<2>  |LED7S<3>       |   12.135|
+BM_KG_data<2>  |LED7S<4>       |   13.581|
+BM_KG_data<2>  |LED7S<5>       |   13.235|
+BM_KG_data<2>  |LED7S<6>       |   12.956|
+BM_KG_data<3>  |LED7S<0>       |   10.920|
+BM_KG_data<3>  |LED7S<1>       |   11.128|
+BM_KG_data<3>  |LED7S<2>       |   11.309|
+BM_KG_data<3>  |LED7S<3>       |   12.474|
+BM_KG_data<3>  |LED7S<4>       |   13.920|
+BM_KG_data<3>  |LED7S<5>       |   13.574|
+BM_KG_data<3>  |LED7S<6>       |   13.295|
+BM_KG_data<4>  |LED7S<0>       |   10.801|
+BM_KG_data<4>  |LED7S<1>       |   10.360|
+BM_KG_data<4>  |LED7S<2>       |   10.762|
+BM_KG_data<4>  |LED7S<3>       |   12.355|
+BM_KG_data<4>  |LED7S<4>       |   13.801|
+BM_KG_data<4>  |LED7S<5>       |   13.455|
+BM_KG_data<4>  |LED7S<6>       |   13.176|
+BM_KG_data<5>  |LED7S<0>       |   11.338|
+BM_KG_data<5>  |LED7S<1>       |   10.427|
+BM_KG_data<5>  |LED7S<2>       |   11.493|
+BM_KG_data<5>  |LED7S<3>       |   12.892|
+BM_KG_data<5>  |LED7S<4>       |   14.338|
+BM_KG_data<5>  |LED7S<5>       |   13.992|
+BM_KG_data<5>  |LED7S<6>       |   13.713|
+BM_KG_data<6>  |LED7S<0>       |   11.602|
+BM_KG_data<6>  |LED7S<1>       |   10.395|
+BM_KG_data<6>  |LED7S<2>       |   11.368|
+BM_KG_data<6>  |LED7S<3>       |   13.156|
+BM_KG_data<6>  |LED7S<4>       |   14.602|
+BM_KG_data<6>  |LED7S<5>       |   14.256|
+BM_KG_data<6>  |LED7S<6>       |   13.977|
+BM_KG_data<7>  |LED7S<0>       |   11.265|
+BM_KG_data<7>  |LED7S<1>       |   10.744|
+BM_KG_data<7>  |LED7S<2>       |   11.472|
+BM_KG_data<7>  |LED7S<3>       |   12.819|
+BM_KG_data<7>  |LED7S<4>       |   14.265|
+BM_KG_data<7>  |LED7S<5>       |   13.919|
+BM_KG_data<7>  |LED7S<6>       |   13.640|
+---------------+---------------+---------+
+
+
+Analysis completed Wed May 07 20:39:34 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 147 MB
+
+
+

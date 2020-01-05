@@ -1,0 +1,34 @@
+xst -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -ifn Decoder3_8.xst -ofn Decoder3_8.syr
+ngdbuild -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "Decoder3_8.ngc" Decoder3_8.ngd
+map -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o Decoder3_8_map.ncd Decoder3_8.ngd Decoder3_8.pcf
+par -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -w -intstyle ise -ol std -t 1 Decoder3_8_map.ncd Decoder3_8.ncd Decoder3_8.pcf
+trce -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -e 3 -s 4 -xml Decoder3_8 Decoder3_8.ncd -o Decoder3_8.twr Decoder3_8.pcf
+xst -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -ifn Decoder3_8.xst -ofn Decoder3_8.syr
+ngdbuild -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "Decoder3_8.ngc" Decoder3_8.ngd
+map -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o Decoder3_8_map.ncd Decoder3_8.ngd Decoder3_8.pcf
+par -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -w -intstyle ise -ol std -t 1 Decoder3_8_map.ncd Decoder3_8.ncd Decoder3_8.pcf
+trce -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -e 3 -s 4 -xml Decoder3_8 Decoder3_8.ncd -o Decoder3_8.twr Decoder3_8.pcf
+bitgen -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -f Decoder3_8.ut Decoder3_8.ncd
+ngdbuild -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -dd _ngo -nt timestamp -uc "Decoder3_8.ucf" -p xc3s500e-pq208-4 "Decoder3_8.ngc" Decoder3_8.ngd
+map -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o Decoder3_8_map.ncd Decoder3_8.ngd Decoder3_8.pcf
+par -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -w -intstyle ise -ol std -t 1 Decoder3_8_map.ncd Decoder3_8.ncd Decoder3_8.pcf
+trce -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -e 3 -s 4 -xml Decoder3_8 Decoder3_8.ncd -o Decoder3_8.twr Decoder3_8.pcf -ucf Decoder3_8.ucf
+bitgen -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -f Decoder3_8.ut Decoder3_8.ncd
+xst -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -ifn Decoder3_8.xst -ofn Decoder3_8.syr
+ngdbuild -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -dd _ngo -nt timestamp -uc "Decoder3_8.ucf" -p xc3s500e-pq208-4 "Decoder3_8.ngc" Decoder3_8.ngd
+map -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o Decoder3_8_map.ncd Decoder3_8.ngd Decoder3_8.pcf
+par -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -w -intstyle ise -ol std -t 1 Decoder3_8_map.ncd Decoder3_8.ncd Decoder3_8.pcf
+trce -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -e 3 -s 4 -xml Decoder3_8 Decoder3_8.ncd -o Decoder3_8.twr Decoder3_8.pcf -ucf Decoder3_8.ucf
+bitgen -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -f Decoder3_8.ut Decoder3_8.ncd
+xst -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -ifn Decoder3_8.xst -ofn Decoder3_8.syr
+ngdbuild -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -dd _ngo -nt timestamp -uc "Decoder3_8.ucf" -p xc3s500e-pq208-4 "Decoder3_8.ngc" Decoder3_8.ngd
+map -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o Decoder3_8_map.ncd Decoder3_8.ngd Decoder3_8.pcf
+par -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -w -intstyle ise -ol std -t 1 Decoder3_8_map.ncd Decoder3_8.ncd Decoder3_8.pcf
+trce -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -e 3 -s 4 -xml Decoder3_8 Decoder3_8.ncd -o Decoder3_8.twr Decoder3_8.pcf -ucf Decoder3_8.ucf
+bitgen -ise "D:/XC3S500/Decoder3_8/Decoder3_8/Decoder3_8.ise" -intstyle ise -f Decoder3_8.ut Decoder3_8.ncd
+xst -intstyle ise -ifn "D:/X9/v/Decoder3_8/Decoder3_8/Decoder3_8.xst" -ofn "D:/X9/v/Decoder3_8/Decoder3_8/Decoder3_8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Decoder3_8.ucf -p xc6slx9-tqg144-2 Decoder3_8.ngc Decoder3_8.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Decoder3_8_map.ncd Decoder3_8.ngd Decoder3_8.pcf 
+par -w -intstyle ise -ol high -mt off Decoder3_8_map.ncd Decoder3_8.ncd Decoder3_8.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml Decoder3_8.twx Decoder3_8.ncd -o Decoder3_8.twr Decoder3_8.pcf -ucf Decoder3_8.ucf 
+bitgen -intstyle ise -f Decoder3_8.ut Decoder3_8.ncd 

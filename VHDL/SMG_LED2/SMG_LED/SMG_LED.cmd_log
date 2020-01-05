@@ -1,0 +1,24 @@
+xst -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -intstyle ise -ifn SMG_LED.xst -ofn SMG_LED.syr
+xst -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -intstyle ise -ifn SMG_LED.xst -ofn SMG_LED.syr
+ngdbuild -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "SMG_LED.ngc" SMG_LED.ngd
+map -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o SMG_LED_map.ncd SMG_LED.ngd SMG_LED.pcf
+par -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -w -intstyle ise -ol std -t 1 SMG_LED_map.ncd SMG_LED.ncd SMG_LED.pcf
+trce -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -intstyle ise -e 3 -s 4 -xml SMG_LED SMG_LED.ncd -o SMG_LED.twr SMG_LED.pcf
+xst -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -intstyle ise -ifn SMG_LED.xst -ofn SMG_LED.syr
+ngdbuild -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -intstyle ise -dd _ngo -nt timestamp -uc "SMG_LED.ucf" -p xc3s500e-pq208-4 "SMG_LED.ngc" SMG_LED.ngd
+map -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o SMG_LED_map.ncd SMG_LED.ngd SMG_LED.pcf
+par -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -w -intstyle ise -ol std -t 1 SMG_LED_map.ncd SMG_LED.ncd SMG_LED.pcf
+trce -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -intstyle ise -e 3 -s 4 -xml SMG_LED SMG_LED.ncd -o SMG_LED.twr SMG_LED.pcf -ucf SMG_LED.ucf
+bitgen -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -intstyle ise -f SMG_LED.ut SMG_LED.ncd
+ngdbuild -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -intstyle ise -dd _ngo -nt timestamp -uc "SMG_LED.ucf" -p xc3s500e-pq208-4 "SMG_LED.ngc" SMG_LED.ngd
+map -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o SMG_LED_map.ncd SMG_LED.ngd SMG_LED.pcf
+map -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o SMG_LED_map.ncd SMG_LED.ngd SMG_LED.pcf
+par -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -w -intstyle ise -ol std -t 1 SMG_LED_map.ncd SMG_LED.ncd SMG_LED.pcf
+trce -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -intstyle ise -e 3 -s 4 -xml SMG_LED SMG_LED.ncd -o SMG_LED.twr SMG_LED.pcf -ucf SMG_LED.ucf
+bitgen -ise "D:/XC3S500/SMG_LED2/SMG_LED/SMG_LED.ise" -intstyle ise -f SMG_LED.ut SMG_LED.ncd
+xst -intstyle ise -ifn "D:/X9/v/SMG_LED2/SMG_LED/SMG_LED.xst" -ofn "D:/X9/v/SMG_LED2/SMG_LED/SMG_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SMG_LED.ucf -p xc6slx9-tqg144-2 SMG_LED.ngc SMG_LED.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SMG_LED_map.ncd SMG_LED.ngd SMG_LED.pcf 
+par -w -intstyle ise -ol high -mt off SMG_LED_map.ncd SMG_LED.ncd SMG_LED.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml SMG_LED.twx SMG_LED.ncd -o SMG_LED.twr SMG_LED.pcf -ucf SMG_LED.ucf 
+bitgen -intstyle ise -f SMG_LED.ut SMG_LED.ncd 

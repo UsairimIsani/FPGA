@@ -1,0 +1,9 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Wed May 07 20:49:40 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P126" LEVEL 1;
+COMP "miao_out" LOCATE = SITE "P45" LEVEL 1;
+SCHEMATIC END;
+

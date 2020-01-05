@@ -1,0 +1,33 @@
+xst -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -ifn VGA_DISPLAY.xst -ofn VGA_DISPLAY.syr
+xst -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -ifn VGA_DISPLAY.xst -ofn VGA_DISPLAY.syr
+xst -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -ifn VGA_DISPLAY.xst -ofn VGA_DISPLAY.syr
+xst -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -ifn VGA_DISPLAY.xst -ofn VGA_DISPLAY.syr
+ngdbuild -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 "VGA_DISPLAY.ngc" VGA_DISPLAY.ngd
+map -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -p xc3s100e-tq144-5 -cm area -pr b -k 4 -c 100 -o VGA_DISPLAY_map.ncd VGA_DISPLAY.ngd VGA_DISPLAY.pcf
+par -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -w -intstyle ise -ol std -t 1 VGA_DISPLAY_map.ncd VGA_DISPLAY.ncd VGA_DISPLAY.pcf
+trce -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -e 3 -s 5 -xml VGA_DISPLAY VGA_DISPLAY.ncd -o VGA_DISPLAY.twr VGA_DISPLAY.pcf
+bitgen -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -f VGA_DISPLAY.ut VGA_DISPLAY.ncd
+xst -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -ifn VGA_DISPLAY.xst -ofn VGA_DISPLAY.syr
+ngdbuild -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -dd _ngo -nt timestamp -uc "VGA_DISPLAY.ucf" -p xc3s100e-tq144-5 "VGA_DISPLAY.ngc" VGA_DISPLAY.ngd
+map -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -p xc3s100e-tq144-5 -cm area -pr b -k 4 -c 100 -o VGA_DISPLAY_map.ncd VGA_DISPLAY.ngd VGA_DISPLAY.pcf
+xst -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -ifn VGA_DISPLAY.xst -ofn VGA_DISPLAY.syr
+ngdbuild -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -dd _ngo -nt timestamp -uc "VGA_DISPLAY.ucf" -p xc3s500e-cp132-5 "VGA_DISPLAY.ngc" VGA_DISPLAY.ngd
+map -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -p xc3s500e-cp132-5 -cm area -pr b -k 4 -c 100 -o VGA_DISPLAY_map.ncd VGA_DISPLAY.ngd VGA_DISPLAY.pcf
+xst -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -ifn VGA_DISPLAY.xst -ofn VGA_DISPLAY.syr
+ngdbuild -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -dd _ngo -nt timestamp -uc "VGA_DISPLAY.ucf" -p xc3s500e-pq208-5 "VGA_DISPLAY.ngc" VGA_DISPLAY.ngd
+map -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -p xc3s500e-pq208-5 -cm area -pr b -k 4 -c 100 -o VGA_DISPLAY_map.ncd VGA_DISPLAY.ngd VGA_DISPLAY.pcf
+par -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -w -intstyle ise -ol std -t 1 VGA_DISPLAY_map.ncd VGA_DISPLAY.ncd VGA_DISPLAY.pcf
+trce -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -e 3 -s 5 -xml VGA_DISPLAY VGA_DISPLAY.ncd -o VGA_DISPLAY.twr VGA_DISPLAY.pcf -ucf VGA_DISPLAY.ucf
+bitgen -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -f VGA_DISPLAY.ut VGA_DISPLAY.ncd
+xst -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -ifn VGA_DISPLAY.xst -ofn VGA_DISPLAY.syr
+ngdbuild -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -dd _ngo -nt timestamp -uc "VGA_DISPLAY.ucf" -p xc3s500e-pq208-5 "VGA_DISPLAY.ngc" VGA_DISPLAY.ngd
+map -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -p xc3s500e-pq208-5 -cm area -pr b -k 4 -c 100 -o VGA_DISPLAY_map.ncd VGA_DISPLAY.ngd VGA_DISPLAY.pcf
+par -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -w -intstyle ise -ol std -t 1 VGA_DISPLAY_map.ncd VGA_DISPLAY.ncd VGA_DISPLAY.pcf
+trce -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -e 3 -s 5 -xml VGA_DISPLAY VGA_DISPLAY.ncd -o VGA_DISPLAY.twr VGA_DISPLAY.pcf -ucf VGA_DISPLAY.ucf
+bitgen -ise "D:/XC3S500/VGA_VR/VGA/VGA.ise" -intstyle ise -f VGA_DISPLAY.ut VGA_DISPLAY.ncd
+xst -intstyle ise -ifn "D:/X9/v/VGA_VR/VGA/VGA_DISPLAY.xst" -ofn "D:/X9/v/VGA_VR/VGA/VGA_DISPLAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_DISPLAY.ucf -p xc6slx9-tqg144-2 VGA_DISPLAY.ngc VGA_DISPLAY.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_DISPLAY_map.ncd VGA_DISPLAY.ngd VGA_DISPLAY.pcf 
+par -w -intstyle ise -ol high -mt off VGA_DISPLAY_map.ncd VGA_DISPLAY.ncd VGA_DISPLAY.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml VGA_DISPLAY.twx VGA_DISPLAY.ncd -o VGA_DISPLAY.twr VGA_DISPLAY.pcf -ucf VGA_DISPLAY.ucf 
+bitgen -intstyle ise -f VGA_DISPLAY.ut VGA_DISPLAY.ncd 

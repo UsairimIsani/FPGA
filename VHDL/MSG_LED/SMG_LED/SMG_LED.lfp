@@ -1,0 +1,5 @@
+# begin LFP file D:\XC3S500\MSG_LED\SMG_LED\SMG_LED.lfp
+designfile SMG_LED.vhd
+parttype xc3s500e-4-pq208
+bus_delimiter 0;
+set_busdelim_onsave 1;

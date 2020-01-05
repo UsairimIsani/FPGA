@@ -1,0 +1,5 @@
+# begin LFP file D:\XC3S500\LED_TEST\LED_TEST\LED_Water.lfp
+designfile LED_TEST.vhd
+parttype xc3s500e-4-pq208
+bus_delimiter 0;
+set_busdelim_onsave 1;

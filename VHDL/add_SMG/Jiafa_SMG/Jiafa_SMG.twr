@@ -1,0 +1,94 @@
+--------------------------------------------------------------------------------
+Release 14.3 Trace  (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+E:\Xilinx\14.3\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -e 3 -s 2 -n
+3 -xml Jiafa_SMG.twx Jiafa_SMG.ncd -o Jiafa_SMG.twr Jiafa_SMG.pcf -ucf
+Jiafa_SMG.ucf
+
+Design file:              Jiafa_SMG.ncd
+Physical constraint file: Jiafa_SMG.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2012-10-12)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+a<0>           |c<0>           |   10.688|
+a<0>           |c<1>           |   10.270|
+a<0>           |c<2>           |   10.252|
+a<0>           |c<3>           |   11.086|
+a<0>           |c<4>           |   12.047|
+a<0>           |c<5>           |   11.411|
+a<0>           |c<6>           |   11.005|
+a<1>           |c<0>           |    9.969|
+a<1>           |c<1>           |    9.812|
+a<1>           |c<2>           |   10.019|
+a<1>           |c<3>           |   10.663|
+a<1>           |c<4>           |   11.553|
+a<1>           |c<5>           |   11.229|
+a<1>           |c<6>           |   10.921|
+a<2>           |c<0>           |   10.566|
+a<2>           |c<1>           |   10.727|
+a<2>           |c<2>           |   10.748|
+a<2>           |c<3>           |   10.683|
+a<2>           |c<4>           |   11.928|
+a<2>           |c<5>           |   11.960|
+a<2>           |c<6>           |   11.026|
+b<0>           |c<0>           |   10.560|
+b<0>           |c<1>           |   10.850|
+b<0>           |c<2>           |   11.029|
+b<0>           |c<3>           |   10.814|
+b<0>           |c<4>           |   11.898|
+b<0>           |c<5>           |   12.062|
+b<0>           |c<6>           |   11.108|
+b<1>           |c<0>           |   11.214|
+b<1>           |c<1>           |   10.891|
+b<1>           |c<2>           |   11.429|
+b<1>           |c<3>           |   11.268|
+b<1>           |c<4>           |   12.350|
+b<1>           |c<5>           |   12.156|
+b<1>           |c<6>           |   11.641|
+b<2>           |c<0>           |    9.771|
+b<2>           |c<1>           |   10.028|
+b<2>           |c<2>           |   10.269|
+b<2>           |c<3>           |   10.287|
+b<2>           |c<4>           |   11.121|
+b<2>           |c<5>           |   10.981|
+b<2>           |c<6>           |   10.478|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Jun 05 08:44:38 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 147 MB
+
+
+

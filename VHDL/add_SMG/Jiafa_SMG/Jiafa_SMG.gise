@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Jiafa_SMG.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Jiafa_SMG.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Jiafa_SMG.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Jiafa_SMG.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Jiafa_SMG.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Jiafa_SMG.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Jiafa_SMG.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Jiafa_SMG.ngr"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="Jiafa_SMG.ntrc_log"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Jiafa_SMG.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Jiafa_SMG.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Jiafa_SMG.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Jiafa_SMG.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Jiafa_SMG.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Jiafa_SMG.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Jiafa_SMG.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Jiafa_SMG.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Jiafa_SMG.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Jiafa_SMG.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Jiafa_SMG.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Jiafa_SMG.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Jiafa_SMG.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Jiafa_SMG_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Jiafa_SMG_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Jiafa_SMG_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Jiafa_SMG_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Jiafa_SMG_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Jiafa_SMG_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Jiafa_SMG_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Jiafa_SMG_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Jiafa_SMG_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Jiafa_SMG_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Jiafa_SMG_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Jiafa_SMG_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Jiafa_SMG_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Jiafa_SMG_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Jiafa_SMG_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="jiafa_smg.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="jiafa_smg.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="jiafa_smg.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_MSK" xil_pn:name="jiafa_smg.msk"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1401929025" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1401929025">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1401929025" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="5414743213473952738" xil_pn:start_ts="1401929025">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1401929025" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-9014683776913659439" xil_pn:start_ts="1401929025">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1401929025" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1401929025">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1401929025" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-8778931511872888412" xil_pn:start_ts="1401929025">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1401929025" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1401929025">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1401929025" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-518050491396992933" xil_pn:start_ts="1401929025">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1401929036" xil_pn:in_ck="-243025511845703247" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="8429938414673352426" xil_pn:start_ts="1401929025">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Jiafa_SMG.lso"/>
+      <outfile xil_pn:name="Jiafa_SMG.ngc"/>
+      <outfile xil_pn:name="Jiafa_SMG.ngr"/>
+      <outfile xil_pn:name="Jiafa_SMG.ntrc_log"/>
+      <outfile xil_pn:name="Jiafa_SMG.prj"/>
+      <outfile xil_pn:name="Jiafa_SMG.stx"/>
+      <outfile xil_pn:name="Jiafa_SMG.syr"/>
+      <outfile xil_pn:name="Jiafa_SMG.xst"/>
+      <outfile xil_pn:name="Jiafa_SMG_vhdl.prj"/>
+      <outfile xil_pn:name="Jiafa_SMG_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1401929036" xil_pn:in_ck="-243025511845704499" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6294401626930430297" xil_pn:start_ts="1401929036">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1401929043" xil_pn:in_ck="-2897389300627062860" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4890046505347293412" xil_pn:start_ts="1401929036">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Jiafa_SMG.bld"/>
+      <outfile xil_pn:name="Jiafa_SMG.ngd"/>
+      <outfile xil_pn:name="Jiafa_SMG_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1401929055" xil_pn:in_ck="-3197267528307213995" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1448924893915930207" xil_pn:start_ts="1401929043">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Jiafa_SMG.pcf"/>
+      <outfile xil_pn:name="Jiafa_SMG_map.map"/>
+      <outfile xil_pn:name="Jiafa_SMG_map.mrp"/>
+      <outfile xil_pn:name="Jiafa_SMG_map.ncd"/>
+      <outfile xil_pn:name="Jiafa_SMG_map.ngm"/>
+      <outfile xil_pn:name="Jiafa_SMG_map.xrpt"/>
+      <outfile xil_pn:name="Jiafa_SMG_summary.xml"/>
+      <outfile xil_pn:name="Jiafa_SMG_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1401929079" xil_pn:in_ck="-6957749357479943410" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1401929055">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Jiafa_SMG.ncd"/>
+      <outfile xil_pn:name="Jiafa_SMG.pad"/>
+      <outfile xil_pn:name="Jiafa_SMG.par"/>
+      <outfile xil_pn:name="Jiafa_SMG.ptwx"/>
+      <outfile xil_pn:name="Jiafa_SMG.unroutes"/>
+      <outfile xil_pn:name="Jiafa_SMG.xpi"/>
+      <outfile xil_pn:name="Jiafa_SMG_pad.csv"/>
+      <outfile xil_pn:name="Jiafa_SMG_pad.txt"/>
+      <outfile xil_pn:name="Jiafa_SMG_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1401929111" xil_pn:in_ck="-243025511845712124" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="60834123659729680" xil_pn:start_ts="1401929079">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Jiafa_SMG.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="jiafa_smg.bgn"/>
+      <outfile xil_pn:name="jiafa_smg.bit"/>
+      <outfile xil_pn:name="jiafa_smg.drc"/>
+      <outfile xil_pn:name="jiafa_smg.msk"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1401929079" xil_pn:in_ck="-506829621946367407" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-1758799009971969897" xil_pn:start_ts="1401929070">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Jiafa_SMG.twr"/>
+      <outfile xil_pn:name="Jiafa_SMG.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

@@ -1,0 +1,36 @@
+Release 14.3 ngdbuild P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: E:\Xilinx\14.3\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc Decoder3_8.ucf -p xc6slx9-tqg144-2 Decoder3_8.ngc
+Decoder3_8.ngd
+
+Reading NGO file "D:/X9/v/Decoder3_8/Decoder3_8/Decoder3_8.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "Decoder3_8.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 119640 kilobytes
+
+Writing NGD file "Decoder3_8.ngd" ...
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "Decoder3_8.bld"...

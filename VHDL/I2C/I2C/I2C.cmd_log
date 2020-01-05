@@ -1,0 +1,50 @@
+xst -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -ifn I2C.xst -ofn I2C.syr
+xst -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -ifn I2C.xst -ofn I2C.syr
+ngdbuild -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "I2C.ngc" I2C.ngd
+map -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o I2C_map.ncd I2C.ngd I2C.pcf
+par -ise "D:/XC3S500/I2C/I2C/I2C.ise" -w -intstyle ise -ol std -t 1 I2C_map.ncd I2C.ncd I2C.pcf
+trce -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -e 3 -s 4 -xml I2C I2C.ncd -o I2C.twr I2C.pcf
+xst -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -ifn I2C.xst -ofn I2C.syr
+ngdbuild -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -dd _ngo -nt timestamp -uc "I2C.ucf" -p xc3s500e-pq208-4 "I2C.ngc" I2C.ngd
+map -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o I2C_map.ncd I2C.ngd I2C.pcf
+xst -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -ifn I2C.xst -ofn I2C.syr
+ngdbuild -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -dd _ngo -nt timestamp -uc "I2C.ucf" -p xc3s500e-pq208-4 "I2C.ngc" I2C.ngd
+map -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o I2C_map.ncd I2C.ngd I2C.pcf
+par -ise "D:/XC3S500/I2C/I2C/I2C.ise" -w -intstyle ise -ol std -t 1 I2C_map.ncd I2C.ncd I2C.pcf
+trce -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -e 3 -s 4 -xml I2C I2C.ncd -o I2C.twr I2C.pcf -ucf I2C.ucf
+bitgen -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -f I2C.ut I2C.ncd
+bitgen -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -f I2C.ut I2C.ncd
+xst -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -ifn I2C.xst -ofn I2C.syr
+ngdbuild -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -dd _ngo -nt timestamp -uc "I2C.ucf" -p xc3s500e-pq208-4 "I2C.ngc" I2C.ngd
+map -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o I2C_map.ncd I2C.ngd I2C.pcf
+par -ise "D:/XC3S500/I2C/I2C/I2C.ise" -w -intstyle ise -ol std -t 1 I2C_map.ncd I2C.ncd I2C.pcf
+trce -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -e 3 -s 4 -xml I2C I2C.ncd -o I2C.twr I2C.pcf -ucf I2C.ucf
+bitgen -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -f I2C.ut I2C.ncd
+xst -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -ifn I2C.xst -ofn I2C.syr
+xst -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -ifn I2C.xst -ofn I2C.syr
+xst -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -ifn I2C.xst -ofn I2C.syr
+xst -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -ifn I2C.xst -ofn I2C.syr
+xst -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -ifn I2C.xst -ofn I2C.syr
+ngdbuild -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -dd _ngo -nt timestamp -uc "I2C.ucf" -p xc3s500e-pq208-4 "I2C.ngc" I2C.ngd
+map -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o I2C_map.ncd I2C.ngd I2C.pcf
+par -ise "D:/XC3S500/I2C/I2C/I2C.ise" -w -intstyle ise -ol std -t 1 I2C_map.ncd I2C.ncd I2C.pcf
+trce -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -e 3 -s 4 -xml I2C I2C.ncd -o I2C.twr I2C.pcf -ucf I2C.ucf
+bitgen -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -f I2C.ut I2C.ncd
+ngdbuild -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -dd _ngo -nt timestamp -uc "I2C.ucf" -p xc3s500e-pq208-4 "I2C.ngc" I2C.ngd
+map -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o I2C_map.ncd I2C.ngd I2C.pcf
+par -ise "D:/XC3S500/I2C/I2C/I2C.ise" -w -intstyle ise -ol std -t 1 I2C_map.ncd I2C.ncd I2C.pcf
+trce -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -e 3 -s 4 -xml I2C I2C.ncd -o I2C.twr I2C.pcf -ucf I2C.ucf
+bitgen -ise "D:/XC3S500/I2C/I2C/I2C.ise" -intstyle ise -f I2C.ut I2C.ncd
+xst -intstyle ise -ifn "D:/X9/v/I2C/I2C/I2C.xst" -ofn "D:/X9/v/I2C/I2C/I2C.syr" 
+xst -intstyle ise -ifn "D:/X9/v/I2C/I2C/I2C.xst" -ofn "D:/X9/v/I2C/I2C/I2C.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc I2C.ucf -p xc6slx9-tqg144-2 I2C.ngc I2C.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o I2C_map.ncd I2C.ngd I2C.pcf 
+xst -intstyle ise -ifn "D:/X9/v/I2C/I2C/I2C.xst" -ofn "D:/X9/v/I2C/I2C/I2C.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc I2C.ucf -p xc6slx9-tqg144-2 I2C.ngc I2C.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o I2C_map.ncd I2C.ngd I2C.pcf 
+xst -intstyle ise -ifn "D:/X9/v/I2C/I2C/I2C.xst" -ofn "D:/X9/v/I2C/I2C/I2C.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc I2C.ucf -p xc6slx9-tqg144-2 I2C.ngc I2C.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o I2C_map.ncd I2C.ngd I2C.pcf 
+par -w -intstyle ise -ol high -mt off I2C_map.ncd I2C.ncd I2C.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml I2C.twx I2C.ncd -o I2C.twr I2C.pcf -ucf I2C.ucf 
+bitgen -intstyle ise -f I2C.ut I2C.ncd 

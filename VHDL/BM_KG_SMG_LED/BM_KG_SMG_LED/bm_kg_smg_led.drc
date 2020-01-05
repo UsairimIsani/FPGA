@@ -1,0 +1,8 @@
+Release 14.3 Drc P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Wed May 07 20:39:43 2014
+
+drc -z BM_KG_SMG_LED.ncd BM_KG_SMG_LED.pcf
+
+DRC detected 0 errors and 0 warnings.

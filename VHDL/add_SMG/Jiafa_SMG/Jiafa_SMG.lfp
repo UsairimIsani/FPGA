@@ -1,0 +1,5 @@
+# begin LFP file D:\XC3S500\Jiafa_SMG\Jiafa_SMG\Jiafa_SMG.lfp
+designfile Jiafa_SMG.vhd
+parttype xc3s500e-4-pq208
+bus_delimiter 0;
+set_busdelim_onsave 1;

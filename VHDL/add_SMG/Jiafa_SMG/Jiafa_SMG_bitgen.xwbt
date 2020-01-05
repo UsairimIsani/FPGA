@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\X9\v\add_SMG\Jiafa_SMG\Jiafa_SMG.ncd
+OUTFILE=D:\X9\v\add_SMG\Jiafa_SMG\Jiafa_SMG.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\X9\v\add_SMG\Jiafa_SMG
+LICENSE=WebPack
+USER_INFO=__0_0_0

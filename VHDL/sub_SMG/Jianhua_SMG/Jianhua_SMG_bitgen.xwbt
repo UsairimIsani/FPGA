@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\X9\v\sub_SMG\Jianhua_SMG\Jianhua_SMG.ncd
+OUTFILE=D:\X9\v\sub_SMG\Jianhua_SMG\Jianhua_SMG.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\X9\v\sub_SMG\Jianhua_SMG
+LICENSE=WebPack
+USER_INFO=__0_0_0

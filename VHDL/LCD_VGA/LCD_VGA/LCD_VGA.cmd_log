@@ -1,0 +1,28 @@
+xst -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -ifn LCD_VGA.xst -ofn LCD_VGA.syr
+ngdbuild -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "LCD_VGA.ngc" LCD_VGA.ngd
+map -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o LCD_VGA_map.ncd LCD_VGA.ngd LCD_VGA.pcf
+par -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -w -intstyle ise -ol std -t 1 LCD_VGA_map.ncd LCD_VGA.ncd LCD_VGA.pcf
+trce -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -e 3 -s 4 -xml LCD_VGA LCD_VGA.ncd -o LCD_VGA.twr LCD_VGA.pcf
+xst -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -ifn LCD_VGA.xst -ofn LCD_VGA.syr
+ngdbuild -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "LCD_VGA.ngc" LCD_VGA.ngd
+map -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o LCD_VGA_map.ncd LCD_VGA.ngd LCD_VGA.pcf
+par -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -w -intstyle ise -ol std -t 1 LCD_VGA_map.ncd LCD_VGA.ncd LCD_VGA.pcf
+trce -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -e 3 -s 4 -xml LCD_VGA LCD_VGA.ncd -o LCD_VGA.twr LCD_VGA.pcf
+bitgen -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -f LCD_VGA.ut LCD_VGA.ncd
+ngdbuild -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -dd _ngo -nt timestamp -uc "LCD_VGA.ucf" -p xc3s500e-pq208-4 "LCD_VGA.ngc" LCD_VGA.ngd
+map -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o LCD_VGA_map.ncd LCD_VGA.ngd LCD_VGA.pcf
+par -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -w -intstyle ise -ol std -t 1 LCD_VGA_map.ncd LCD_VGA.ncd LCD_VGA.pcf
+trce -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -e 3 -s 4 -xml LCD_VGA LCD_VGA.ncd -o LCD_VGA.twr LCD_VGA.pcf -ucf LCD_VGA.ucf
+bitgen -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -f LCD_VGA.ut LCD_VGA.ncd
+xst -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -ifn LCD_VGA.xst -ofn LCD_VGA.syr
+ngdbuild -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -dd _ngo -nt timestamp -uc "LCD_VGA.ucf" -p xc3s500e-pq208-4 "LCD_VGA.ngc" LCD_VGA.ngd
+map -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o LCD_VGA_map.ncd LCD_VGA.ngd LCD_VGA.pcf
+par -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -w -intstyle ise -ol std -t 1 LCD_VGA_map.ncd LCD_VGA.ncd LCD_VGA.pcf
+trce -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -e 3 -s 4 -xml LCD_VGA LCD_VGA.ncd -o LCD_VGA.twr LCD_VGA.pcf -ucf LCD_VGA.ucf
+bitgen -ise "D:/XC3S500/LCD_VGA/LCD_VGA/LCD_VGA.ise" -intstyle ise -f LCD_VGA.ut LCD_VGA.ncd
+xst -intstyle ise -ifn "D:/X9/v/LCD_VGA/LCD_VGA/LCD_VGA.xst" -ofn "D:/X9/v/LCD_VGA/LCD_VGA/LCD_VGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCD_VGA.ucf -p xc6slx9-tqg144-2 LCD_VGA.ngc LCD_VGA.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_VGA_map.ncd LCD_VGA.ngd LCD_VGA.pcf 
+par -w -intstyle ise -ol high -mt off LCD_VGA_map.ncd LCD_VGA.ncd LCD_VGA.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml LCD_VGA.twx LCD_VGA.ncd -o LCD_VGA.twr LCD_VGA.pcf -ucf LCD_VGA.ucf 
+bitgen -intstyle ise -f LCD_VGA.ut LCD_VGA.ncd 

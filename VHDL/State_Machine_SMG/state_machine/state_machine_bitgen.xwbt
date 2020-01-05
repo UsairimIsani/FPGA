@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\X9\v\State_Machine_SMG\state_machine\state_machine.ncd
+OUTFILE=D:\X9\v\State_Machine_SMG\state_machine\state_machine.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\X9\v\State_Machine_SMG\state_machine
+LICENSE=WebPack
+USER_INFO=__0_0_0

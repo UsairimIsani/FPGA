@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\X9\digital_clock\digital_clock.ncd
+OUTFILE=D:\X9\digital_clock\digital_clock.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\X9\digital_clock
+LICENSE=WebPack
+USER_INFO=__0_0_0

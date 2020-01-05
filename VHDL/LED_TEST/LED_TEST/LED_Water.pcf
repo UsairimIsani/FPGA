@@ -1,0 +1,20 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Wed May 07 21:26:17 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led1<0>" LOCATE = SITE "P33" LEVEL 1;
+COMP "led1<1>" LOCATE = SITE "P34" LEVEL 1;
+COMP "clk" LOCATE = SITE "P126" LEVEL 1;
+COMP "led1<2>" LOCATE = SITE "P35" LEVEL 1;
+COMP "led1<3>" LOCATE = SITE "P44" LEVEL 1;
+COMP "led1<4>" LOCATE = SITE "P45" LEVEL 1;
+COMP "led1<5>" LOCATE = SITE "P46" LEVEL 1;
+COMP "led1<6>" LOCATE = SITE "P43" LEVEL 1;
+COMP "led1<7>" LOCATE = SITE "P41" LEVEL 1;
+COMP "led1<8>" LOCATE = SITE "P40" LEVEL 1;
+COMP "led1<9>" LOCATE = SITE "P32" LEVEL 1;
+COMP "led1<10>" LOCATE = SITE "P30" LEVEL 1;
+COMP "led1<11>" LOCATE = SITE "P29" LEVEL 1;
+SCHEMATIC END;
+

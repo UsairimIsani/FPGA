@@ -1,0 +1,5 @@
+# begin LFP file D:\XC3S500\Jianhua_SMG\Jianhua_SMG\Jianhua_SMG.lfp
+designfile Jianhua_SMG.vhd
+parttype xc3s500e-4-pq208
+bus_delimiter 0;
+set_busdelim_onsave 1;

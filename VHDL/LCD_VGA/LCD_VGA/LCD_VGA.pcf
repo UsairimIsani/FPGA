@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Wed May 07 22:17:31 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Blue_out" LOCATE = SITE "P98" LEVEL 1;
+COMP "clk50_in" LOCATE = SITE "P126" LEVEL 1;
+COMP "vs_out" LOCATE = SITE "P97" LEVEL 1;
+COMP "Green_out" LOCATE = SITE "P99" LEVEL 1;
+COMP "Red_out" LOCATE = SITE "P100" LEVEL 1;
+COMP "hs_out" LOCATE = SITE "P95" LEVEL 1;
+SCHEMATIC END;
+

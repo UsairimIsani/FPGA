@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Thu Jun 05 08:59:07 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P126" LEVEL 1;
+COMP "out_bit" LOCATE = SITE "P94" LEVEL 1;
+COMP "rst" LOCATE = SITE "P114" LEVEL 1;
+SCHEMATIC END;
+

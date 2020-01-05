@@ -1,0 +1,71 @@
+xst -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -ifn digital_clock.xst -ofn digital_clock.syr
+xst -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -ifn digital_clock.xst -ofn digital_clock.syr
+ngdbuild -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "digital_clock.ngc" digital_clock.ngd
+map -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o digital_clock_map.ncd digital_clock.ngd digital_clock.pcf
+par -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -w -intstyle ise -ol std -t 1 digital_clock_map.ncd digital_clock.ncd digital_clock.pcf
+trce -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -e 3 -s 4 -xml digital_clock digital_clock.ncd -o digital_clock.twr digital_clock.pcf
+xst -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -ifn digital_clock.xst -ofn digital_clock.syr
+xst -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -ifn digital_clock.xst -ofn digital_clock.syr
+ngdbuild -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -dd _ngo -nt timestamp -uc "digital_clock.ucf" -p xc3s500e-pq208-4 "digital_clock.ngc" digital_clock.ngd
+xst -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -ifn digital_clock.xst -ofn digital_clock.syr
+ngdbuild -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -dd _ngo -nt timestamp -uc "digital_clock.ucf" -p xc3s500e-pq208-4 "digital_clock.ngc" digital_clock.ngd
+map -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o digital_clock_map.ncd digital_clock.ngd digital_clock.pcf
+par -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -w -intstyle ise -ol std -t 1 digital_clock_map.ncd digital_clock.ncd digital_clock.pcf
+trce -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -e 3 -s 4 -xml digital_clock digital_clock.ncd -o digital_clock.twr digital_clock.pcf -ucf digital_clock.ucf
+bitgen -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -f digital_clock.ut digital_clock.ncd
+xst -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -ifn digital_clock.xst -ofn digital_clock.syr
+ngdbuild -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -dd _ngo -nt timestamp -uc "digital_clock.ucf" -p xc3s500e-pq208-4 "digital_clock.ngc" digital_clock.ngd
+map -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o digital_clock_map.ncd digital_clock.ngd digital_clock.pcf
+par -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -w -intstyle ise -ol std -t 1 digital_clock_map.ncd digital_clock.ncd digital_clock.pcf
+trce -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -e 3 -s 4 -xml digital_clock digital_clock.ncd -o digital_clock.twr digital_clock.pcf -ucf digital_clock.ucf
+bitgen -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -f digital_clock.ut digital_clock.ncd
+xst -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -ifn digital_clock.xst -ofn digital_clock.syr
+ngdbuild -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -dd _ngo -nt timestamp -uc "digital_clock.ucf" -p xc3s500e-pq208-4 "digital_clock.ngc" digital_clock.ngd
+ngdbuild -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -dd _ngo -nt timestamp -uc "digital_clock.ucf" -p xc3s500e-pq208-4 "digital_clock.ngc" digital_clock.ngd
+map -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o digital_clock_map.ncd digital_clock.ngd digital_clock.pcf
+par -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -w -intstyle ise -ol std -t 1 digital_clock_map.ncd digital_clock.ncd digital_clock.pcf
+trce -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -e 3 -s 4 -xml digital_clock digital_clock.ncd -o digital_clock.twr digital_clock.pcf -ucf digital_clock.ucf
+bitgen -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -f digital_clock.ut digital_clock.ncd
+xst -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -ifn digital_clock.xst -ofn digital_clock.syr
+ngdbuild -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -dd _ngo -nt timestamp -uc "digital_clock.ucf" -p xc3s500e-pq208-4 "digital_clock.ngc" digital_clock.ngd
+map -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o digital_clock_map.ncd digital_clock.ngd digital_clock.pcf
+par -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -w -intstyle ise -ol std -t 1 digital_clock_map.ncd digital_clock.ncd digital_clock.pcf
+trce -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -e 3 -s 4 -xml digital_clock digital_clock.ncd -o digital_clock.twr digital_clock.pcf -ucf digital_clock.ucf
+bitgen -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -f digital_clock.ut digital_clock.ncd
+bitgen -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -f digital_clock.ut digital_clock.ncd
+xst -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -ifn digital_clock.xst -ofn digital_clock.syr
+ngdbuild -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -dd _ngo -nt timestamp -uc "digital_clock.ucf" -p xc3s500e-pq208-4 "digital_clock.ngc" digital_clock.ngd
+map -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o digital_clock_map.ncd digital_clock.ngd digital_clock.pcf
+xst -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -ifn digital_clock.xst -ofn digital_clock.syr
+ngdbuild -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -dd _ngo -nt timestamp -uc "digital_clock.ucf" -p xc3s500e-pq208-4 "digital_clock.ngc" digital_clock.ngd
+map -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o digital_clock_map.ncd digital_clock.ngd digital_clock.pcf
+par -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -w -intstyle ise -ol std -t 1 digital_clock_map.ncd digital_clock.ncd digital_clock.pcf
+trce -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -e 3 -s 4 -xml digital_clock digital_clock.ncd -o digital_clock.twr digital_clock.pcf -ucf digital_clock.ucf
+bitgen -ise "D:/XC3S500/TIMAE_24/digital_clock/digital_clock.ise" -intstyle ise -f digital_clock.ut digital_clock.ncd
+xst -ise "D:/XC3S500/Timer_24/digital_clock/digital_clock.ise" -intstyle ise -ifn digital_clock.xst -ofn digital_clock.syr
+ngdbuild -ise "D:/XC3S500/Timer_24/digital_clock/digital_clock.ise" -intstyle ise -dd _ngo -nt timestamp -uc "digital_clock.ucf" -p xc3s500e-pq208-4 "digital_clock.ngc" digital_clock.ngd
+map -ise "D:/XC3S500/Timer_24/digital_clock/digital_clock.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o digital_clock_map.ncd digital_clock.ngd digital_clock.pcf
+par -ise "D:/XC3S500/Timer_24/digital_clock/digital_clock.ise" -w -intstyle ise -ol std -t 1 digital_clock_map.ncd digital_clock.ncd digital_clock.pcf
+trce -ise "D:/XC3S500/Timer_24/digital_clock/digital_clock.ise" -intstyle ise -e 3 -s 4 -xml digital_clock digital_clock.ncd -o digital_clock.twr digital_clock.pcf -ucf digital_clock.ucf
+bitgen -ise "D:/XC3S500/Timer_24/digital_clock/digital_clock.ise" -intstyle ise -f digital_clock.ut digital_clock.ncd
+bitgen -ise "D:/XC3S500/Timer_24/digital_clock/digital_clock.ise" -intstyle ise -f digital_clock.ut digital_clock.ncd
+xst -ise "D:/XC3S500/Timer_24/digital_clock/digital_clock.ise" -intstyle ise -ifn digital_clock.xst -ofn digital_clock.syr
+ngdbuild -ise "D:/XC3S500/Timer_24/digital_clock/digital_clock.ise" -intstyle ise -dd _ngo -nt timestamp -uc "digital_clock.ucf" -p xc3s500e-pq208-4 "digital_clock.ngc" digital_clock.ngd
+map -ise "D:/XC3S500/Timer_24/digital_clock/digital_clock.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o digital_clock_map.ncd digital_clock.ngd digital_clock.pcf
+par -ise "D:/XC3S500/Timer_24/digital_clock/digital_clock.ise" -w -intstyle ise -ol std -t 1 digital_clock_map.ncd digital_clock.ncd digital_clock.pcf
+trce -ise "D:/XC3S500/Timer_24/digital_clock/digital_clock.ise" -intstyle ise -e 3 -s 4 -xml digital_clock digital_clock.ncd -o digital_clock.twr digital_clock.pcf -ucf digital_clock.ucf
+bitgen -ise "D:/XC3S500/Timer_24/digital_clock/digital_clock.ise" -intstyle ise -f digital_clock.ut digital_clock.ncd
+xst -ise "D:/XC3S500/Timer_24/digital_clock/digital_clock.ise" -intstyle ise -ifn digital_clock.xst -ofn digital_clock.syr
+xst -ise "D:/XC3S500/Timer_24/digital_clock/digital_clock.ise" -intstyle ise -ifn digital_clock.xst -ofn digital_clock.syr
+xst -ise "D:/XC3S500/Timer_24/digital_clock/digital_clock.ise" -intstyle ise -ifn digital_clock.xst -ofn digital_clock.syr
+xst -intstyle ise -ifn "D:/X9/digital_clock/digital_clock.xst" -ofn "D:/X9/digital_clock/digital_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digital_clock.ucf -p xc6slx9-tqg144-2 digital_clock.ngc digital_clock.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o digital_clock_map.ncd digital_clock.ngd digital_clock.pcf 
+par -w -intstyle ise -ol high -mt off digital_clock_map.ncd digital_clock.ncd digital_clock.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml digital_clock.twx digital_clock.ncd -o digital_clock.twr digital_clock.pcf -ucf digital_clock.ucf 
+xst -intstyle ise -ifn "D:/X9/digital_clock/digital_clock.xst" -ofn "D:/X9/digital_clock/digital_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digital_clock.ucf -p xc6slx9-tqg144-2 digital_clock.ngc digital_clock.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o digital_clock_map.ncd digital_clock.ngd digital_clock.pcf 
+par -w -intstyle ise -ol high -mt off digital_clock_map.ncd digital_clock.ncd digital_clock.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml digital_clock.twx digital_clock.ncd -o digital_clock.twr digital_clock.pcf -ucf digital_clock.ucf 
+bitgen -intstyle ise -f digital_clock.ut digital_clock.ncd 

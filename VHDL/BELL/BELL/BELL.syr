@@ -1,0 +1,438 @@
+Release 14.3 - xst P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: BELL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BELL.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BELL"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : BELL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Off
+Reduce Control Sets                : Off
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\X9\v\BELL\BELL\BELL.vhd" into library work
+Parsing entity <BELL>.
+Parsing architecture <Behavioral> of entity <bell>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <BELL> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\X9\v\BELL\BELL\BELL.vhd" Line 152. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <BELL>.
+    Related source file is "D:\X9\v\BELL\BELL\BELL.vhd".
+    Found 13-bit register for signal <clk_div2>.
+    Found 3-bit register for signal <state>.
+    Found 22-bit register for signal <cnt>.
+    Found 4-bit register for signal <clk_div1>.
+    Found 1-bit register for signal <out_bit>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 24                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (negative)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <clk_div1[3]_GND_5_o_add_1_OUT> created at line 46.
+    Found 22-bit adder for signal <cnt[21]_GND_5_o_add_47_OUT> created at line 142.
+    Found 13-bit adder for signal <clk_div2[12]_GND_5_o_add_51_OUT> created at line 147.
+    Found 13-bit 8-to-1 multiplexer for signal <state[2]_GND_5_o_wide_mux_55_OUT> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <state[2]_out_bit_tmp_Mux_56_o> created at line 63.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+	inferred  19 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <BELL> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 13-bit adder                                          : 1
+ 22-bit adder                                          : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 4
+ 1-bit register                                        : 1
+ 13-bit register                                       : 1
+ 22-bit register                                       : 1
+ 4-bit register                                        : 1
+# Multiplexers                                         : 19
+ 1-bit 2-to-1 multiplexer                              : 8
+ 1-bit 8-to-1 multiplexer                              : 1
+ 13-bit 2-to-1 multiplexer                             : 8
+ 13-bit 8-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <BELL>.
+The following registers are absorbed into counter <clk_div1>: 1 register on signal <clk_div1>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <BELL> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 13-bit adder                                          : 1
+# Counters                                             : 2
+ 22-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 14
+ Flip-Flops                                            : 14
+# Multiplexers                                         : 18
+ 1-bit 2-to-1 multiplexer                              : 8
+ 1-bit 8-to-1 multiplexer                              : 1
+ 13-bit 2-to-1 multiplexer                             : 8
+ 13-bit 8-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+ 101   | 101
+ 110   | 110
+ 111   | 111
+-------------------
+
+Optimizing unit <BELL> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BELL, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 43
+ Flip-Flops                                            : 43
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : BELL.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 159
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 33
+#      LUT3                        : 5
+#      LUT4                        : 6
+#      LUT5                        : 4
+#      LUT6                        : 37
+#      MUXCY                       : 33
+#      VCC                         : 1
+#      XORCY                       : 35
+# FlipFlops/Latches                : 43
+#      FDC                         : 7
+#      FDCE                        : 36
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              43  out of  11440     0%  
+ Number of Slice LUTs:                   89  out of   5720     1%  
+    Number used as Logic:                89  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     89
+   Number with an unused Flip Flop:      46  out of     89    51%  
+   Number with an unused LUT:             0  out of     89     0%  
+   Number of fully used LUT-FF pairs:    43  out of     89    48%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                           3
+ Number of bonded IOBs:                   3  out of    102     2%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 43    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.010ns (Maximum Frequency: 166.389MHz)
+   Minimum input arrival time before clock: 4.426ns
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.010ns (frequency: 166.389MHz)
+  Total number of paths / destination ports: 2489 / 79
+-------------------------------------------------------------------------
+Delay:               6.010ns (Levels of Logic = 4)
+  Source:            clk_div2_2 (FF)
+  Destination:       clk_div2_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clk_div2_2 to clk_div2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.525   1.431  clk_div2_2 (clk_div2_2)
+     LUT6:I0->O            1   0.254   0.958  clk_div2[12]_GND_5_o_not_equal_32_o2 (clk_div2[12]_GND_5_o_not_equal_32_o2)
+     LUT6:I2->O            4   0.254   0.804  Mmux_state[2]_out_bit_tmp_Mux_56_o_3_SW0 (N4)
+     LUT5:I4->O           13   0.254   1.206  Mmux_state[2]_GND_5_o_wide_mux_55_OUT_2_f7_11_SW3 (N144)
+     LUT6:I4->O            1   0.250   0.000  Mmux_state[2]_GND_5_o_wide_mux_55_OUT_2_f7_11 (state[2]_GND_5_o_wide_mux_55_OUT<9>)
+     FDCE:D                    0.074          clk_div2_9
+    ----------------------------------------
+    Total                      6.010ns (1.611ns logic, 4.399ns route)
+                                       (26.8% logic, 73.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 43 / 43
+-------------------------------------------------------------------------
+Offset:              4.426ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       out_bit_tmp (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to out_bit_tmp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  rst_IBUF (rst_IBUF)
+     INV:I->O             43   0.255   1.703  rst_inv1_INV_0 (rst_inv)
+     FDCE:CLR                  0.459          out_bit_tmp
+    ----------------------------------------
+    Total                      4.426ns (2.042ns logic, 2.384ns route)
+                                       (46.1% logic, 53.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            out_bit_tmp (FF)
+  Destination:       out_bit (PAD)
+  Source Clock:      clk rising
+
+  Data Path: out_bit_tmp to out_bit
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.525   0.725  out_bit_tmp (out_bit_tmp)
+     OBUF:I->O                 2.912          out_bit_OBUF (out_bit)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.010|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.18 secs
+ 
+--> 
+
+Total memory usage is 215988 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

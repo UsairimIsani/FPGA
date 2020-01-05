@@ -1,0 +1,33 @@
+xst -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -ifn LCD1602.xst -ofn LCD1602.syr
+xst -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -ifn LCD1602.xst -ofn LCD1602.syr
+ngdbuild -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "LCD1602.ngc" LCD1602.ngd
+map -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o LCD1602_map.ncd LCD1602.ngd LCD1602.pcf
+par -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -w -intstyle ise -ol std -t 1 LCD1602_map.ncd LCD1602.ncd LCD1602.pcf
+trce -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -e 3 -s 4 -xml LCD1602 LCD1602.ncd -o LCD1602.twr LCD1602.pcf
+xst -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -ifn LCD1602.xst -ofn LCD1602.syr
+ngdbuild -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "LCD1602.ngc" LCD1602.ngd
+map -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o LCD1602_map.ncd LCD1602.ngd LCD1602.pcf
+par -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -w -intstyle ise -ol std -t 1 LCD1602_map.ncd LCD1602.ncd LCD1602.pcf
+trce -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -e 3 -s 4 -xml LCD1602 LCD1602.ncd -o LCD1602.twr LCD1602.pcf
+bitgen -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -f LCD1602.ut LCD1602.ncd
+xst -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -ifn LCD1602.xst -ofn LCD1602.syr
+ngdbuild -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -dd _ngo -nt timestamp -uc "LCD1602.ucf" -p xc3s500e-pq208-4 "LCD1602.ngc" LCD1602.ngd
+map -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o LCD1602_map.ncd LCD1602.ngd LCD1602.pcf
+par -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -w -intstyle ise -ol std -t 1 LCD1602_map.ncd LCD1602.ncd LCD1602.pcf
+trce -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -e 3 -s 4 -xml LCD1602 LCD1602.ncd -o LCD1602.twr LCD1602.pcf -ucf LCD1602.ucf
+bitgen -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -f LCD1602.ut LCD1602.ncd
+xst -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -ifn LCD1602.xst -ofn LCD1602.syr
+ngdbuild -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -dd _ngo -nt timestamp -uc "LCD1602.ucf" -p xc3s500e-pq208-4 "LCD1602.ngc" LCD1602.ngd
+map -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o LCD1602_map.ncd LCD1602.ngd LCD1602.pcf
+par -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -w -intstyle ise -ol std -t 1 LCD1602_map.ncd LCD1602.ncd LCD1602.pcf
+trce -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -e 3 -s 4 -xml LCD1602 LCD1602.ncd -o LCD1602.twr LCD1602.pcf -ucf LCD1602.ucf
+bitgen -ise "D:/XC3S500/LCD1602/LCD1602/LCD1602.ise" -intstyle ise -f LCD1602.ut LCD1602.ncd
+xst -intstyle ise -ifn "D:/X9/v/LCD1602/LCD1602/LCD1602.xst" -ofn "D:/X9/v/LCD1602/LCD1602/LCD1602.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCD1602.ucf -p xc6slx9-tqg144-2 LCD1602.ngc LCD1602.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_map.ncd LCD1602.ngd LCD1602.pcf 
+xst -intstyle ise -ifn "D:/X9/v/LCD1602/LCD1602/LCD1602.xst" -ofn "D:/X9/v/LCD1602/LCD1602/LCD1602.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCD1602.ucf -p xc6slx9-tqg144-2 LCD1602.ngc LCD1602.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_map.ncd LCD1602.ngd LCD1602.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_map.ncd LCD1602.ncd LCD1602.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml LCD1602.twx LCD1602.ncd -o LCD1602.twr LCD1602.pcf -ucf LCD1602.ucf 
+bitgen -intstyle ise -f LCD1602.ut LCD1602.ncd 

@@ -1,0 +1,93 @@
+--------------------------------------------------------------------------------
+Release 14.3 Trace  (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+E:\Xilinx\14.3\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -e 3 -s 2 -n
+3 -xml VGA_DISPLAY.twx VGA_DISPLAY.ncd -o VGA_DISPLAY.twr VGA_DISPLAY.pcf -ucf
+VGA_DISPLAY.ucf
+
+Design file:              VGA_DISPLAY.ncd
+Physical constraint file: VGA_DISPLAY.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2012-10-12)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock CLK to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+BLUE<0>     |        11.586(R)|      SLOW  |         4.745(R)|      FAST  |CLK_BUFGP         |   0.000|
+BLUE<1>     |        11.143(R)|      SLOW  |         4.366(R)|      FAST  |CLK_BUFGP         |   0.000|
+GREEN<0>    |        11.913(R)|      SLOW  |         4.583(R)|      FAST  |CLK_BUFGP         |   0.000|
+GREEN<1>    |        12.111(R)|      SLOW  |         4.833(R)|      FAST  |CLK_BUFGP         |   0.000|
+GREEN<2>    |        11.409(R)|      SLOW  |         4.297(R)|      FAST  |CLK_BUFGP         |   0.000|
+HS          |         9.398(R)|      SLOW  |         3.852(R)|      FAST  |CLK_BUFGP         |   0.000|
+RED<0>      |        11.851(R)|      SLOW  |         4.647(R)|      FAST  |CLK_BUFGP         |   0.000|
+RED<1>      |        12.095(R)|      SLOW  |         4.870(R)|      FAST  |CLK_BUFGP         |   0.000|
+RED<2>      |        11.356(R)|      SLOW  |         4.331(R)|      FAST  |CLK_BUFGP         |   0.000|
+VS          |         9.042(R)|      SLOW  |         3.687(R)|      FAST  |CLK_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    4.207|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+CTL<0>         |BLUE<0>        |   10.332|
+CTL<0>         |BLUE<1>        |    9.889|
+CTL<0>         |GREEN<0>       |   10.232|
+CTL<0>         |GREEN<1>       |   10.373|
+CTL<0>         |GREEN<2>       |    9.671|
+CTL<0>         |RED<0>         |   10.725|
+CTL<0>         |RED<1>         |   10.183|
+CTL<0>         |RED<2>         |    9.444|
+CTL<1>         |BLUE<0>        |   10.267|
+CTL<1>         |BLUE<1>        |    9.824|
+CTL<1>         |GREEN<0>       |   10.089|
+CTL<1>         |GREEN<1>       |   10.327|
+CTL<1>         |GREEN<2>       |    9.625|
+CTL<1>         |RED<0>         |   10.176|
+CTL<1>         |RED<1>         |   10.479|
+CTL<1>         |RED<2>         |    9.740|
+---------------+---------------+---------+
+
+
+Analysis completed Wed May 07 22:23:37 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 146 MB
+
+
+

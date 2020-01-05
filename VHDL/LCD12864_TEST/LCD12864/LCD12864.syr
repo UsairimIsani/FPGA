@@ -1,0 +1,663 @@
+Release 14.3 - xst P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.27 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.27 secs
+ 
+--> Reading design: LCD12864.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "LCD12864.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "LCD12864"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : LCD12864
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\X9\v\LCD12864_TEST\LCD12864\LCD12864.vhd" into library work
+Parsing entity <LCD12864>.
+Parsing architecture <Behavioral> of entity <lcd12864>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <LCD12864> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "D:\X9\v\LCD12864_TEST\LCD12864\LCD12864.vhd" Line 54: Net <volt_v[0][7]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\X9\v\LCD12864_TEST\LCD12864\LCD12864.vhd" Line 56: Net <freq_v[0][7]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <LCD12864>.
+    Related source file is "D:\X9\v\LCD12864_TEST\LCD12864\LCD12864.vhd".
+WARNING:Xst:653 - Signal <volt_v<0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <volt_v<4>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <freq_v<0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <s_clk>.
+    Found 15-bit register for signal <div_process.count>.
+    Found 3-bit register for signal <current_sta>.
+    Found 7-bit register for signal <d.count>.
+    Found 1-bit register for signal <lcd_e>.
+    Found 1-bit register for signal <lcd_rs>.
+    Found 1-bit register for signal <lcd_wr>.
+    Found 8-bit register for signal <current_sta[2]_dff_199_OUT>.
+    Found 4-bit register for signal <disp_cnt1>.
+    Found 4-bit register for signal <disp_cnt>.
+    Found 1-bit register for signal <current_sta[2]_s_clk_DFF_42>.
+    Found 1-bit register for signal <current_sta[2]_s_clk_DFF_43>.
+    Found 1-bit register for signal <current_sta[2]_s_clk_DFF_44>.
+    Found 1-bit register for signal <current_sta[2]_s_clk_DFF_45>.
+    Found 1-bit register for signal <current_sta[2]_s_clk_DFF_46>.
+    Found 1-bit register for signal <current_sta[2]_s_clk_DFF_47>.
+    Found 1-bit register for signal <current_sta[2]_s_clk_DFF_48>.
+    Found 1-bit register for signal <current_sta[2]_s_clk_DFF_49>.
+INFO:Xst:1799 - State stop is never reached in FSM <current_sta>.
+    Found finite state machine <FSM_0> for signal <current_sta>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 37                                             |
+    | Inputs             | 17                                             |
+    | Outputs            | 5                                              |
+    | Clock              | s_clk (rising_edge)                            |
+    | Reset              | reset (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | set_bus                                        |
+    | Power Up State     | clr_lcd                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 15-bit adder for signal <div_process.count[14]_GND_5_o_add_9_OUT> created at line 78.
+    Found 7-bit adder for signal <d.count[6]_GND_5_o_add_116_OUT> created at line 177.
+    Found 4-bit adder for signal <disp_cnt1[3]_GND_5_o_add_151_OUT> created at line 212.
+    Found 4-bit adder for signal <disp_cnt[3]_GND_5_o_add_153_OUT> created at line 214.
+    Found 8x18-bit Read Only RAM for signal <_n0626>
+    Found 4-bit 3-to-1 multiplexer for signal <_n0453> created at line 196.
+    Found 4-bit 4-to-1 multiplexer for signal <_n0459> created at line 196.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0465> created at line 180.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0468> created at line 180.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0471> created at line 180.
+    Found 1-bit 3-to-1 multiplexer for signal <_n0480> created at line 180.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0483> created at line 180.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0486> created at line 180.
+    Found 1-bit tristate buffer for signal <lcd_bus<7>> created at line 83
+    Found 1-bit tristate buffer for signal <lcd_bus<6>> created at line 83
+    Found 1-bit tristate buffer for signal <lcd_bus<5>> created at line 83
+    Found 1-bit tristate buffer for signal <lcd_bus<4>> created at line 83
+    Found 1-bit tristate buffer for signal <lcd_bus<3>> created at line 83
+    Found 1-bit tristate buffer for signal <lcd_bus<2>> created at line 83
+    Found 1-bit tristate buffer for signal <lcd_bus<1>> created at line 83
+    Found 1-bit tristate buffer for signal <lcd_bus<0>> created at line 83
+    Found 15-bit comparator greater for signal <div_process.count[14]_PWR_5_o_LessThan_9_o> created at line 78
+    Found 7-bit comparator greater for signal <GND_5_o_GND_5_o_LessThan_16_o> created at line 94
+    Found 7-bit comparator greater for signal <d.count[6]_GND_5_o_LessThan_90_o> created at line 158
+    Found 7-bit comparator greater for signal <d.count[6]_GND_5_o_LessThan_116_o> created at line 177
+    Found 4-bit comparator greater for signal <disp_cnt1[3]_GND_5_o_LessThan_139_o> created at line 203
+    Found 4-bit comparator greater for signal <disp_cnt1[3]_GND_5_o_LessThan_146_o> created at line 208
+    Found 4-bit comparator greater for signal <disp_cnt1[3]_GND_5_o_LessThan_153_o> created at line 213
+    WARNING:Xst:2404 -  FFs/Latches <volt_v<2><1:2>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <volt_v<2><2:3>> (without init value) have a constant value of 1 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <volt_v<2><3:3>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <volt_v<2><3:4>> (without init value) have a constant value of 1 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <volt_v<2><4:4>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <volt_v<3><1:1>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <volt_v<3><1:1>> (without init value) have a constant value of 1 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <volt_v<3><1:1>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <volt_v<3><1:1>> (without init value) have a constant value of 1 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <volt_v<3><1:1>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <volt_v<3><1:2>> (without init value) have a constant value of 1 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <volt_v<3><2:2>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<1><1:2>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<1><2:3>> (without init value) have a constant value of 1 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<1><3:5>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<1><5:5>> (without init value) have a constant value of 1 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<2><1:2>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<2><2:3>> (without init value) have a constant value of 1 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<2><3:6>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<3><7:6>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<3><6:5>> (without init value) have a constant value of 1 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<3><5:2>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<4><1:1>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<4><1:1>> (without init value) have a constant value of 1 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<4><1:2>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<4><2:2>> (without init value) have a constant value of 1 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<4><2:4>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<5><1:1>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<5><1:1>> (without init value) have a constant value of 1 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<5><1:1>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<5><1:2>> (without init value) have a constant value of 1 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<5><2:2>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<5><2:2>> (without init value) have a constant value of 1 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <freq_v<5><2:2>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <volt_v<1><1:2>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <volt_v<1><2:3>> (without init value) have a constant value of 1 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <volt_v<1><3:4>> (without init value) have a constant value of 0 in block <LCD12864>.
+    WARNING:Xst:2404 -  FFs/Latches <volt_v<1><4:5>> (without init value) have a constant value of 1 in block <LCD12864>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  49 D-type flip-flop(s).
+	inferred   7 Comparator(s).
+	inferred  34 Multiplexer(s).
+	inferred   8 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <LCD12864> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x18-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 4
+ 15-bit adder                                          : 1
+ 4-bit adder                                           : 2
+ 7-bit adder                                           : 1
+# Registers                                            : 16
+ 1-bit register                                        : 11
+ 15-bit register                                       : 1
+ 4-bit register                                        : 2
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 7
+ 15-bit comparator greater                             : 1
+ 4-bit comparator greater                              : 3
+ 7-bit comparator greater                              : 3
+# Multiplexers                                         : 34
+ 1-bit 2-to-1 multiplexer                              : 8
+ 1-bit 3-to-1 multiplexer                              : 1
+ 1-bit 4-to-1 multiplexer                              : 5
+ 15-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 7
+ 4-bit 3-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 9
+ 8-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 8
+ 1-bit tristate buffer                                 : 8
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <LCD12864>.
+The following registers are absorbed into counter <div_process.count>: 1 register on signal <div_process.count>.
+INFO:Xst:3231 - The small RAM <Mram__n0626> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 18-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <disp_cnt1<2:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <LCD12864> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x18-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 3
+ 4-bit adder                                           : 2
+ 7-bit adder                                           : 1
+# Counters                                             : 1
+ 15-bit up counter                                     : 1
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+# Comparators                                          : 7
+ 15-bit comparator greater                             : 1
+ 4-bit comparator greater                              : 3
+ 7-bit comparator greater                              : 3
+# Multiplexers                                         : 33
+ 1-bit 2-to-1 multiplexer                              : 8
+ 1-bit 3-to-1 multiplexer                              : 1
+ 1-bit 4-to-1 multiplexer                              : 5
+ 4-bit 2-to-1 multiplexer                              : 7
+ 4-bit 3-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 9
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <current_sta[2]_s_clk_DFF_44> in Unit <LCD12864> is equivalent to the following 7 FFs/Latches, which will be removed : <current_sta[2]_s_clk_DFF_42> <current_sta[2]_s_clk_DFF_43> <current_sta[2]_s_clk_DFF_45> <current_sta[2]_s_clk_DFF_46> <current_sta[2]_s_clk_DFF_47> <current_sta[2]_s_clk_DFF_48> <current_sta[2]_s_clk_DFF_49> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <current_sta[1:3]> with gray encoding.
+----------------------------
+ State          | Encoding
+----------------------------
+ clr_lcd        | 001
+ set_bus        | 000
+ clr_disp       | 011
+ set_disp_mod   | 010
+ set_cursor     | 110
+ set_disp_place | 111
+ send_data      | 101
+ stop           | unreached
+----------------------------
+WARNING:Xst:1710 - FF/Latch <current_sta[2]_s_clk_DFF_44> (without init value) has a constant value of 1 in block <LCD12864>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set or reset and opposite initialization value:
+    current_sta_FSM_FFd3 in unit <LCD12864>
+
+
+Optimizing unit <LCD12864> ...
+WARNING:Xst:1293 - FF/Latch <disp_cnt1_3> has a constant value of 0 in block <LCD12864>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d.count_4> has a constant value of 0 in block <LCD12864>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d.count_5> has a constant value of 0 in block <LCD12864>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d.count_6> has a constant value of 0 in block <LCD12864>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <disp_cnt_3> has a constant value of 0 in block <LCD12864>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block LCD12864, actual ratio is 1.
+WARNING:Xst:1426 - The value init of the FF/Latch current_sta_FSM_FFd3_LD hinder the constant cleaning in the block LCD12864.
+   You should achieve better results by setting this init to 0.
+FlipFlop current_sta_FSM_FFd1 has been replicated 2 time(s)
+FlipFlop current_sta_FSM_FFd2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 43
+ Flip-Flops                                            : 43
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : LCD12864.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 122
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 6
+#      LUT3                        : 10
+#      LUT4                        : 7
+#      LUT5                        : 10
+#      LUT6                        : 55
+#      MUXCY                       : 14
+#      MUXF7                       : 2
+#      XORCY                       : 15
+# FlipFlops/Latches                : 44
+#      FD                          : 11
+#      FDC                         : 21
+#      FDCE                        : 4
+#      FDE                         : 6
+#      FDP                         : 1
+#      LD                          : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 1
+#      OBUF                        : 11
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              44  out of  11440     0%  
+ Number of Slice LUTs:                   90  out of   5720     1%  
+    Number used as Logic:                90  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     94
+   Number with an unused Flip Flop:      50  out of     94    53%  
+   Number with an unused LUT:             4  out of     94     4%  
+   Number of fully used LUT-FF pairs:    40  out of     94    42%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    102    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+s_clk                              | BUFG                   | 27    |
+clk                                | BUFGP                  | 16    |
+reset                              | IBUF+BUFG              | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.073ns (Maximum Frequency: 197.122MHz)
+   Minimum input arrival time before clock: 4.499ns
+   Maximum output required time after clock: 4.202ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 's_clk'
+  Clock period: 5.073ns (frequency: 197.122MHz)
+  Total number of paths / destination ports: 488 / 37
+-------------------------------------------------------------------------
+Delay:               5.073ns (Levels of Logic = 3)
+  Source:            d.count_0 (FF)
+  Destination:       disp_cnt1_0 (FF)
+  Source Clock:      s_clk rising
+  Destination Clock: s_clk rising
+
+  Data Path: d.count_0 to disp_cnt1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            14   0.525   1.355  d.count_0 (d.count_0)
+     LUT3:I0->O            4   0.235   1.080  _n0598_inv21 (current_sta_FSM_FFd2-In1)
+     LUT4:I0->O            5   0.254   1.296  _n0598_inv1_rstpot (_n0598_inv1_rstpot)
+     LUT6:I0->O            1   0.254   0.000  disp_cnt1_0_dpot (disp_cnt1_0_dpot)
+     FDE:D                     0.074          disp_cnt1_0
+    ----------------------------------------
+    Total                      5.073ns (1.342ns logic, 3.731ns route)
+                                       (26.5% logic, 73.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.292ns (frequency: 233.019MHz)
+  Total number of paths / destination ports: 1573 / 16
+-------------------------------------------------------------------------
+Delay:               4.292ns (Levels of Logic = 17)
+  Source:            div_process.count_10 (FF)
+  Destination:       div_process.count_14 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: div_process.count_10 to div_process.count_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.525   1.186  div_process.count_10 (div_process.count_10)
+     LUT4:I0->O            1   0.254   0.790  div_process.count[14]_PWR_5_o_LessThan_9_o_inv1_inv12 (div_process.count[14]_PWR_5_o_LessThan_9_o_inv1_inv11)
+     LUT4:I2->O            1   0.250   0.681  div_process.count[14]_PWR_5_o_LessThan_9_o_inv1_inv13 (div_process.count[14]_PWR_5_o_LessThan_9_o_inv1_inv)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_div_process.count_cy<0> (Mcount_div_process.count_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_div_process.count_cy<1> (Mcount_div_process.count_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_div_process.count_cy<2> (Mcount_div_process.count_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_div_process.count_cy<3> (Mcount_div_process.count_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_div_process.count_cy<4> (Mcount_div_process.count_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_div_process.count_cy<5> (Mcount_div_process.count_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_div_process.count_cy<6> (Mcount_div_process.count_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_div_process.count_cy<7> (Mcount_div_process.count_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_div_process.count_cy<8> (Mcount_div_process.count_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_div_process.count_cy<9> (Mcount_div_process.count_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_div_process.count_cy<10> (Mcount_div_process.count_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_div_process.count_cy<11> (Mcount_div_process.count_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_div_process.count_cy<12> (Mcount_div_process.count_cy<12>)
+     MUXCY:CI->O           0   0.023   0.000  Mcount_div_process.count_cy<13> (Mcount_div_process.count_cy<13>)
+     XORCY:CI->O           1   0.206   0.000  Mcount_div_process.count_xor<14> (Mcount_div_process.count14)
+     FDC:D                     0.074          div_process.count_14
+    ----------------------------------------
+    Total                      4.292ns (1.635ns logic, 2.657ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 's_clk'
+  Total number of paths / destination ports: 27 / 26
+-------------------------------------------------------------------------
+Offset:              4.499ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       d.count_0 (FF)
+  Destination Clock: s_clk rising
+
+  Data Path: reset to d.count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.328   1.038  reset_IBUF (reset_IBUF)
+     INV:I->O             26   0.255   1.419  reset_IBUF_BUFG_LUT1_INV_0 (reset_IBUF_BUFG_LUT1)
+     FDCE:CLR                  0.459          d.count_0
+    ----------------------------------------
+    Total                      4.499ns (2.042ns logic, 2.457ns route)
+                                       (45.4% logic, 54.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.499ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       div_process.count_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to div_process.count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.328   1.038  reset_IBUF (reset_IBUF)
+     INV:I->O             26   0.255   1.419  reset_IBUF_BUFG_LUT1_INV_0 (reset_IBUF_BUFG_LUT1)
+     FDC:CLR                   0.459          div_process.count_0
+    ----------------------------------------
+    Total                      4.499ns (2.042ns logic, 2.457ns route)
+                                       (45.4% logic, 54.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 's_clk'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              4.202ns (Levels of Logic = 1)
+  Source:            lcd_bus_6 (FF)
+  Destination:       lcd_bus<6> (PAD)
+  Source Clock:      s_clk rising
+
+  Data Path: lcd_bus_6 to lcd_bus<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.525   0.765  lcd_bus_6 (lcd_bus_6)
+     OBUF:I->O                 2.912          lcd_bus_6_OBUF (lcd_bus<6>)
+    ----------------------------------------
+    Total                      4.202ns (3.437ns logic, 0.765ns route)
+                                       (81.8% logic, 18.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.292|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock s_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+reset          |    4.678|         |         |         |
+s_clk          |    5.073|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.68 secs
+ 
+--> 
+
+Total memory usage is 216308 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   51 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

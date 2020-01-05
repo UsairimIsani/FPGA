@@ -1,0 +1,15 @@
+iMPACT Version: 
+iMPACT log file Started on Thu Oct 14 09:59:49 2010
+
+// *** BATCH CMD : loadProjectFile -file"D:\XC3S500E_VHDL\LED_Water_3/LED_Water_3.ipf"
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.0.0. WinDriver v8.10 Jungo (c) 1997 - 2006 Build Date: Aug 15 2006 X86 32bit SYS14:21:34, version = 810.
+ LPT base address = 0378h.
+ ECP base address = FFFFFFFFh.
+Cable connection established.
+'1': Loading file 'D:/XC3S500/LED_Water_3/led_water.bit' ...
+ERROR:iMPACT:1525 - File D:/XC3S500/LED_Water_3/led_water.bit can not be found.
+ERROR:iMPACT:2009 - Fail to add device by file   D:/XC3S500/LED_Water_3/led_water.bit.
+ERROR:iMPACT:2587 - Failed to add device 0.
+Active mode is BS

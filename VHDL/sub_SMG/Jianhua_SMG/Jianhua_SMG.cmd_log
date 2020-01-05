@@ -1,0 +1,24 @@
+xst -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -intstyle ise -ifn Jianhua_SMG.xst -ofn Jianhua_SMG.syr
+xst -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -intstyle ise -ifn Jianhua_SMG.xst -ofn Jianhua_SMG.syr
+ngdbuild -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "Jianhua_SMG.ngc" Jianhua_SMG.ngd
+map -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o Jianhua_SMG_map.ncd Jianhua_SMG.ngd Jianhua_SMG.pcf
+par -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -w -intstyle ise -ol std -t 1 Jianhua_SMG_map.ncd Jianhua_SMG.ncd Jianhua_SMG.pcf
+trce -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -intstyle ise -e 3 -s 4 -xml Jianhua_SMG Jianhua_SMG.ncd -o Jianhua_SMG.twr Jianhua_SMG.pcf
+xst -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -intstyle ise -ifn Jianhua_SMG.xst -ofn Jianhua_SMG.syr
+ngdbuild -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -intstyle ise -dd _ngo -nt timestamp -uc "Jianhua_SMG.ucf" -p xc3s500e-pq208-4 "Jianhua_SMG.ngc" Jianhua_SMG.ngd
+map -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o Jianhua_SMG_map.ncd Jianhua_SMG.ngd Jianhua_SMG.pcf
+par -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -w -intstyle ise -ol std -t 1 Jianhua_SMG_map.ncd Jianhua_SMG.ncd Jianhua_SMG.pcf
+trce -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -intstyle ise -e 3 -s 4 -xml Jianhua_SMG Jianhua_SMG.ncd -o Jianhua_SMG.twr Jianhua_SMG.pcf -ucf Jianhua_SMG.ucf
+bitgen -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -intstyle ise -f Jianhua_SMG.ut Jianhua_SMG.ncd
+xst -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -intstyle ise -ifn Jianhua_SMG.xst -ofn Jianhua_SMG.syr
+ngdbuild -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -intstyle ise -dd _ngo -nt timestamp -uc "Jianhua_SMG.ucf" -p xc3s500e-pq208-4 "Jianhua_SMG.ngc" Jianhua_SMG.ngd
+map -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o Jianhua_SMG_map.ncd Jianhua_SMG.ngd Jianhua_SMG.pcf
+par -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -w -intstyle ise -ol std -t 1 Jianhua_SMG_map.ncd Jianhua_SMG.ncd Jianhua_SMG.pcf
+trce -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -intstyle ise -e 3 -s 4 -xml Jianhua_SMG Jianhua_SMG.ncd -o Jianhua_SMG.twr Jianhua_SMG.pcf -ucf Jianhua_SMG.ucf
+bitgen -ise "D:/XC3S500/Jianhua_SMG/Jianhua_SMG/Jianhua_SMG.ise" -intstyle ise -f Jianhua_SMG.ut Jianhua_SMG.ncd
+xst -intstyle ise -ifn "D:/X9/v/sub_SMG/Jianhua_SMG/Jianhua_SMG.xst" -ofn "D:/X9/v/sub_SMG/Jianhua_SMG/Jianhua_SMG.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Jianhua_SMG.ucf -p xc6slx9-tqg144-2 Jianhua_SMG.ngc Jianhua_SMG.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Jianhua_SMG_map.ncd Jianhua_SMG.ngd Jianhua_SMG.pcf 
+par -w -intstyle ise -ol high -mt off Jianhua_SMG_map.ncd Jianhua_SMG.ncd Jianhua_SMG.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml Jianhua_SMG.twx Jianhua_SMG.ncd -o Jianhua_SMG.twr Jianhua_SMG.pcf -ucf Jianhua_SMG.ucf 
+bitgen -intstyle ise -f Jianhua_SMG.ut Jianhua_SMG.ncd 

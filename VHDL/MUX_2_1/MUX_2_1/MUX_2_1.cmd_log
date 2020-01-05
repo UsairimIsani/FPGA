@@ -1,0 +1,18 @@
+xst -ise "D:/XC3S500/MUX_2_1/MUX_2_1/MUX_2_1.ise" -intstyle ise -ifn MUX_2_1.xst -ofn MUX_2_1.syr
+ngdbuild -ise "D:/XC3S500/MUX_2_1/MUX_2_1/MUX_2_1.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "MUX_2_1.ngc" MUX_2_1.ngd
+map -ise "D:/XC3S500/MUX_2_1/MUX_2_1/MUX_2_1.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o MUX_2_1_map.ncd MUX_2_1.ngd MUX_2_1.pcf
+par -ise "D:/XC3S500/MUX_2_1/MUX_2_1/MUX_2_1.ise" -w -intstyle ise -ol std -t 1 MUX_2_1_map.ncd MUX_2_1.ncd MUX_2_1.pcf
+trce -ise "D:/XC3S500/MUX_2_1/MUX_2_1/MUX_2_1.ise" -intstyle ise -e 3 -s 4 -xml MUX_2_1 MUX_2_1.ncd -o MUX_2_1.twr MUX_2_1.pcf
+bitgen -ise "D:/XC3S500/MUX_2_1/MUX_2_1/MUX_2_1.ise" -intstyle ise -f MUX_2_1.ut MUX_2_1.ncd
+xst -ise "D:/XC3S500/MUX_2_1/MUX_2_1/MUX_2_1.ise" -intstyle ise -ifn MUX_2_1.xst -ofn MUX_2_1.syr
+ngdbuild -ise "D:/XC3S500/MUX_2_1/MUX_2_1/MUX_2_1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "MUX_2_1.ucf" -p xc3s500e-pq208-4 "MUX_2_1.ngc" MUX_2_1.ngd
+map -ise "D:/XC3S500/MUX_2_1/MUX_2_1/MUX_2_1.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o MUX_2_1_map.ncd MUX_2_1.ngd MUX_2_1.pcf
+par -ise "D:/XC3S500/MUX_2_1/MUX_2_1/MUX_2_1.ise" -w -intstyle ise -ol std -t 1 MUX_2_1_map.ncd MUX_2_1.ncd MUX_2_1.pcf
+trce -ise "D:/XC3S500/MUX_2_1/MUX_2_1/MUX_2_1.ise" -intstyle ise -e 3 -s 4 -xml MUX_2_1 MUX_2_1.ncd -o MUX_2_1.twr MUX_2_1.pcf -ucf MUX_2_1.ucf
+bitgen -ise "D:/XC3S500/MUX_2_1/MUX_2_1/MUX_2_1.ise" -intstyle ise -f MUX_2_1.ut MUX_2_1.ncd
+xst -intstyle ise -ifn "D:/X9/v/MUX_2_1/MUX_2_1/MUX_2_1.xst" -ofn "D:/X9/v/MUX_2_1/MUX_2_1/MUX_2_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MUX_2_1.ucf -p xc6slx9-tqg144-2 MUX_2_1.ngc MUX_2_1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MUX_2_1_map.ncd MUX_2_1.ngd MUX_2_1.pcf 
+par -w -intstyle ise -ol high -mt off MUX_2_1_map.ncd MUX_2_1.ncd MUX_2_1.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml MUX_2_1.twx MUX_2_1.ncd -o MUX_2_1.twr MUX_2_1.pcf -ucf MUX_2_1.ucf 
+bitgen -intstyle ise -f MUX_2_1.ut MUX_2_1.ncd 

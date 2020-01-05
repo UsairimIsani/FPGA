@@ -1,0 +1,89 @@
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+ngdbuild -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "KEY_LED.ngc" KEY_LED.ngd
+map -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o KEY_LED_map.ncd KEY_LED.ngd KEY_LED.pcf
+par -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -w -intstyle ise -ol std -t 1 KEY_LED_map.ncd KEY_LED.ncd KEY_LED.pcf
+trce -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -e 3 -s 4 -xml KEY_LED KEY_LED.ncd -o KEY_LED.twr KEY_LED.pcf
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+ngdbuild -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -dd _ngo -nt timestamp -uc "KEY_LED.ucf" -p xc3s500e-pq208-4 "KEY_LED.ngc" KEY_LED.ngd
+map -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o KEY_LED_map.ncd KEY_LED.ngd KEY_LED.pcf
+par -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -w -intstyle ise -ol std -t 1 KEY_LED_map.ncd KEY_LED.ncd KEY_LED.pcf
+trce -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -e 3 -s 4 -xml KEY_LED KEY_LED.ncd -o KEY_LED.twr KEY_LED.pcf -ucf KEY_LED.ucf
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+ngdbuild -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -dd _ngo -nt timestamp -uc "KEY_LED.ucf" -p xc3s500e-pq208-4 "KEY_LED.ngc" KEY_LED.ngd
+map -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o KEY_LED_map.ncd KEY_LED.ngd KEY_LED.pcf
+par -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -w -intstyle ise -ol std -t 1 KEY_LED_map.ncd KEY_LED.ncd KEY_LED.pcf
+trce -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -e 3 -s 4 -xml KEY_LED KEY_LED.ncd -o KEY_LED.twr KEY_LED.pcf -ucf KEY_LED.ucf
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+ngdbuild -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -dd _ngo -nt timestamp -uc "KEY_LED.ucf" -p xc3s500e-pq208-4 "KEY_LED.ngc" KEY_LED.ngd
+map -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o KEY_LED_map.ncd KEY_LED.ngd KEY_LED.pcf
+par -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -w -intstyle ise -ol std -t 1 KEY_LED_map.ncd KEY_LED.ncd KEY_LED.pcf
+trce -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -e 3 -s 4 -xml KEY_LED KEY_LED.ncd -o KEY_LED.twr KEY_LED.pcf -ucf KEY_LED.ucf
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+ngdbuild -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -dd _ngo -nt timestamp -uc "KEY_LED.ucf" -p xc3s500e-pq208-4 "KEY_LED.ngc" KEY_LED.ngd
+map -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o KEY_LED_map.ncd KEY_LED.ngd KEY_LED.pcf
+par -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -w -intstyle ise -ol std -t 1 KEY_LED_map.ncd KEY_LED.ncd KEY_LED.pcf
+trce -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -e 3 -s 4 -xml KEY_LED KEY_LED.ncd -o KEY_LED.twr KEY_LED.pcf -ucf KEY_LED.ucf
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+ngdbuild -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -dd _ngo -nt timestamp -uc "KEY_LED.ucf" -p xc3s500e-pq208-4 "KEY_LED.ngc" KEY_LED.ngd
+map -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o KEY_LED_map.ncd KEY_LED.ngd KEY_LED.pcf
+par -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -w -intstyle ise -ol std -t 1 KEY_LED_map.ncd KEY_LED.ncd KEY_LED.pcf
+trce -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -e 3 -s 4 -xml KEY_LED KEY_LED.ncd -o KEY_LED.twr KEY_LED.pcf -ucf KEY_LED.ucf
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+ngdbuild -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -dd _ngo -nt timestamp -uc "KEY_LED.ucf" -p xc3s500e-pq208-4 "KEY_LED.ngc" KEY_LED.ngd
+map -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o KEY_LED_map.ncd KEY_LED.ngd KEY_LED.pcf
+par -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -w -intstyle ise -ol std -t 1 KEY_LED_map.ncd KEY_LED.ncd KEY_LED.pcf
+trce -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -e 3 -s 4 -xml KEY_LED KEY_LED.ncd -o KEY_LED.twr KEY_LED.pcf -ucf KEY_LED.ucf
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+ngdbuild -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -dd _ngo -nt timestamp -uc "KEY_LED.ucf" -p xc3s500e-pq208-4 "KEY_LED.ngc" KEY_LED.ngd
+map -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o KEY_LED_map.ncd KEY_LED.ngd KEY_LED.pcf
+par -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -w -intstyle ise -ol std -t 1 KEY_LED_map.ncd KEY_LED.ncd KEY_LED.pcf
+trce -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -e 3 -s 4 -xml KEY_LED KEY_LED.ncd -o KEY_LED.twr KEY_LED.pcf -ucf KEY_LED.ucf
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+ngdbuild -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -dd _ngo -nt timestamp -uc "KEY_LED.ucf" -p xc3s500e-pq208-4 "KEY_LED.ngc" KEY_LED.ngd
+map -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o KEY_LED_map.ncd KEY_LED.ngd KEY_LED.pcf
+par -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -w -intstyle ise -ol std -t 1 KEY_LED_map.ncd KEY_LED.ncd KEY_LED.pcf
+trce -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -e 3 -s 4 -xml KEY_LED KEY_LED.ncd -o KEY_LED.twr KEY_LED.pcf -ucf KEY_LED.ucf
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+ngdbuild -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -dd _ngo -nt timestamp -uc "KEY_LED.ucf" -p xc3s500e-pq208-4 "KEY_LED.ngc" KEY_LED.ngd
+map -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o KEY_LED_map.ncd KEY_LED.ngd KEY_LED.pcf
+par -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -w -intstyle ise -ol std -t 1 KEY_LED_map.ncd KEY_LED.ncd KEY_LED.pcf
+trce -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -e 3 -s 4 -xml KEY_LED KEY_LED.ncd -o KEY_LED.twr KEY_LED.pcf -ucf KEY_LED.ucf
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+xst -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -ifn KEY_LED.xst -ofn KEY_LED.syr
+ngdbuild -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -dd _ngo -nt timestamp -uc "KEY_LED.ucf" -p xc3s500e-pq208-4 "KEY_LED.ngc" KEY_LED.ngd
+map -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o KEY_LED_map.ncd KEY_LED.ngd KEY_LED.pcf
+par -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -w -intstyle ise -ol std -t 1 KEY_LED_map.ncd KEY_LED.ncd KEY_LED.pcf
+trce -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -e 3 -s 4 -xml KEY_LED KEY_LED.ncd -o KEY_LED.twr KEY_LED.pcf -ucf KEY_LED.ucf
+bitgen -ise "D:/XC3S500/KEY_LED/KEY_LED/KEY_LED.ise" -intstyle ise -f KEY_LED.ut KEY_LED.ncd
+xst -intstyle ise -ifn "D:/X9/v/KEY_LED/KEY_LED/KEY_LED.xst" -ofn "D:/X9/v/KEY_LED/KEY_LED/KEY_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc KEY_LED.ucf -p xc6slx9-tqg144-2 KEY_LED.ngc KEY_LED.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o KEY_LED_map.ncd KEY_LED.ngd KEY_LED.pcf 
+par -w -intstyle ise -ol high -mt off KEY_LED_map.ncd KEY_LED.ncd KEY_LED.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml KEY_LED.twx KEY_LED.ncd -o KEY_LED.twr KEY_LED.pcf -ucf KEY_LED.ucf 
+bitgen -intstyle ise -f KEY_LED.ut KEY_LED.ncd 

@@ -1,0 +1,5 @@
+# begin LFP file D:\XC3S500\State_Machine_SMG\state_machine\state_machine.lfp
+designfile state_machine.vhd
+parttype xc3s500e-4-pq208
+bus_delimiter 0;
+set_busdelim_onsave 1;

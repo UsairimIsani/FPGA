@@ -1,0 +1,22 @@
+xst -ise "D:/XC3S500/Jiafa_SMG/Jiafa_SMG/Jiafa_SMG.ise" -intstyle ise -ifn Jiafa_SMG.xst -ofn Jiafa_SMG.syr
+ngdbuild -ise "D:/XC3S500/Jiafa_SMG/Jiafa_SMG/Jiafa_SMG.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "Jiafa_SMG.ngc" Jiafa_SMG.ngd
+map -ise "D:/XC3S500/Jiafa_SMG/Jiafa_SMG/Jiafa_SMG.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o Jiafa_SMG_map.ncd Jiafa_SMG.ngd Jiafa_SMG.pcf
+par -ise "D:/XC3S500/Jiafa_SMG/Jiafa_SMG/Jiafa_SMG.ise" -w -intstyle ise -ol std -t 1 Jiafa_SMG_map.ncd Jiafa_SMG.ncd Jiafa_SMG.pcf
+trce -ise "D:/XC3S500/Jiafa_SMG/Jiafa_SMG/Jiafa_SMG.ise" -intstyle ise -e 3 -s 4 -xml Jiafa_SMG Jiafa_SMG.ncd -o Jiafa_SMG.twr Jiafa_SMG.pcf
+xst -ise "D:/XC3S500/Jiafa_SMG/Jiafa_SMG/Jiafa_SMG.ise" -intstyle ise -ifn Jiafa_SMG.xst -ofn Jiafa_SMG.syr
+ngdbuild -ise "D:/XC3S500/Jiafa_SMG/Jiafa_SMG/Jiafa_SMG.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "Jiafa_SMG.ngc" Jiafa_SMG.ngd
+map -ise "D:/XC3S500/Jiafa_SMG/Jiafa_SMG/Jiafa_SMG.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o Jiafa_SMG_map.ncd Jiafa_SMG.ngd Jiafa_SMG.pcf
+par -ise "D:/XC3S500/Jiafa_SMG/Jiafa_SMG/Jiafa_SMG.ise" -w -intstyle ise -ol std -t 1 Jiafa_SMG_map.ncd Jiafa_SMG.ncd Jiafa_SMG.pcf
+trce -ise "D:/XC3S500/Jiafa_SMG/Jiafa_SMG/Jiafa_SMG.ise" -intstyle ise -e 3 -s 4 -xml Jiafa_SMG Jiafa_SMG.ncd -o Jiafa_SMG.twr Jiafa_SMG.pcf
+bitgen -ise "D:/XC3S500/Jiafa_SMG/Jiafa_SMG/Jiafa_SMG.ise" -intstyle ise -f Jiafa_SMG.ut Jiafa_SMG.ncd
+ngdbuild -ise "D:/XC3S500/Jiafa_SMG/Jiafa_SMG/Jiafa_SMG.ise" -intstyle ise -dd _ngo -nt timestamp -uc "Jiafa_SMG.ucf" -p xc3s500e-pq208-4 "Jiafa_SMG.ngc" Jiafa_SMG.ngd
+map -ise "D:/XC3S500/Jiafa_SMG/Jiafa_SMG/Jiafa_SMG.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o Jiafa_SMG_map.ncd Jiafa_SMG.ngd Jiafa_SMG.pcf
+par -ise "D:/XC3S500/Jiafa_SMG/Jiafa_SMG/Jiafa_SMG.ise" -w -intstyle ise -ol std -t 1 Jiafa_SMG_map.ncd Jiafa_SMG.ncd Jiafa_SMG.pcf
+trce -ise "D:/XC3S500/Jiafa_SMG/Jiafa_SMG/Jiafa_SMG.ise" -intstyle ise -e 3 -s 4 -xml Jiafa_SMG Jiafa_SMG.ncd -o Jiafa_SMG.twr Jiafa_SMG.pcf -ucf Jiafa_SMG.ucf
+bitgen -ise "D:/XC3S500/Jiafa_SMG/Jiafa_SMG/Jiafa_SMG.ise" -intstyle ise -f Jiafa_SMG.ut Jiafa_SMG.ncd
+xst -intstyle ise -ifn "D:/X9/v/add_SMG/Jiafa_SMG/Jiafa_SMG.xst" -ofn "D:/X9/v/add_SMG/Jiafa_SMG/Jiafa_SMG.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Jiafa_SMG.ucf -p xc6slx9-tqg144-2 Jiafa_SMG.ngc Jiafa_SMG.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Jiafa_SMG_map.ncd Jiafa_SMG.ngd Jiafa_SMG.pcf 
+par -w -intstyle ise -ol high -mt off Jiafa_SMG_map.ncd Jiafa_SMG.ncd Jiafa_SMG.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml Jiafa_SMG.twx Jiafa_SMG.ncd -o Jiafa_SMG.twr Jiafa_SMG.pcf -ucf Jiafa_SMG.ucf 
+bitgen -intstyle ise -f Jiafa_SMG.ut Jiafa_SMG.ncd 

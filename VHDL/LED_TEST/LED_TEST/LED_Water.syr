@@ -1,0 +1,438 @@
+Release 14.3 - xst P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: LED_Water.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "LED_Water.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "LED_Water"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : LED_Water
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\X9\v\LED_TEST\LED_TEST\LED_TEST.vhd" into library work
+Parsing entity <LED_Water>.
+Parsing architecture <Behavioral> of entity <led_water>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <LED_Water> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <LED_Water>.
+    Related source file is "D:\X9\v\LED_TEST\LED_TEST\LED_TEST.vhd".
+    Found 24-bit register for signal <P1.count>.
+    Found 4-bit register for signal <P2.count1>.
+    Found 12-bit register for signal <led1>.
+    Found 1-bit register for signal <clk1>.
+    Found 24-bit adder for signal <P1.count[23]_GND_5_o_add_4_OUT> created at line 36.
+    Found 4-bit adder for signal <P2.count1[3]_GND_5_o_add_12_OUT> created at line 66.
+    Found 16x12-bit Read Only RAM for signal <P2.count1[3]_PWR_5_o_wide_mux_11_OUT>
+    Found 24-bit comparator greater for signal <n0000> created at line 31
+    Found 24-bit comparator lessequal for signal <n0002> created at line 34
+    Found 24-bit comparator lessequal for signal <n0004> created at line 34
+    Found 4-bit comparator greater for signal <n0014> created at line 47
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  41 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <LED_Water> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x12-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 2
+ 24-bit adder                                          : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 4
+ 1-bit register                                        : 1
+ 12-bit register                                       : 1
+ 24-bit register                                       : 1
+ 4-bit register                                        : 1
+# Comparators                                          : 4
+ 24-bit comparator greater                             : 1
+ 24-bit comparator lessequal                           : 2
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <LED_Water>.
+The following registers are absorbed into counter <P2.count1>: 1 register on signal <P2.count1>.
+The following registers are absorbed into counter <P1.count>: 1 register on signal <P1.count>.
+INFO:Xst:3231 - The small RAM <Mram_P2.count1[3]_PWR_5_o_wide_mux_11_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 12-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0037>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <LED_Water> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x12-bit single-port distributed Read Only RAM       : 1
+# Counters                                             : 2
+ 24-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+# Comparators                                          : 4
+ 24-bit comparator greater                             : 1
+ 24-bit comparator lessequal                           : 2
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <LED_Water> ...
+WARNING:Xst:1710 - FF/Latch <led1_11> (without init value) has a constant value of 1 in block <LED_Water>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block LED_Water, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 40
+ Flip-Flops                                            : 40
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : LED_Water.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 144
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 23
+#      LUT2                        : 27
+#      LUT3                        : 2
+#      LUT4                        : 19
+#      LUT5                        : 8
+#      LUT6                        : 7
+#      MUXCY                       : 30
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 24
+# FlipFlops/Latches                : 40
+#      FD                          : 25
+#      FDE                         : 15
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              40  out of  11440     0%  
+ Number of Slice LUTs:                   87  out of   5720     1%  
+    Number used as Logic:                87  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     87
+   Number with an unused Flip Flop:      47  out of     87    54%  
+   Number with an unused LUT:             0  out of     87     0%  
+   Number of fully used LUT-FF pairs:    40  out of     87    45%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    102    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk1                               | NONE(led1_0)           | 15    |
+clk                                | BUFGP                  | 25    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.249ns (Maximum Frequency: 160.026MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk1'
+  Clock period: 3.666ns (frequency: 272.777MHz)
+  Total number of paths / destination ports: 118 / 30
+-------------------------------------------------------------------------
+Delay:               3.666ns (Levels of Logic = 1)
+  Source:            P2.count1_3 (FF)
+  Destination:       led1_0 (FF)
+  Source Clock:      clk1 rising
+  Destination Clock: clk1 rising
+
+  Data Path: P2.count1_3 to led1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             15   0.525   1.431  P2.count1_3 (P2.count1_3)
+     LUT4:I0->O           15   0.254   1.154  n0014_inv1 (n0014_inv)
+     FDE:CE                    0.302          led1_0
+    ----------------------------------------
+    Total                      3.666ns (1.081ns logic, 2.585ns route)
+                                       (29.5% logic, 70.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.249ns (frequency: 160.026MHz)
+  Total number of paths / destination ports: 2892 / 25
+-------------------------------------------------------------------------
+Delay:               6.249ns (Levels of Logic = 5)
+  Source:            P1.count_12 (FF)
+  Destination:       P1.count_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: P1.count_12 to P1.count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.525   0.949  P1.count_12 (P1.count_12)
+     LUT2:I0->O            2   0.250   1.156  n000022 (n000021)
+     LUT6:I1->O            2   0.254   0.726  n000025 (n0000)
+     LUT5:I4->O            1   0.254   0.000  _n00401_lut (_n00401_lut)
+     MUXCY:S->O           24   0.427   1.380  _n00401_cy1 (_n0040)
+     LUT2:I1->O            1   0.254   0.000  P1.count_0_rstpot (P1.count_0_rstpot)
+     FD:D                      0.074          P1.count_0
+    ----------------------------------------
+    Total                      6.249ns (2.038ns logic, 4.211ns route)
+                                       (32.6% logic, 67.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk1'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            led1_10 (FF)
+  Destination:       led1<10> (PAD)
+  Source Clock:      clk1 rising
+
+  Data Path: led1_10 to led1<10>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.525   0.681  led1_10 (led1_10)
+     OBUF:I->O                 2.912          led1_10_OBUF (led1<10>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.249|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk1           |    3.666|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.37 secs
+ 
+--> 
+
+Total memory usage is 213940 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

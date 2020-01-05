@@ -1,0 +1,869 @@
+Release 14.3 - xst P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: digital_clock.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "digital_clock.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "digital_clock"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : digital_clock
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\X9\digital_clock\xd.vhd" into library work
+Parsing entity <xd>.
+Parsing architecture <Behavioral> of entity <xd>.
+Parsing VHDL file "D:\X9\digital_clock\digital_clock.vhd" into library work
+Parsing entity <digital_clock>.
+Parsing architecture <Behavioral> of entity <digital_clock>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <digital_clock> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <xd> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\X9\digital_clock\digital_clock.vhd" Line 142: mode should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\X9\digital_clock\digital_clock.vhd" Line 144: x3 should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <digital_clock>.
+    Related source file is "D:\X9\digital_clock\digital_clock.vhd".
+    Found 1-bit register for signal <clk1>.
+    Found 4-bit register for signal <x3>.
+    Found 4-bit register for signal <x4>.
+    Found 4-bit register for signal <x5>.
+    Found 4-bit register for signal <x6>.
+    Found 3-bit register for signal <wei>.
+    Found 1-bit register for signal <mode>.
+    Found 4-bit register for signal <a0>.
+    Found 4-bit register for signal <a1>.
+    Found 4-bit register for signal <a2>.
+    Found 12-bit register for signal <cnt1>.
+    Found 1-bit register for signal <clk2>.
+    Found 3-bit register for signal <sel>.
+    Found 1-bit register for signal <q>.
+    Found 4-bit register for signal <disp>.
+    Found 6-bit register for signal <seg_sel>.
+    Found 23-bit register for signal <cnt>.
+    Found 1-bit register for signal <a3<3>>.
+    Found 1-bit register for signal <a3<2>>.
+    Found 1-bit register for signal <a3<1>>.
+    Found 1-bit register for signal <a3<0>>.
+    Found 1-bit register for signal <a4<3>>.
+    Found 1-bit register for signal <a4<2>>.
+    Found 1-bit register for signal <a4<1>>.
+    Found 1-bit register for signal <a4<0>>.
+    Found 1-bit register for signal <a5<3>>.
+    Found 1-bit register for signal <a5<2>>.
+    Found 1-bit register for signal <a5<1>>.
+    Found 1-bit register for signal <a5<0>>.
+    Found 1-bit register for signal <a6<3>>.
+    Found 1-bit register for signal <a6<2>>.
+    Found 1-bit register for signal <a6<1>>.
+    Found 1-bit register for signal <a6<0>>.
+    Found 23-bit adder for signal <cnt[22]_GND_5_o_add_0_OUT> created at line 60.
+    Found 3-bit adder for signal <wei[2]_GND_5_o_add_7_OUT> created at line 86.
+    Found 4-bit adder for signal <x3[3]_GND_5_o_add_11_OUT> created at line 97.
+    Found 4-bit adder for signal <x4[3]_GND_5_o_add_14_OUT> created at line 100.
+    Found 4-bit adder for signal <x5[3]_GND_5_o_add_23_OUT> created at line 106.
+    Found 4-bit adder for signal <x6[3]_GND_5_o_add_28_OUT> created at line 108.
+    Found 4-bit adder for signal <a0[3]_GND_5_o_add_80_OUT> created at line 146.
+    Found 4-bit adder for signal <a1[3]_GND_5_o_add_82_OUT> created at line 148.
+    Found 4-bit adder for signal <a2[3]_GND_5_o_add_84_OUT> created at line 150.
+    Found 4-bit adder for signal <a3[3]_GND_5_o_add_86_OUT> created at line 152.
+    Found 4-bit adder for signal <a4[3]_GND_5_o_add_88_OUT> created at line 154.
+    Found 4-bit adder for signal <a5[3]_GND_5_o_add_90_OUT> created at line 156.
+    Found 4-bit adder for signal <a6[3]_GND_5_o_add_93_OUT> created at line 158.
+    Found 12-bit adder for signal <cnt1[11]_GND_5_o_add_135_OUT> created at line 174.
+    Found 3-bit adder for signal <sel[2]_GND_5_o_add_141_OUT> created at line 185.
+    Found 4-bit subtractor for signal <GND_5_o_GND_5_o_sub_40_OUT<3:0>> created at line 121.
+    Found 4-bit subtractor for signal <GND_5_o_GND_5_o_sub_43_OUT<3:0>> created at line 124.
+    Found 4-bit subtractor for signal <GND_5_o_GND_5_o_sub_46_OUT<3:0>> created at line 127.
+    Found 4-bit subtractor for signal <GND_5_o_GND_5_o_sub_51_OUT<3:0>> created at line 131.
+    Found 16x8-bit Read Only RAM for signal <seg>
+    Found 4-bit 7-to-1 multiplexer for signal <sel[2]_x6[3]_wide_mux_145_OUT> created at line 199.
+    Found 4-bit 7-to-1 multiplexer for signal <sel[2]_x6[3]_wide_mux_157_OUT> created at line 212.
+    Found 4-bit 7-to-1 multiplexer for signal <sel[2]_a6[3]_wide_mux_159_OUT> created at line 238.
+    Found 23-bit comparator greater for signal <cnt[22]_GND_5_o_LessThan_2_o> created at line 61
+    Found 23-bit comparator greater for signal <cnt[22]_PWR_5_o_LessThan_3_o> created at line 62
+    Found 3-bit comparator lessequal for signal <n0010> created at line 83
+    Found 4-bit comparator greater for signal <x3[3]_PWR_5_o_LessThan_11_o> created at line 97
+    Found 4-bit comparator greater for signal <x4[3]_GND_5_o_LessThan_14_o> created at line 100
+    Found 4-bit comparator greater for signal <x5[3]_PWR_5_o_LessThan_17_o> created at line 103
+    Found 4-bit comparator greater for signal <x6[3]_GND_5_o_LessThan_21_o> created at line 104
+    Found 4-bit comparator greater for signal <x5[3]_GND_5_o_LessThan_22_o> created at line 105
+    Found 4-bit comparator greater for signal <n0088> created at line 147
+    Found 4-bit comparator greater for signal <n0091> created at line 149
+    Found 4-bit comparator lessequal for signal <n0094> created at line 151
+    Found 4-bit comparator lessequal for signal <n0097> created at line 153
+    Found 4-bit comparator lessequal for signal <n0100> created at line 155
+    Found 4-bit comparator lessequal for signal <n0103> created at line 157
+    Found 4-bit comparator greater for signal <a6[3]_GND_5_o_LessThan_93_o> created at line 157
+    Found 4-bit comparator lessequal for signal <n0110> created at line 159
+    Found 12-bit comparator greater for signal <cnt1[11]_GND_5_o_LessThan_137_o> created at line 175
+    Found 12-bit comparator greater for signal <cnt1[11]_PWR_5_o_LessThan_138_o> created at line 176
+    Found 4-bit comparator greater for signal <a0[3]_GND_5_o_LessThan_143_o> created at line 186
+    Summary:
+	inferred   1 RAM(s).
+	inferred  19 Adder/Subtractor(s).
+	inferred  99 D-type flip-flop(s).
+	inferred  19 Comparator(s).
+	inferred  67 Multiplexer(s).
+Unit <digital_clock> synthesized.
+
+Synthesizing Unit <xd>.
+    Related source file is "D:\X9\digital_clock\xd.vhd".
+    Found 1-bit register for signal <q>.
+    Found 16-bit register for signal <i>.
+    Found 16-bit adder for signal <i[15]_GND_6_o_add_3_OUT> created at line 48.
+    Found 16-bit comparator greater for signal <i[15]_PWR_6_o_LessThan_1_o> created at line 45
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <xd> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 23
+ 12-bit adder                                          : 1
+ 16-bit adder                                          : 4
+ 23-bit adder                                          : 1
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 11
+ 4-bit subtractor                                      : 4
+# Registers                                            : 41
+ 1-bit register                                        : 24
+ 12-bit register                                       : 1
+ 16-bit register                                       : 4
+ 23-bit register                                       : 1
+ 3-bit register                                        : 2
+ 4-bit register                                        : 8
+ 6-bit register                                        : 1
+# Comparators                                          : 23
+ 12-bit comparator greater                             : 2
+ 16-bit comparator greater                             : 4
+ 23-bit comparator greater                             : 2
+ 3-bit comparator lessequal                            : 1
+ 4-bit comparator greater                              : 9
+ 4-bit comparator lessequal                            : 5
+# Multiplexers                                         : 67
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 60
+ 4-bit 7-to-1 multiplexer                              : 3
+ 6-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <digital_clock>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+The following registers are absorbed into counter <a0>: 1 register on signal <a0>.
+The following registers are absorbed into counter <a1>: 1 register on signal <a1>.
+The following registers are absorbed into counter <a2>: 1 register on signal <a2>.
+The following registers are absorbed into counter <cnt1>: 1 register on signal <cnt1>.
+The following registers are absorbed into counter <sel>: 1 register on signal <sel>.
+INFO:Xst:3231 - The small RAM <Mram_seg> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <disp>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seg>           |          |
+    -----------------------------------------------------------------------
+Unit <digital_clock> synthesized (advanced).
+
+Synthesizing (advanced) Unit <xd>.
+The following registers are absorbed into counter <i>: 1 register on signal <i>.
+Unit <xd> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 15
+ 12-bit adder                                          : 1
+ 23-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 8
+ 4-bit subtractor                                      : 4
+# Counters                                             : 10
+ 12-bit up counter                                     : 1
+ 16-bit up counter                                     : 4
+ 23-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 3
+# Registers                                            : 53
+ Flip-Flops                                            : 53
+# Comparators                                          : 23
+ 12-bit comparator greater                             : 2
+ 16-bit comparator greater                             : 4
+ 23-bit comparator greater                             : 2
+ 3-bit comparator lessequal                            : 1
+ 4-bit comparator greater                              : 9
+ 4-bit comparator lessequal                            : 5
+# Multiplexers                                         : 67
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 60
+ 4-bit 7-to-1 multiplexer                              : 3
+ 6-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    a5_0 in unit <digital_clock>
+    a6_0 in unit <digital_clock>
+    a4_0 in unit <digital_clock>
+    a3_0 in unit <digital_clock>
+    a6_1 in unit <digital_clock>
+    a6_2 in unit <digital_clock>
+    a6_3 in unit <digital_clock>
+    a5_1 in unit <digital_clock>
+    a5_2 in unit <digital_clock>
+    a5_3 in unit <digital_clock>
+    a4_1 in unit <digital_clock>
+    a4_2 in unit <digital_clock>
+    a4_3 in unit <digital_clock>
+    a3_1 in unit <digital_clock>
+    a3_2 in unit <digital_clock>
+    a3_3 in unit <digital_clock>
+
+
+Optimizing unit <digital_clock> ...
+WARNING:Xst:1293 - FF/Latch <a2_3> has a constant value of 0 in block <digital_clock>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <cnt_0> in Unit <digital_clock> is equivalent to the following FF/Latch, which will be removed : <cnt1_0> 
+INFO:Xst:2261 - The FF/Latch <cnt_1> in Unit <digital_clock> is equivalent to the following FF/Latch, which will be removed : <cnt1_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block digital_clock, actual ratio is 7.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 180
+ Flip-Flops                                            : 180
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : digital_clock.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 674
+#      GND                         : 1
+#      INV                         : 12
+#      LUT1                        : 126
+#      LUT2                        : 54
+#      LUT3                        : 72
+#      LUT4                        : 24
+#      LUT5                        : 25
+#      LUT6                        : 99
+#      MUXCY                       : 126
+#      MUXF7                       : 8
+#      VCC                         : 1
+#      XORCY                       : 126
+# FlipFlops/Latches                : 196
+#      FD                          : 47
+#      FDC                         : 16
+#      FDE                         : 25
+#      FDP                         : 16
+#      FDR                         : 1
+#      FDRE                        : 75
+#      LDC                         : 16
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 4
+#      OBUF                        : 15
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             195  out of  11440     1%  
+ Number of Slice LUTs:                  412  out of   5720     7%  
+    Number used as Logic:               412  out of   5720     7%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    444
+   Number with an unused Flip Flop:     249  out of    444    56%  
+   Number with an unused LUT:            32  out of    444     7%  
+   Number of fully used LUT-FF pairs:   163  out of    444    36%  
+   Number of unique control sets:        64
+
+IO Utilization: 
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    102    19%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------+------------------------+-------+
+Clock Signal                                 | Clock buffer(FF name)  | Load  |
+---------------------------------------------+------------------------+-------+
+clk                                          | BUFGP                  | 123   |
+clk2                                         | NONE(q)                | 14    |
+clk1                                         | BUFG                   | 43    |
+ns[0]_x3[3]_AND_9_o(ns[0]_x3[3]_AND_9_o1:O)  | NONE(*)(a3_3_LDC)      | 1     |
+ns[0]_x3[2]_AND_11_o(ns[0]_x3[2]_AND_11_o1:O)| NONE(*)(a3_2_LDC)      | 1     |
+ns[0]_x3[1]_AND_13_o(ns[0]_x3[1]_AND_13_o1:O)| NONE(*)(a3_1_LDC)      | 1     |
+ns[0]_x4[3]_AND_17_o(ns[0]_x4[3]_AND_17_o1:O)| NONE(*)(a4_3_LDC)      | 1     |
+ns[0]_x4[2]_AND_19_o(ns[0]_x4[2]_AND_19_o1:O)| NONE(*)(a4_2_LDC)      | 1     |
+ns[0]_x4[1]_AND_21_o(ns[0]_x4[1]_AND_21_o1:O)| NONE(*)(a4_1_LDC)      | 1     |
+ns[0]_x5[3]_AND_25_o(ns[0]_x5[3]_AND_25_o1:O)| NONE(*)(a5_3_LDC)      | 1     |
+ns[0]_x5[2]_AND_27_o(ns[0]_x5[2]_AND_27_o1:O)| NONE(*)(a5_2_LDC)      | 1     |
+ns[0]_x5[1]_AND_29_o(ns[0]_x5[1]_AND_29_o1:O)| NONE(*)(a5_1_LDC)      | 1     |
+ns[0]_x6[3]_AND_33_o(ns[0]_x6[3]_AND_33_o1:O)| NONE(*)(a6_3_LDC)      | 1     |
+ns[0]_x6[2]_AND_35_o(ns[0]_x6[2]_AND_35_o1:O)| NONE(*)(a6_2_LDC)      | 1     |
+ns[0]_x6[1]_AND_37_o(ns[0]_x6[1]_AND_37_o1:O)| NONE(*)(a6_1_LDC)      | 1     |
+ns[0]_x3[0]_AND_15_o(ns[0]_x3[0]_AND_15_o1:O)| NONE(*)(a3_0_LDC)      | 1     |
+ns[0]_x4[0]_AND_23_o(ns[0]_x4[0]_AND_23_o1:O)| NONE(*)(a4_0_LDC)      | 1     |
+ns[0]_x6[0]_AND_39_o(ns[0]_x6[0]_AND_39_o1:O)| NONE(*)(a6_0_LDC)      | 1     |
+ns[0]_x5[0]_AND_31_o(ns[0]_x5[0]_AND_31_o1:O)| NONE(*)(a5_0_LDC)      | 1     |
+---------------------------------------------+------------------------+-------+
+(*) These 16 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.662ns (Maximum Frequency: 150.099MHz)
+   Minimum input arrival time before clock: 2.995ns
+   Maximum output required time after clock: 5.558ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.662ns (frequency: 150.099MHz)
+  Total number of paths / destination ports: 10471 / 207
+-------------------------------------------------------------------------
+Delay:               6.662ns (Levels of Logic = 12)
+  Source:            cnt_0 (FF)
+  Destination:       cnt_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cnt_0 to cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.525   0.803  cnt_0 (cnt_0)
+     INV:I->O              1   0.255   0.000  Madd_cnt[22]_GND_5_o_add_0_OUT_lut<0>_INV_0 (Madd_cnt[22]_GND_5_o_add_0_OUT_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Madd_cnt[22]_GND_5_o_add_0_OUT_cy<0> (Madd_cnt[22]_GND_5_o_add_0_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_cnt[22]_GND_5_o_add_0_OUT_cy<1> (Madd_cnt[22]_GND_5_o_add_0_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_cnt[22]_GND_5_o_add_0_OUT_cy<2> (Madd_cnt[22]_GND_5_o_add_0_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_cnt[22]_GND_5_o_add_0_OUT_cy<3> (Madd_cnt[22]_GND_5_o_add_0_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_cnt[22]_GND_5_o_add_0_OUT_cy<4> (Madd_cnt[22]_GND_5_o_add_0_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_cnt[22]_GND_5_o_add_0_OUT_cy<5> (Madd_cnt[22]_GND_5_o_add_0_OUT_cy<5>)
+     XORCY:CI->O           2   0.206   0.954  Madd_cnt[22]_GND_5_o_add_0_OUT_xor<6> (cnt[22]_GND_5_o_add_0_OUT<6>)
+     LUT3:I0->O            1   0.235   0.682  cnt[22]_PWR_5_o_LessThan_3_o24 (cnt[22]_PWR_5_o_LessThan_3_o23)
+     LUT6:I5->O            3   0.254   0.766  cnt[22]_PWR_5_o_LessThan_3_o25 (cnt[22]_PWR_5_o_LessThan_3_o24)
+     LUT6:I5->O           12   0.254   1.069  _n04661 (_n0466)
+     LUT2:I1->O            1   0.254   0.000  cnt_0_rstpot (cnt_0_rstpot)
+     FD:D                      0.074          cnt_0
+    ----------------------------------------
+    Total                      6.662ns (2.388ns logic, 4.274ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk2'
+  Clock period: 3.806ns (frequency: 262.743MHz)
+  Total number of paths / destination ports: 65 / 19
+-------------------------------------------------------------------------
+Delay:               3.806ns (Levels of Logic = 2)
+  Source:            sel_1 (FF)
+  Destination:       disp_0 (FF)
+  Source Clock:      clk2 rising
+  Destination Clock: clk2 rising
+
+  Data Path: sel_1 to disp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              20   0.525   1.741  sel_1 (sel_1)
+     LUT6:I0->O            1   0.254   0.958  Mmux_sel[2]_sel[2]_mux_163_OUT91 (Mmux_sel[2]_sel[2]_mux_163_OUT9)
+     LUT6:I2->O            1   0.254   0.000  Mmux_sel[2]_sel[2]_mux_163_OUT94 (sel[2]_sel[2]_mux_163_OUT<2>)
+     FD:D                      0.074          disp_2
+    ----------------------------------------
+    Total                      3.806ns (1.107ns logic, 2.699ns route)
+                                       (29.1% logic, 70.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk1'
+  Clock period: 5.998ns (frequency: 166.722MHz)
+  Total number of paths / destination ports: 1757 / 61
+-------------------------------------------------------------------------
+Delay:               5.998ns (Levels of Logic = 5)
+  Source:            a3_2_C_2 (FF)
+  Destination:       a5_1_C_1 (FF)
+  Source Clock:      clk1 rising
+  Destination Clock: clk1 rising
+
+  Data Path: a3_2_C_2 to a5_1_C_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.525   0.834  a3_2_C_2 (a3_2_C_2)
+     LUT3:I1->O            5   0.250   1.069  a3_21 (a3_2)
+     LUT6:I3->O            5   0.235   0.841  PWR_5_o_a3[3]_LessThan_88_o1 (PWR_5_o_a3[3]_LessThan_88_o)
+     LUT6:I5->O           12   0.254   1.499  Mmux_a4[3]_a4[3]_mux_122_OUT111 (Mmux_a4[3]_a4[3]_mux_122_OUT11)
+     LUT6:I1->O            1   0.254   0.000  Mmux_a5[3]_a5[3]_mux_123_OUT41_F (N80)
+     MUXF7:I0->O           2   0.163   0.000  Mmux_a5[3]_a5[3]_mux_123_OUT41 (a5[3]_a5[3]_mux_123_OUT<1>)
+     FDC:D                     0.074          a5_1_C_1
+    ----------------------------------------
+    Total                      5.998ns (1.755ns logic, 4.243ns route)
+                                       (29.3% logic, 70.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 68 / 68
+-------------------------------------------------------------------------
+Offset:              2.995ns (Levels of Logic = 1)
+  Source:            key<3> (PAD)
+  Destination:       text1[3].u1/i_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: key<3> to text1[3].u1/i_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   1.328   1.208  key_3_IBUF (key_3_IBUF)
+     FDRE:R                    0.459          text1[3].u1/i_0
+    ----------------------------------------
+    Total                      2.995ns (1.787ns logic, 1.208ns route)
+                                       (59.7% logic, 40.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk2'
+  Total number of paths / destination ports: 35 / 14
+-------------------------------------------------------------------------
+Offset:              5.558ns (Levels of Logic = 2)
+  Source:            disp_2 (FF)
+  Destination:       seg<6> (PAD)
+  Source Clock:      clk2 rising
+
+  Data Path: disp_2 to seg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.525   1.186  disp_2 (disp_2)
+     LUT4:I0->O            1   0.254   0.681  Mram_seg61 (seg_6_OBUF)
+     OBUF:I->O                 2.912          seg_6_OBUF (seg<6>)
+    ----------------------------------------
+    Total                      5.558ns (3.691ns logic, 1.867ns route)
+                                       (66.4% logic, 33.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+clk                 |    6.662|         |         |         |
+clk1                |    3.530|         |         |         |
+ns[0]_x3[0]_AND_15_o|         |    2.019|         |         |
+ns[0]_x3[1]_AND_13_o|         |    1.951|         |         |
+ns[0]_x3[2]_AND_11_o|         |    1.911|         |         |
+ns[0]_x3[3]_AND_9_o |         |    1.951|         |         |
+ns[0]_x4[0]_AND_23_o|         |    1.951|         |         |
+ns[0]_x4[1]_AND_21_o|         |    1.951|         |         |
+ns[0]_x4[2]_AND_19_o|         |    1.951|         |         |
+ns[0]_x4[3]_AND_17_o|         |    1.951|         |         |
+ns[0]_x5[0]_AND_31_o|         |    3.691|         |         |
+ns[0]_x5[1]_AND_29_o|         |    3.181|         |         |
+ns[0]_x5[2]_AND_27_o|         |    3.236|         |         |
+ns[0]_x5[3]_AND_25_o|         |    3.236|         |         |
+ns[0]_x6[0]_AND_39_o|         |    2.059|         |         |
+ns[0]_x6[1]_AND_37_o|         |    1.951|         |         |
+ns[0]_x6[2]_AND_35_o|         |    2.902|         |         |
+ns[0]_x6[3]_AND_33_o|         |    2.864|         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk1
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+clk                 |    5.398|         |         |         |
+clk1                |    5.998|         |         |         |
+ns[0]_x3[0]_AND_15_o|         |    6.019|         |         |
+ns[0]_x3[1]_AND_13_o|         |    6.094|         |         |
+ns[0]_x3[2]_AND_11_o|         |    6.159|         |         |
+ns[0]_x3[3]_AND_9_o |         |    5.141|         |         |
+ns[0]_x4[0]_AND_23_o|         |    5.505|         |         |
+ns[0]_x4[1]_AND_21_o|         |    5.571|         |         |
+ns[0]_x4[2]_AND_19_o|         |    4.693|         |         |
+ns[0]_x4[3]_AND_17_o|         |    5.676|         |         |
+ns[0]_x5[0]_AND_31_o|         |    4.657|         |         |
+ns[0]_x5[1]_AND_29_o|         |    4.756|         |         |
+ns[0]_x5[2]_AND_27_o|         |    4.903|         |         |
+ns[0]_x5[3]_AND_25_o|         |    4.878|         |         |
+ns[0]_x6[0]_AND_39_o|         |    5.275|         |         |
+ns[0]_x6[1]_AND_37_o|         |    5.506|         |         |
+ns[0]_x6[2]_AND_35_o|         |    5.570|         |         |
+ns[0]_x6[3]_AND_33_o|         |    4.629|         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk2
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+clk                 |    5.359|         |         |         |
+clk1                |    4.746|         |         |         |
+clk2                |    3.806|         |         |         |
+ns[0]_x3[0]_AND_15_o|         |    4.153|         |         |
+ns[0]_x3[1]_AND_13_o|         |    4.124|         |         |
+ns[0]_x3[2]_AND_11_o|         |    4.084|         |         |
+ns[0]_x3[3]_AND_9_o |         |    4.087|         |         |
+ns[0]_x4[0]_AND_23_o|         |    4.154|         |         |
+ns[0]_x4[1]_AND_21_o|         |    4.116|         |         |
+ns[0]_x4[2]_AND_19_o|         |    4.076|         |         |
+ns[0]_x4[3]_AND_17_o|         |    4.116|         |         |
+ns[0]_x5[0]_AND_31_o|         |    4.485|         |         |
+ns[0]_x5[1]_AND_29_o|         |    4.430|         |         |
+ns[0]_x5[2]_AND_27_o|         |    4.485|         |         |
+ns[0]_x5[3]_AND_25_o|         |    4.485|         |         |
+ns[0]_x6[0]_AND_39_o|         |    4.467|         |         |
+ns[0]_x6[1]_AND_37_o|         |    4.430|         |         |
+ns[0]_x6[2]_AND_35_o|         |    4.390|         |         |
+ns[0]_x6[3]_AND_33_o|         |    4.352|         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ns[0]_x3[0]_AND_15_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.125|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ns[0]_x3[1]_AND_13_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.125|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ns[0]_x3[2]_AND_11_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.125|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ns[0]_x3[3]_AND_9_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.125|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ns[0]_x4[0]_AND_23_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.125|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ns[0]_x4[1]_AND_21_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.125|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ns[0]_x4[2]_AND_19_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.125|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ns[0]_x4[3]_AND_17_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.125|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ns[0]_x5[0]_AND_31_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.125|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ns[0]_x5[1]_AND_29_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.125|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ns[0]_x5[2]_AND_27_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.125|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ns[0]_x5[3]_AND_25_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.125|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ns[0]_x6[0]_AND_39_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.125|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ns[0]_x6[1]_AND_37_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.125|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ns[0]_x6[2]_AND_35_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.125|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ns[0]_x6[3]_AND_33_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.125|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.69 secs
+ 
+--> 
+
+Total memory usage is 216308 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+
