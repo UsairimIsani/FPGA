@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Thu Jun 05 14:43:11 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk_50M" LOCATE = SITE "P126" LEVEL 1;
+COMP "f_led_out" LOCATE = SITE "P44" LEVEL 1;
+COMP "led_out" LOCATE = SITE "P46" LEVEL 1;
+SCHEMATIC END;
+

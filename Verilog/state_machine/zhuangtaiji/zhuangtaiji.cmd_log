@@ -1,0 +1,17 @@
+xst -ise "D:/XC3S500E_Verilog/zhuangtaiji/zhuangtaiji/zhuangtaiji.ise" -intstyle ise -ifn zhuangtaiji.xst -ofn zhuangtaiji.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/zhuangtaiji/zhuangtaiji/zhuangtaiji.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "zhuangtaiji.ngc" zhuangtaiji.ngd
+map -ise "D:/XC3S500E_Verilog/zhuangtaiji/zhuangtaiji/zhuangtaiji.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o zhuangtaiji_map.ncd zhuangtaiji.ngd zhuangtaiji.pcf
+par -ise "D:/XC3S500E_Verilog/zhuangtaiji/zhuangtaiji/zhuangtaiji.ise" -w -intstyle ise -ol std -t 1 zhuangtaiji_map.ncd zhuangtaiji.ncd zhuangtaiji.pcf
+trce -ise "D:/XC3S500E_Verilog/zhuangtaiji/zhuangtaiji/zhuangtaiji.ise" -intstyle ise -e 3 -s 4 -xml zhuangtaiji zhuangtaiji.ncd -o zhuangtaiji.twr zhuangtaiji.pcf
+bitgen -ise "D:/XC3S500E_Verilog/zhuangtaiji/zhuangtaiji/zhuangtaiji.ise" -intstyle ise -f zhuangtaiji.ut zhuangtaiji.ncd
+xst -ise "D:/XC3S500E_Verilog/zhuangtaiji/zhuangtaiji/zhuangtaiji.ise" -intstyle ise -ifn zhuangtaiji.xst -ofn zhuangtaiji.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/zhuangtaiji/zhuangtaiji/zhuangtaiji.ise" -intstyle ise -dd _ngo -nt timestamp -uc "zhuangtaiji.ucf" -p xc3s500e-pq208-4 "zhuangtaiji.ngc" zhuangtaiji.ngd
+map -ise "D:/XC3S500E_Verilog/zhuangtaiji/zhuangtaiji/zhuangtaiji.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o zhuangtaiji_map.ncd zhuangtaiji.ngd zhuangtaiji.pcf
+par -ise "D:/XC3S500E_Verilog/zhuangtaiji/zhuangtaiji/zhuangtaiji.ise" -w -intstyle ise -ol std -t 1 zhuangtaiji_map.ncd zhuangtaiji.ncd zhuangtaiji.pcf
+trce -ise "D:/XC3S500E_Verilog/zhuangtaiji/zhuangtaiji/zhuangtaiji.ise" -intstyle ise -e 3 -s 4 -xml zhuangtaiji zhuangtaiji.ncd -o zhuangtaiji.twr zhuangtaiji.pcf -ucf zhuangtaiji.ucf
+bitgen -ise "D:/XC3S500E_Verilog/zhuangtaiji/zhuangtaiji/zhuangtaiji.ise" -intstyle ise -f zhuangtaiji.ut zhuangtaiji.ncd
+xst -intstyle ise -ifn "D:/X9/Verilog/state_machine/zhuangtaiji/zhuangtaiji.xst" -ofn "D:/X9/Verilog/state_machine/zhuangtaiji/zhuangtaiji.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc zhuangtaiji.ucf -p xc6slx9-tqg144-2 zhuangtaiji.ngc zhuangtaiji.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o zhuangtaiji_map.ncd zhuangtaiji.ngd zhuangtaiji.pcf 
+par -w -intstyle ise -ol high -mt off zhuangtaiji_map.ncd zhuangtaiji.ncd zhuangtaiji.pcf 
+bitgen -intstyle ise -f zhuangtaiji.ut zhuangtaiji.ncd 

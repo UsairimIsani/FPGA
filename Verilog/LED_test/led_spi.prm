@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.40xd
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o D:\X9\LED_test//led_spi -s 2048 -u 0000 D:/X9/LED_test/led_test/ledwater.bit -spi 
+
+PROM D:\X9\LED_test\led_spi.prm map: Tue May 06 16:49:11 2014
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          2048K
+PROM start    0000:0000
+PROM end      001f:ffff
+PROM checksum 1ab7c574
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:327b     May 06 16:40:49 2014 D:/X9/LED_test/led_test/ledwater.bit

@@ -1,0 +1,18 @@
+xst -ise "D:/XC3S500E_Verilog/key_smg_led/key_smg_led/key_smg_led.ise" -intstyle ise -ifn key_led.xst -ofn key_led.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/key_smg_led/key_smg_led/key_smg_led.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "key_led.ngc" key_led.ngd
+map -ise "D:/XC3S500E_Verilog/key_smg_led/key_smg_led/key_smg_led.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o key_led_map.ncd key_led.ngd key_led.pcf
+par -ise "D:/XC3S500E_Verilog/key_smg_led/key_smg_led/key_smg_led.ise" -w -intstyle ise -ol std -t 1 key_led_map.ncd key_led.ncd key_led.pcf
+trce -ise "D:/XC3S500E_Verilog/key_smg_led/key_smg_led/key_smg_led.ise" -intstyle ise -e 3 -s 4 -xml key_led key_led.ncd -o key_led.twr key_led.pcf
+bitgen -ise "D:/XC3S500E_Verilog/key_smg_led/key_smg_led/key_smg_led.ise" -intstyle ise -f key_led.ut key_led.ncd
+xst -ise "D:/XC3S500E_Verilog/key_smg_led/key_smg_led/key_smg_led.ise" -intstyle ise -ifn key_led.xst -ofn key_led.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/key_smg_led/key_smg_led/key_smg_led.ise" -intstyle ise -dd _ngo -nt timestamp -uc "key_led.ucf" -p xc3s500e-pq208-4 "key_led.ngc" key_led.ngd
+map -ise "D:/XC3S500E_Verilog/key_smg_led/key_smg_led/key_smg_led.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o key_led_map.ncd key_led.ngd key_led.pcf
+par -ise "D:/XC3S500E_Verilog/key_smg_led/key_smg_led/key_smg_led.ise" -w -intstyle ise -ol std -t 1 key_led_map.ncd key_led.ncd key_led.pcf
+trce -ise "D:/XC3S500E_Verilog/key_smg_led/key_smg_led/key_smg_led.ise" -intstyle ise -e 3 -s 4 -xml key_led key_led.ncd -o key_led.twr key_led.pcf -ucf key_led.ucf
+bitgen -ise "D:/XC3S500E_Verilog/key_smg_led/key_smg_led/key_smg_led.ise" -intstyle ise -f key_led.ut key_led.ncd
+xst -intstyle ise -ifn "D:/X9/Verilog/key_smg_led/key_smg_led/key_led.xst" -ofn "D:/X9/Verilog/key_smg_led/key_smg_led/key_led.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc key_led.ucf -p xc6slx9-tqg144-2 key_led.ngc key_led.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o key_led_map.ncd key_led.ngd key_led.pcf 
+par -w -intstyle ise -ol high -mt off key_led_map.ncd key_led.ncd key_led.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml key_led.twx key_led.ncd -o key_led.twr key_led.pcf -ucf key_led.ucf 
+bitgen -intstyle ise -f key_led.ut key_led.ncd 

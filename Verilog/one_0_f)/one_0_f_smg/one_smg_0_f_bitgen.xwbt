@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\X9\Verilog\one_0_f)\one_0_f_smg\one_smg_0_f.ncd
+OUTFILE=D:\X9\Verilog\one_0_f)\one_0_f_smg\one_smg_0_f.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\X9\Verilog\one_0_f)\one_0_f_smg
+LICENSE=WebPack
+USER_INFO=__0_0_0

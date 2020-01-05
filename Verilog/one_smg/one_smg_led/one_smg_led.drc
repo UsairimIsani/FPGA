@@ -1,0 +1,8 @@
+Release 14.3 Drc P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Thu Jun 05 21:27:01 2014
+
+drc -z one_smg_led.ncd one_smg_led.pcf
+
+DRC detected 0 errors and 0 warnings.

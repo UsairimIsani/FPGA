@@ -1,0 +1,5 @@
+# begin LFP file D:\XC3S500E_Verilog\one_0_f)\one_0_f_smg\one_smg_0_f.lfp
+designfile one_smg_0_f.v
+parttype xc3s500e-4-pq208
+bus_delimiter 1;
+set_busdelim_onsave 1;

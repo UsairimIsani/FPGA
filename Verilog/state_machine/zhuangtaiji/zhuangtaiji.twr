@@ -1,0 +1,68 @@
+--------------------------------------------------------------------------------
+Release 9.1i Trace 
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx91i\bin\nt\trce.exe -ise
+D:/XC3S500E_Verilog/zhuangtaiji/zhuangtaiji/zhuangtaiji.ise -intstyle ise -e 3
+-s 4 -xml zhuangtaiji zhuangtaiji.ncd -o zhuangtaiji.twr zhuangtaiji.pcf -ucf
+zhuangtaiji.ucf
+
+Design file:              zhuangtaiji.ncd
+Physical constraint file: zhuangtaiji.pcf
+Device,package,speed:     xc3s500e,pq208,-4 (PRODUCTION 1.26 2006-10-19)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+c<0>        |   11.921(R)|clk_BUFGP         |   0.000|
+c<1>        |   12.448(R)|clk_BUFGP         |   0.000|
+c<2>        |   10.766(R)|clk_BUFGP         |   0.000|
+c<3>        |   12.145(R)|clk_BUFGP         |   0.000|
+c<4>        |   10.281(R)|clk_BUFGP         |   0.000|
+c<5>        |   11.567(R)|clk_BUFGP         |   0.000|
+c<6>        |   11.872(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.611|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Oct 19 22:17:56 2010
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 119 MB
+
+
+

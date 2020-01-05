@@ -1,0 +1,17 @@
+xst -ise "D:/XC3S500E_Verilog/one_smg/one_smg_led/one_smg_led.ise" -intstyle ise -ifn one_smg_led.xst -ofn one_smg_led.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/one_smg/one_smg_led/one_smg_led.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "one_smg_led.ngc" one_smg_led.ngd
+map -ise "D:/XC3S500E_Verilog/one_smg/one_smg_led/one_smg_led.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o one_smg_led_map.ncd one_smg_led.ngd one_smg_led.pcf
+par -ise "D:/XC3S500E_Verilog/one_smg/one_smg_led/one_smg_led.ise" -w -intstyle ise -ol std -t 1 one_smg_led_map.ncd one_smg_led.ncd one_smg_led.pcf
+trce -ise "D:/XC3S500E_Verilog/one_smg/one_smg_led/one_smg_led.ise" -intstyle ise -e 3 -s 4 -xml one_smg_led one_smg_led.ncd -o one_smg_led.twr one_smg_led.pcf
+xst -ise "D:/XC3S500E_Verilog/one_smg/one_smg_led/one_smg_led.ise" -intstyle ise -ifn one_smg_led.xst -ofn one_smg_led.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/one_smg/one_smg_led/one_smg_led.ise" -intstyle ise -dd _ngo -nt timestamp -uc "one_smg_led.ucf" -p xc3s500e-pq208-4 "one_smg_led.ngc" one_smg_led.ngd
+map -ise "D:/XC3S500E_Verilog/one_smg/one_smg_led/one_smg_led.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o one_smg_led_map.ncd one_smg_led.ngd one_smg_led.pcf
+par -ise "D:/XC3S500E_Verilog/one_smg/one_smg_led/one_smg_led.ise" -w -intstyle ise -ol std -t 1 one_smg_led_map.ncd one_smg_led.ncd one_smg_led.pcf
+trce -ise "D:/XC3S500E_Verilog/one_smg/one_smg_led/one_smg_led.ise" -intstyle ise -e 3 -s 4 -xml one_smg_led one_smg_led.ncd -o one_smg_led.twr one_smg_led.pcf -ucf one_smg_led.ucf
+bitgen -ise "D:/XC3S500E_Verilog/one_smg/one_smg_led/one_smg_led.ise" -intstyle ise -f one_smg_led.ut one_smg_led.ncd
+xst -intstyle ise -ifn "D:/X9/Verilog/one_smg/one_smg_led/one_smg_led.xst" -ofn "D:/X9/Verilog/one_smg/one_smg_led/one_smg_led.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc one_smg_led.ucf -p xc6slx9-tqg144-2 one_smg_led.ngc one_smg_led.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o one_smg_led_map.ncd one_smg_led.ngd one_smg_led.pcf 
+par -w -intstyle ise -ol high -mt off one_smg_led_map.ncd one_smg_led.ncd one_smg_led.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml one_smg_led.twx one_smg_led.ncd -o one_smg_led.twr one_smg_led.pcf -ucf one_smg_led.ucf 
+bitgen -intstyle ise -f one_smg_led.ut one_smg_led.ncd 

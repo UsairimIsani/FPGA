@@ -1,0 +1,18 @@
+xst -ise "D:/XC3S500E_Verilog/bm_kg_led/bm_kg_led/bm_kg_led.ise" -intstyle ise -ifn bm_kg_led.xst -ofn bm_kg_led.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/bm_kg_led/bm_kg_led/bm_kg_led.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "bm_kg_led.ngc" bm_kg_led.ngd
+map -ise "D:/XC3S500E_Verilog/bm_kg_led/bm_kg_led/bm_kg_led.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o bm_kg_led_map.ncd bm_kg_led.ngd bm_kg_led.pcf
+par -ise "D:/XC3S500E_Verilog/bm_kg_led/bm_kg_led/bm_kg_led.ise" -w -intstyle ise -ol std -t 1 bm_kg_led_map.ncd bm_kg_led.ncd bm_kg_led.pcf
+trce -ise "D:/XC3S500E_Verilog/bm_kg_led/bm_kg_led/bm_kg_led.ise" -intstyle ise -e 3 -s 4 -xml bm_kg_led bm_kg_led.ncd -o bm_kg_led.twr bm_kg_led.pcf
+bitgen -ise "D:/XC3S500E_Verilog/bm_kg_led/bm_kg_led/bm_kg_led.ise" -intstyle ise -f bm_kg_led.ut bm_kg_led.ncd
+xst -ise "D:/XC3S500E_Verilog/bm_kg_led/bm_kg_led/bm_kg_led.ise" -intstyle ise -ifn bm_kg_led.xst -ofn bm_kg_led.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/bm_kg_led/bm_kg_led/bm_kg_led.ise" -intstyle ise -dd _ngo -nt timestamp -uc "bm_kg_led.ucf" -p xc3s500e-pq208-4 "bm_kg_led.ngc" bm_kg_led.ngd
+map -ise "D:/XC3S500E_Verilog/bm_kg_led/bm_kg_led/bm_kg_led.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o bm_kg_led_map.ncd bm_kg_led.ngd bm_kg_led.pcf
+par -ise "D:/XC3S500E_Verilog/bm_kg_led/bm_kg_led/bm_kg_led.ise" -w -intstyle ise -ol std -t 1 bm_kg_led_map.ncd bm_kg_led.ncd bm_kg_led.pcf
+trce -ise "D:/XC3S500E_Verilog/bm_kg_led/bm_kg_led/bm_kg_led.ise" -intstyle ise -e 3 -s 4 -xml bm_kg_led bm_kg_led.ncd -o bm_kg_led.twr bm_kg_led.pcf -ucf bm_kg_led.ucf
+bitgen -ise "D:/XC3S500E_Verilog/bm_kg_led/bm_kg_led/bm_kg_led.ise" -intstyle ise -f bm_kg_led.ut bm_kg_led.ncd
+xst -intstyle ise -ifn "D:/X9/Verilog/bm_kg_led/bm_kg_led/bm_kg_led.xst" -ofn "D:/X9/Verilog/bm_kg_led/bm_kg_led/bm_kg_led.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bm_kg_led.ucf -p xc6slx9-tqg144-2 bm_kg_led.ngc bm_kg_led.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bm_kg_led_map.ncd bm_kg_led.ngd bm_kg_led.pcf 
+par -w -intstyle ise -ol high -mt off bm_kg_led_map.ncd bm_kg_led.ncd bm_kg_led.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml bm_kg_led.twx bm_kg_led.ncd -o bm_kg_led.twr bm_kg_led.pcf -ucf bm_kg_led.ucf 
+bitgen -intstyle ise -f bm_kg_led.ut bm_kg_led.ncd 

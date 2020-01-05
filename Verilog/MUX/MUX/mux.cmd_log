@@ -1,0 +1,12 @@
+xst -ise "D:/XC3S500E_Verilog/MUX/MUX/MUX.ise" -intstyle ise -ifn mux.xst -ofn mux.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/MUX/MUX/MUX.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "mux.ngc" mux.ngd
+map -ise "D:/XC3S500E_Verilog/MUX/MUX/MUX.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o mux_map.ncd mux.ngd mux.pcf
+par -ise "D:/XC3S500E_Verilog/MUX/MUX/MUX.ise" -w -intstyle ise -ol std -t 1 mux_map.ncd mux.ncd mux.pcf
+trce -ise "D:/XC3S500E_Verilog/MUX/MUX/MUX.ise" -intstyle ise -e 3 -s 4 -xml mux mux.ncd -o mux.twr mux.pcf
+bitgen -ise "D:/XC3S500E_Verilog/MUX/MUX/MUX.ise" -intstyle ise -f mux.ut mux.ncd
+xst -ise "D:/XC3S500E_Verilog/MUX/MUX/MUX.ise" -intstyle ise -ifn mux.xst -ofn mux.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/MUX/MUX/MUX.ise" -intstyle ise -dd _ngo -nt timestamp -uc "mux.ucf" -p xc3s500e-pq208-4 "mux.ngc" mux.ngd
+map -ise "D:/XC3S500E_Verilog/MUX/MUX/MUX.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o mux_map.ncd mux.ngd mux.pcf
+par -ise "D:/XC3S500E_Verilog/MUX/MUX/MUX.ise" -w -intstyle ise -ol std -t 1 mux_map.ncd mux.ncd mux.pcf
+trce -ise "D:/XC3S500E_Verilog/MUX/MUX/MUX.ise" -intstyle ise -e 3 -s 4 -xml mux mux.ncd -o mux.twr mux.pcf -ucf mux.ucf
+bitgen -ise "D:/XC3S500E_Verilog/MUX/MUX/MUX.ise" -intstyle ise -f mux.ut mux.ncd

@@ -1,0 +1,36 @@
+xst -ise "D:/XC3S500E_Verilog/UART/UART/UART.ise" -intstyle ise -ifn UART.xst -ofn UART.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/UART/UART/UART.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "UART.ngc" UART.ngd
+map -ise "D:/XC3S500E_Verilog/UART/UART/UART.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o UART_map.ncd UART.ngd UART.pcf
+par -ise "D:/XC3S500E_Verilog/UART/UART/UART.ise" -w -intstyle ise -ol std -t 1 UART_map.ncd UART.ncd UART.pcf
+trce -ise "D:/XC3S500E_Verilog/UART/UART/UART.ise" -intstyle ise -e 3 -s 4 -xml UART UART.ncd -o UART.twr UART.pcf
+bitgen -ise "D:/XC3S500E_Verilog/UART/UART/UART.ise" -intstyle ise -f UART.ut UART.ncd
+xst -ise "D:/XC3S500E_Verilog/UART/UART/UART.ise" -intstyle ise -ifn UART.xst -ofn UART.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/UART/UART/UART.ise" -intstyle ise -dd _ngo -nt timestamp -uc "UART.ucf" -p xc3s500e-pq208-4 "UART.ngc" UART.ngd
+map -ise "D:/XC3S500E_Verilog/UART/UART/UART.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o UART_map.ncd UART.ngd UART.pcf
+par -ise "D:/XC3S500E_Verilog/UART/UART/UART.ise" -w -intstyle ise -ol std -t 1 UART_map.ncd UART.ncd UART.pcf
+trce -ise "D:/XC3S500E_Verilog/UART/UART/UART.ise" -intstyle ise -e 3 -s 4 -xml UART UART.ncd -o UART.twr UART.pcf -ucf UART.ucf
+bitgen -ise "D:/XC3S500E_Verilog/UART/UART/UART.ise" -intstyle ise -f UART.ut UART.ncd
+xst -intstyle ise -ifn "D:/X9/ver/UART/UART.xst" -ofn "D:/X9/ver/UART/UART.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART.ucf -p xc6slx9-tqg144-2 UART.ngc UART.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_map.ncd UART.ngd UART.pcf 
+par -w -intstyle ise -ol high -mt off UART_map.ncd UART.ncd UART.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml UART.twx UART.ncd -o UART.twr UART.pcf -ucf UART.ucf 
+bitgen -intstyle ise -f UART.ut UART.ncd 
+xst -intstyle ise -ifn "D:/X9/ver/UART/UART.xst" -ofn "D:/X9/ver/UART/UART.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART.ucf -p xc6slx9-tqg144-2 UART.ngc UART.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_map.ncd UART.ngd UART.pcf 
+par -w -intstyle ise -ol high -mt off UART_map.ncd UART.ncd UART.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml UART.twx UART.ncd -o UART.twr UART.pcf -ucf UART.ucf 
+bitgen -intstyle ise -f UART.ut UART.ncd 
+xst -intstyle ise -ifn "D:/X9/ver/UART/UART.xst" -ofn "D:/X9/ver/UART/UART.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART.ucf -p xc6slx9-tqg144-2 UART.ngc UART.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_map.ncd UART.ngd UART.pcf 
+par -w -intstyle ise -ol high -mt off UART_map.ncd UART.ncd UART.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml UART.twx UART.ncd -o UART.twr UART.pcf -ucf UART.ucf 
+bitgen -intstyle ise -f UART.ut UART.ncd 
+xst -intstyle ise -ifn "D:/X9/Verilog/UART/UART.xst" -ofn "D:/X9/Verilog/UART/UART.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART.ucf -p xc6slx9-tqg144-2 UART.ngc UART.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o UART_map.ncd UART.ngd UART.pcf 
+par -w -intstyle ise -ol high -mt off UART_map.ncd UART.ncd UART.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml UART.twx UART.ncd -o UART.twr UART.pcf -ucf UART.ucf 
+bitgen -intstyle ise -f UART.ut UART.ncd 

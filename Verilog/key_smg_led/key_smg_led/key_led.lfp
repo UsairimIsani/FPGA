@@ -1,0 +1,5 @@
+# begin LFP file D:\XC3S500E_Verilog\key_smg_led\key_smg_led\key_led.lfp
+designfile key_smg_led.v
+parttype xc3s500e-4-pq208
+bus_delimiter 1;
+set_busdelim_onsave 1;

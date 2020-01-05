@@ -1,0 +1,32 @@
+xst -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -ifn smg_0_7.xst -ofn smg_0_7.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "smg_0_7.ngc" smg_0_7.ngd
+ngdbuild -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "smg_0_7.ngc" smg_0_7.ngd
+map -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o smg_0_7_map.ncd smg_0_7.ngd smg_0_7.pcf
+par -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -w -intstyle ise -ol std -t 1 smg_0_7_map.ncd smg_0_7.ncd smg_0_7.pcf
+trce -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -e 3 -s 4 -xml smg_0_7 smg_0_7.ncd -o smg_0_7.twr smg_0_7.pcf
+bitgen -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -f smg_0_7.ut smg_0_7.ncd
+xst -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -ifn smg_0_7.xst -ofn smg_0_7.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "smg_0_7.ucf" -p xc3s500e-pq208-4 "smg_0_7.ngc" smg_0_7.ngd
+map -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o smg_0_7_map.ncd smg_0_7.ngd smg_0_7.pcf
+par -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -w -intstyle ise -ol std -t 1 smg_0_7_map.ncd smg_0_7.ncd smg_0_7.pcf
+trce -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -e 3 -s 4 -xml smg_0_7 smg_0_7.ncd -o smg_0_7.twr smg_0_7.pcf -ucf smg_0_7.ucf
+bitgen -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -f smg_0_7.ut smg_0_7.ncd
+bitgen -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -f smg_0_7.ut smg_0_7.ncd
+xst -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -ifn smg_0_7.xst -ofn smg_0_7.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "smg_0_7.ucf" -p xc3s500e-pq208-4 "smg_0_7.ngc" smg_0_7.ngd
+map -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o smg_0_7_map.ncd smg_0_7.ngd smg_0_7.pcf
+par -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -w -intstyle ise -ol std -t 1 smg_0_7_map.ncd smg_0_7.ncd smg_0_7.pcf
+trce -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -e 3 -s 4 -xml smg_0_7 smg_0_7.ncd -o smg_0_7.twr smg_0_7.pcf -ucf smg_0_7.ucf
+bitgen -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -f smg_0_7.ut smg_0_7.ncd
+xst -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -ifn smg_0_7.xst -ofn smg_0_7.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "smg_0_7.ucf" -p xc3s500e-pq208-4 "smg_0_7.ngc" smg_0_7.ngd
+map -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o smg_0_7_map.ncd smg_0_7.ngd smg_0_7.pcf
+par -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -w -intstyle ise -ol std -t 1 smg_0_7_map.ncd smg_0_7.ncd smg_0_7.pcf
+trce -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -e 3 -s 4 -xml smg_0_7 smg_0_7.ncd -o smg_0_7.twr smg_0_7.pcf -ucf smg_0_7.ucf
+bitgen -ise "D:/XC3S500E_Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.ise" -intstyle ise -f smg_0_7.ut smg_0_7.ncd
+xst -intstyle ise -ifn "D:/X9/Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.xst" -ofn "D:/X9/Verilog/smg_8bit_0_7/smg_0_7/smg_0_7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc smg_0_7.ucf -p xc6slx9-tqg144-2 smg_0_7.ngc smg_0_7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o smg_0_7_map.ncd smg_0_7.ngd smg_0_7.pcf 
+par -w -intstyle ise -ol high -mt off smg_0_7_map.ncd smg_0_7.ncd smg_0_7.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml smg_0_7.twx smg_0_7.ncd -o smg_0_7.twr smg_0_7.pcf -ucf smg_0_7.ucf 
+bitgen -intstyle ise -f smg_0_7.ut smg_0_7.ncd 

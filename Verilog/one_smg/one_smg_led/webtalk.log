@@ -1,0 +1,16 @@
+Release 14.3 - WebTalk (P.40xd)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=F6D8B85C11E5495B8B3F1F14721BD266
+ProjectIteration=1
+
+WebTalk Summary
+----------------
+INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
+
+INFO:WebTalk:8 - WebTalk Install setting is ON.
+INFO:WebTalk:6 - WebTalk User setting is ON.
+
+INFO:WebTalk:4 - D:/X9/Verilog/one_smg/one_smg_led/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2014-06-05T21:27:28.  For additional details about this file, please refer to the WebTalk help file at E:/Xilinx/14.3/ISE_DS/ISE/data/reports/webtalk_introduction.html

@@ -1,0 +1,45 @@
+
+****** PlanAhead v14.3
+  **** Build 209282 by xbuild on Thu Oct 18 20:54:02 MDT 2012
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from E:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [E:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [E:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/X9/LED_test/led_test/pa.fromHdl.tcl
+# create_project -name led_test -dir "D:/X9/LED_test/led_test/planAhead_run_4" -part xc6slx9tqg144-2
+create_project: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 381.270 ; gain = 30.039
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "ledwater.ucf" [current_fileset -constrset]
+Adding file 'D:/X9/LED_test/led_test/ledwater.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {ledwater.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top ledwater $srcset
+# add_files [list {ledwater.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-2
+Using Verific elaboration
+Parsing VHDL file "E:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "D:/X9/LED_test/led_test/ledwater.v" into library work
+Loading clock regions from E:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from E:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from E:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from E:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from E:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from E:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : E:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/X9/LED_test/led_test/ledwater.ucf]
+Finished Parsing UCF File [D:/X9/LED_test/led_test/ledwater.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 53ab2ee1
+open_rtl_design: Time (s): elapsed = 00:00:30 . Memory (MB): peak = 476.781 ; gain = 93.766
+update_compile_order -fileset sim_1
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Tue May 06 16:31:55 2014...
+INFO: [Common 17-83] Releasing license: PlanAhead

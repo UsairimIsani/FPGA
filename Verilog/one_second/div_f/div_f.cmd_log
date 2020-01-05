@@ -1,0 +1,18 @@
+xst -ise "D:/XC3S500E_Verilog/one_second/div_f/div_f.ise" -intstyle ise -ifn div_f.xst -ofn div_f.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/one_second/div_f/div_f.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "div_f.ngc" div_f.ngd
+map -ise "D:/XC3S500E_Verilog/one_second/div_f/div_f.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o div_f_map.ncd div_f.ngd div_f.pcf
+par -ise "D:/XC3S500E_Verilog/one_second/div_f/div_f.ise" -w -intstyle ise -ol std -t 1 div_f_map.ncd div_f.ncd div_f.pcf
+trce -ise "D:/XC3S500E_Verilog/one_second/div_f/div_f.ise" -intstyle ise -e 3 -s 4 -xml div_f div_f.ncd -o div_f.twr div_f.pcf
+bitgen -ise "D:/XC3S500E_Verilog/one_second/div_f/div_f.ise" -intstyle ise -f div_f.ut div_f.ncd
+xst -ise "D:/XC3S500E_Verilog/one_second/div_f/div_f.ise" -intstyle ise -ifn div_f.xst -ofn div_f.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/one_second/div_f/div_f.ise" -intstyle ise -dd _ngo -nt timestamp -uc "div_f.ucf" -p xc3s500e-pq208-4 "div_f.ngc" div_f.ngd
+map -ise "D:/XC3S500E_Verilog/one_second/div_f/div_f.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o div_f_map.ncd div_f.ngd div_f.pcf
+par -ise "D:/XC3S500E_Verilog/one_second/div_f/div_f.ise" -w -intstyle ise -ol std -t 1 div_f_map.ncd div_f.ncd div_f.pcf
+trce -ise "D:/XC3S500E_Verilog/one_second/div_f/div_f.ise" -intstyle ise -e 3 -s 4 -xml div_f div_f.ncd -o div_f.twr div_f.pcf -ucf div_f.ucf
+bitgen -ise "D:/XC3S500E_Verilog/one_second/div_f/div_f.ise" -intstyle ise -f div_f.ut div_f.ncd
+xst -intstyle ise -ifn "D:/X9/Verilog/one_second/div_f/div_f.xst" -ofn "D:/X9/Verilog/one_second/div_f/div_f.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc div_f.ucf -p xc6slx9-tqg144-2 div_f.ngc div_f.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o div_f_map.ncd div_f.ngd div_f.pcf 
+par -w -intstyle ise -ol high -mt off div_f_map.ncd div_f.ncd div_f.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml div_f.twx div_f.ncd -o div_f.twr div_f.pcf -ucf div_f.ucf 
+bitgen -intstyle ise -f div_f.ut div_f.ncd 

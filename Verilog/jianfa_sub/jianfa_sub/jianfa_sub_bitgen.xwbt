@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\X9\Verilog\jianfa_sub\jianfa_sub\jianfa_sub.ncd
+OUTFILE=D:\X9\Verilog\jianfa_sub\jianfa_sub\jianfa_sub.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\X9\Verilog\jianfa_sub\jianfa_sub
+LICENSE=WebPack
+USER_INFO=__0_0_0

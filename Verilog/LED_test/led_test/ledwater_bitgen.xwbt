@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\X9\LED_test\led_test\ledwater.ncd
+OUTFILE=D:\X9\LED_test\led_test\ledwater.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\X9\LED_test\led_test
+LICENSE=WebPack
+USER_INFO=__0_0_0

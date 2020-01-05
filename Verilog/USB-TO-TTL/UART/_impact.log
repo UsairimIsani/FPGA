@@ -1,0 +1,205 @@
+iMPACT Version: 
+iMPACT log file Started on Mon Oct 18 23:34:57 2010
+
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.0.0. WinDriver v8.10 Jungo (c) 1997 - 2006 Build Date: Aug 15 2006 X86 32bit SYS14:21:34, version = 810.
+ LPT base address = 0378h.
+ ECP base address = FFFFFFFFh.
+Cable connection established.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+Attempting to identify devices in the boundary-scan chain configuration...// *** BATCH CMD : Identify 
+PROGRESS_START - Starting Operation.
+Identifying chain contents ....'1': : Manufacturer's ID =Unknown 
+INFO:iMPACT:501 - '1': Added Device UNKNOWN successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'2': : Manufacturer's ID =Unknown 
+INFO:iMPACT:501 - '1': Added Device UNKNOWN successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'3': : Manufacturer's ID =Unknown 
+INFO:iMPACT:501 - '1': Added Device UNKNOWN successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'4': : Manufacturer's ID =Unknown 
+INFO:iMPACT:501 - '1': Added Device UNKNOWN successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'5': : Manufacturer's ID =Unknown 
+INFO:iMPACT:501 - '1': Added Device UNKNOWN successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'6': : Manufacturer's ID =Unknown 
+INFO:iMPACT:501 - '1': Added Device UNKNOWN successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'7': : Manufacturer's ID =Unknown 
+INFO:iMPACT:501 - '1': Added Device UNKNOWN successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'8': : Manufacturer's ID =Unknown 
+INFO:iMPACT:501 - '1': Added Device UNKNOWN successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'9': : Manufacturer's ID =Unknown 
+INFO:iMPACT:501 - '1': Added Device UNKNOWN successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'10': : Manufacturer's ID =Unknown 
+INFO:iMPACT:501 - '1': Added Device UNKNOWN successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'11': : Manufacturer's ID =Unknown 
+INFO:iMPACT:501 - '1': Added Device UNKNOWN successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'12': : Manufacturer's ID =Unknown 
+INFO:iMPACT:501 - '1': Added Device UNKNOWN successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'13': : Manufacturer's ID =Unknown 
+INFO:iMPACT:501 - '1': Added Device UNKNOWN successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+INFO:iMPACT:1588 - '14':The part does not appear to be Xilinx Part.
+'14': : Manufacturer's ID =Unknown , Version : 15
+INFO:iMPACT:501 - '1': Added Device UNKNOWN successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+ERROR:iMPACT:477 - The bsdl for device 'UNKNOWN' is out of date. Please check   your installation.
+ERROR:iMPACT:490 - Boundary-scan chain validation terminated.
+ERROR:iMPACT:477 - The bsdl for device 'UNKNOWN' is out of date. Please check   your installation.
+ERROR:iMPACT:477 - The bsdl for device 'UNKNOWN' is out of date. Please check   your installation.
+ERROR:iMPACT:477 - The bsdl for device 'UNKNOWN' is out of date. Please check   your installation.
+ERROR:iMPACT:477 - The bsdl for device 'UNKNOWN' is out of date. Please check   your installation.
+ERROR:iMPACT:477 - The bsdl for device 'UNKNOWN' is out of date. Please check   your installation.
+ERROR:iMPACT:477 - The bsdl for device 'UNKNOWN' is out of date. Please check   your installation.
+ERROR:iMPACT:477 - The bsdl for device 'UNKNOWN' is out of date. Please check   your installation.
+ERROR:iMPACT:477 - The bsdl for device 'UNKNOWN' is out of date. Please check   your installation.
+ERROR:iMPACT:477 - The bsdl for device 'UNKNOWN' is out of date. Please check   your installation.
+ERROR:iMPACT:477 - The bsdl for device 'UNKNOWN' is out of date. Please check   your installation.
+ERROR:iMPACT:477 - The bsdl for device 'UNKNOWN' is out of date. Please check   your installation.
+ERROR:iMPACT:477 - The bsdl for device 'UNKNOWN' is out of date. Please check   your installation.
+ERROR:iMPACT:477 - The bsdl for device 'UNKNOWN' is out of date. Please check   your installation.
+ERROR:iMPACT:477 - The bsdl for device 'UNKNOWN' is out of date. Please check   your installation.
+PROGRESS_END - End Operation.
+Elapsed time =      7 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 14
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 13
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 12
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 11
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 10
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 9
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 8
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 7
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 6
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 5
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 4
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 3
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 2
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.0.0. WinDriver v8.10 Jungo (c) 1997 - 2006 Build Date: Aug 15 2006 X86 32bit SYS14:21:34, version = 810.
+ LPT base address = 0378h.
+ ECP base address = FFFFFFFFh.
+Cable connection established.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+Attempting to identify devices in the boundary-scan chain configuration...// *** BATCH CMD : Identify 
+PROGRESS_START - Starting Operation.
+Identifying chain contents ....'1': : Manufacturer's ID =Xilinx xc3s500e, Version : 4
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx91i/spartan3e/data/xc3s500e.bsd...
+INFO:iMPACT:501 - '1': Added Device xc3s500e successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file"D:/XC3S500E_Verilog/UART/UART/uart.bit"
+'1': Loading file 'D:/XC3S500E_Verilog/UART/UART/uart.bit' ...
+done.
+INFO:iMPACT:501 - '1': Added Device xc3s500e successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : Program -p 1 -defaultVersion 0 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Reading status register contents...
+CRC error                                         :         0
+Decryptor security set                            :         0
+DCM locked                                        :         1
+DCI matched                                       :         1
+legacy input error                                :         0
+status of GTS_CFG_B                               :         1
+status of GWE                                     :         1
+status of GHIGH                                   :         1
+value of MODE pin M0                              :         1
+value of MODE pin M1                              :         0
+value of MODE pin M2                              :         0
+value of CFG_RDY (INIT_B)                         :         1
+DONEIN input from DONE pin                        :         1
+IDCODE not validated while trying to write FDRI   :         0
+write FDRI issued before or after decrypt operation:         0
+Decryptor keys not used in proper sequence        :         0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1001 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     12 sec.
+// *** BATCH CMD : saveProjectFile -file"D:/XC3S500E_Verilog/UART/UART/UART.ipf"
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs

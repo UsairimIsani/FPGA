@@ -1,0 +1,18 @@
+xst -ise "D:/XC3S500E_Verilog/mlt/mlt/mlt.ise" -intstyle ise -ifn mlt.xst -ofn mlt.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/mlt/mlt/mlt.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "mlt.ngc" mlt.ngd
+map -ise "D:/XC3S500E_Verilog/mlt/mlt/mlt.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o mlt_map.ncd mlt.ngd mlt.pcf
+par -ise "D:/XC3S500E_Verilog/mlt/mlt/mlt.ise" -w -intstyle ise -ol std -t 1 mlt_map.ncd mlt.ncd mlt.pcf
+trce -ise "D:/XC3S500E_Verilog/mlt/mlt/mlt.ise" -intstyle ise -e 3 -s 4 -xml mlt mlt.ncd -o mlt.twr mlt.pcf
+bitgen -ise "D:/XC3S500E_Verilog/mlt/mlt/mlt.ise" -intstyle ise -f mlt.ut mlt.ncd
+xst -ise "D:/XC3S500E_Verilog/mlt/mlt/mlt.ise" -intstyle ise -ifn mlt.xst -ofn mlt.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/mlt/mlt/mlt.ise" -intstyle ise -dd _ngo -nt timestamp -uc "mlt.ucf" -p xc3s500e-pq208-4 "mlt.ngc" mlt.ngd
+map -ise "D:/XC3S500E_Verilog/mlt/mlt/mlt.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o mlt_map.ncd mlt.ngd mlt.pcf
+par -ise "D:/XC3S500E_Verilog/mlt/mlt/mlt.ise" -w -intstyle ise -ol std -t 1 mlt_map.ncd mlt.ncd mlt.pcf
+trce -ise "D:/XC3S500E_Verilog/mlt/mlt/mlt.ise" -intstyle ise -e 3 -s 4 -xml mlt mlt.ncd -o mlt.twr mlt.pcf -ucf mlt.ucf
+bitgen -ise "D:/XC3S500E_Verilog/mlt/mlt/mlt.ise" -intstyle ise -f mlt.ut mlt.ncd
+xst -intstyle ise -ifn "D:/X9/Verilog/mlt/mlt/mlt.xst" -ofn "D:/X9/Verilog/mlt/mlt/mlt.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mlt.ucf -p xc6slx9-tqg144-2 mlt.ngc mlt.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mlt_map.ncd mlt.ngd mlt.pcf 
+par -w -intstyle ise -ol high -mt off mlt_map.ncd mlt.ncd mlt.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml mlt.twx mlt.ncd -o mlt.twr mlt.pcf -ucf mlt.ucf 
+bitgen -intstyle ise -f mlt.ut mlt.ncd 

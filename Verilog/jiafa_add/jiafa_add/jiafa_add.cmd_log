@@ -1,0 +1,18 @@
+xst -ise "D:/XC3S500E_Verilog/jiafa_add/jiafa_add/jiafa_add.ise" -intstyle ise -ifn jiafa_add.xst -ofn jiafa_add.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/jiafa_add/jiafa_add/jiafa_add.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "jiafa_add.ngc" jiafa_add.ngd
+map -ise "D:/XC3S500E_Verilog/jiafa_add/jiafa_add/jiafa_add.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o jiafa_add_map.ncd jiafa_add.ngd jiafa_add.pcf
+par -ise "D:/XC3S500E_Verilog/jiafa_add/jiafa_add/jiafa_add.ise" -w -intstyle ise -ol std -t 1 jiafa_add_map.ncd jiafa_add.ncd jiafa_add.pcf
+trce -ise "D:/XC3S500E_Verilog/jiafa_add/jiafa_add/jiafa_add.ise" -intstyle ise -e 3 -s 4 -xml jiafa_add jiafa_add.ncd -o jiafa_add.twr jiafa_add.pcf
+bitgen -ise "D:/XC3S500E_Verilog/jiafa_add/jiafa_add/jiafa_add.ise" -intstyle ise -f jiafa_add.ut jiafa_add.ncd
+xst -ise "D:/XC3S500E_Verilog/jiafa_add/jiafa_add/jiafa_add.ise" -intstyle ise -ifn jiafa_add.xst -ofn jiafa_add.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/jiafa_add/jiafa_add/jiafa_add.ise" -intstyle ise -dd _ngo -nt timestamp -uc "jiafa_add.ucf" -p xc3s500e-pq208-4 "jiafa_add.ngc" jiafa_add.ngd
+map -ise "D:/XC3S500E_Verilog/jiafa_add/jiafa_add/jiafa_add.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o jiafa_add_map.ncd jiafa_add.ngd jiafa_add.pcf
+par -ise "D:/XC3S500E_Verilog/jiafa_add/jiafa_add/jiafa_add.ise" -w -intstyle ise -ol std -t 1 jiafa_add_map.ncd jiafa_add.ncd jiafa_add.pcf
+trce -ise "D:/XC3S500E_Verilog/jiafa_add/jiafa_add/jiafa_add.ise" -intstyle ise -e 3 -s 4 -xml jiafa_add jiafa_add.ncd -o jiafa_add.twr jiafa_add.pcf -ucf jiafa_add.ucf
+bitgen -ise "D:/XC3S500E_Verilog/jiafa_add/jiafa_add/jiafa_add.ise" -intstyle ise -f jiafa_add.ut jiafa_add.ncd
+xst -intstyle ise -ifn "D:/X9/Verilog/jiafa_add/jiafa_add/jiafa_add.xst" -ofn "D:/X9/Verilog/jiafa_add/jiafa_add/jiafa_add.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc jiafa_add.ucf -p xc6slx9-tqg144-2 jiafa_add.ngc jiafa_add.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o jiafa_add_map.ncd jiafa_add.ngd jiafa_add.pcf 
+par -w -intstyle ise -ol high -mt off jiafa_add_map.ncd jiafa_add.ncd jiafa_add.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml jiafa_add.twx jiafa_add.ncd -o jiafa_add.twr jiafa_add.pcf -ucf jiafa_add.ucf 
+bitgen -intstyle ise -f jiafa_add.ut jiafa_add.ncd 

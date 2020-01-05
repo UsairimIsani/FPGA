@@ -1,0 +1,5 @@
+# begin LFP file D:\XC3S500E_Verilog\zhuangtaiji\zhuangtaiji\zhuangtaiji.lfp
+designfile zhuangtaiji.v
+parttype xc3s500e-4-pq208
+bus_delimiter 1;
+set_busdelim_onsave 1;

@@ -1,0 +1,8 @@
+Release 14.3 Drc P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Thu Jun 05 14:43:40 2014
+
+drc -z DIV_F_F.ncd DIV_F_F.pcf
+
+DRC detected 0 errors and 0 warnings.

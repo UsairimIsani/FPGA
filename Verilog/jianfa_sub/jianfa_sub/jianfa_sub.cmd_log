@@ -1,0 +1,19 @@
+xst -ise "D:/XC3S500E_Verilog/jianfa_sub/jianfa_sub/jianfa_sub.ise" -intstyle ise -ifn jianfa_sub.xst -ofn jianfa_sub.syr
+xst -ise "D:/XC3S500E_Verilog/jianfa_sub/jianfa_sub/jianfa_sub.ise" -intstyle ise -ifn jianfa_sub.xst -ofn jianfa_sub.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/jianfa_sub/jianfa_sub/jianfa_sub.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "jianfa_sub.ngc" jianfa_sub.ngd
+map -ise "D:/XC3S500E_Verilog/jianfa_sub/jianfa_sub/jianfa_sub.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o jianfa_sub_map.ncd jianfa_sub.ngd jianfa_sub.pcf
+par -ise "D:/XC3S500E_Verilog/jianfa_sub/jianfa_sub/jianfa_sub.ise" -w -intstyle ise -ol std -t 1 jianfa_sub_map.ncd jianfa_sub.ncd jianfa_sub.pcf
+trce -ise "D:/XC3S500E_Verilog/jianfa_sub/jianfa_sub/jianfa_sub.ise" -intstyle ise -e 3 -s 4 -xml jianfa_sub jianfa_sub.ncd -o jianfa_sub.twr jianfa_sub.pcf
+bitgen -ise "D:/XC3S500E_Verilog/jianfa_sub/jianfa_sub/jianfa_sub.ise" -intstyle ise -f jianfa_sub.ut jianfa_sub.ncd
+xst -ise "D:/XC3S500E_Verilog/jianfa_sub/jianfa_sub/jianfa_sub.ise" -intstyle ise -ifn jianfa_sub.xst -ofn jianfa_sub.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/jianfa_sub/jianfa_sub/jianfa_sub.ise" -intstyle ise -dd _ngo -nt timestamp -uc "jianfa_sub.ucf" -p xc3s500e-pq208-4 "jianfa_sub.ngc" jianfa_sub.ngd
+map -ise "D:/XC3S500E_Verilog/jianfa_sub/jianfa_sub/jianfa_sub.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o jianfa_sub_map.ncd jianfa_sub.ngd jianfa_sub.pcf
+par -ise "D:/XC3S500E_Verilog/jianfa_sub/jianfa_sub/jianfa_sub.ise" -w -intstyle ise -ol std -t 1 jianfa_sub_map.ncd jianfa_sub.ncd jianfa_sub.pcf
+trce -ise "D:/XC3S500E_Verilog/jianfa_sub/jianfa_sub/jianfa_sub.ise" -intstyle ise -e 3 -s 4 -xml jianfa_sub jianfa_sub.ncd -o jianfa_sub.twr jianfa_sub.pcf -ucf jianfa_sub.ucf
+bitgen -ise "D:/XC3S500E_Verilog/jianfa_sub/jianfa_sub/jianfa_sub.ise" -intstyle ise -f jianfa_sub.ut jianfa_sub.ncd
+xst -intstyle ise -ifn "D:/X9/Verilog/jianfa_sub/jianfa_sub/jianfa_sub.xst" -ofn "D:/X9/Verilog/jianfa_sub/jianfa_sub/jianfa_sub.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc jianfa_sub.ucf -p xc6slx9-tqg144-2 jianfa_sub.ngc jianfa_sub.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o jianfa_sub_map.ncd jianfa_sub.ngd jianfa_sub.pcf 
+par -w -intstyle ise -ol high -mt off jianfa_sub_map.ncd jianfa_sub.ncd jianfa_sub.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml jianfa_sub.twx jianfa_sub.ncd -o jianfa_sub.twr jianfa_sub.pcf -ucf jianfa_sub.ucf 
+bitgen -intstyle ise -f jianfa_sub.ut jianfa_sub.ncd 

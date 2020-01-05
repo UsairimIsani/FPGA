@@ -1,0 +1,24 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Thu Jun 05 15:07:07 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "duan_ma<0>" LOCATE = SITE "P81" LEVEL 1;
+COMP "duan_ma<1>" LOCATE = SITE "P80" LEVEL 1;
+COMP "wei_ma<0>" LOCATE = SITE "P82" LEVEL 1;
+COMP "duan_ma<2>" LOCATE = SITE "P79" LEVEL 1;
+COMP "wei_ma<1>" LOCATE = SITE "P83" LEVEL 1;
+COMP "duan_ma<3>" LOCATE = SITE "P78" LEVEL 1;
+COMP "wei_ma<2>" LOCATE = SITE "P84" LEVEL 1;
+COMP "duan_ma<4>" LOCATE = SITE "P75" LEVEL 1;
+COMP "wei_ma<3>" LOCATE = SITE "P85" LEVEL 1;
+COMP "duan_ma<5>" LOCATE = SITE "P74" LEVEL 1;
+COMP "duan_ma<6>" LOCATE = SITE "P12" LEVEL 1;
+COMP "clk_50M" LOCATE = SITE "P126" LEVEL 1;
+COMP "duan_ma<7>" LOCATE = SITE "P14" LEVEL 1;
+COMP "key<0>" LOCATE = SITE "P111" LEVEL 1;
+COMP "key<1>" LOCATE = SITE "P112" LEVEL 1;
+COMP "key<2>" LOCATE = SITE "P114" LEVEL 1;
+COMP "key<3>" LOCATE = SITE "P15" LEVEL 1;
+SCHEMATIC END;
+

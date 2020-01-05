@@ -1,0 +1,8 @@
+read_verilog decoder_38.v 
+synth_xilinx -family xc6s ­-top decoder_38 ­ -edif decoder_38.edif 
+read_xdc decoder_38.xdc
+read_edif decoder_38.edif
+link_design -­part xc6slx9-tqg144  ­-top decoder_38
+opt_design; place_design; route_design
+report_utilization; report_timing
+write_bitstream ­-force decoder_38.bit

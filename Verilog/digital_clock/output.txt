@@ -1,0 +1,8 @@
+Storage Target: SPI Flash Single FPGA
+16M
+FF
+timer_spi
+D:/X9/digital_clock
+
+MCS
+No

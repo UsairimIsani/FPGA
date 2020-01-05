@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.3
+# Build 209282 by xbuild on Thu Oct 18 20:54:02 MDT 2012
+# Start of session at: Tue May 06 16:30:25 2014
+# Process ID: 5812
+# Log file: D:/X9/LED_test/led_test/planAhead_run_4/planAhead.log
+# Journal file: D:/X9/LED_test/led_test/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/X9/LED_test/led_test/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

@@ -1,0 +1,27 @@
+xst -ise "D:/XC3S500E_Verilog/div_f_f/DIVF_F/DIVF_F.ise" -intstyle ise -ifn DIV_F_F.xst -ofn DIV_F_F.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/div_f_f/DIVF_F/DIVF_F.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "DIV_F_F.ngc" DIV_F_F.ngd
+map -ise "D:/XC3S500E_Verilog/div_f_f/DIVF_F/DIVF_F.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o DIV_F_F_map.ncd DIV_F_F.ngd DIV_F_F.pcf
+par -ise "D:/XC3S500E_Verilog/div_f_f/DIVF_F/DIVF_F.ise" -w -intstyle ise -ol std -t 1 DIV_F_F_map.ncd DIV_F_F.ncd DIV_F_F.pcf
+trce -ise "D:/XC3S500E_Verilog/div_f_f/DIVF_F/DIVF_F.ise" -intstyle ise -e 3 -s 4 -xml DIV_F_F DIV_F_F.ncd -o DIV_F_F.twr DIV_F_F.pcf
+bitgen -ise "D:/XC3S500E_Verilog/div_f_f/DIVF_F/DIVF_F.ise" -intstyle ise -f DIV_F_F.ut DIV_F_F.ncd
+xst -ise "D:/XC3S500E_Verilog/div_f_f/DIVF_F/DIVF_F.ise" -intstyle ise -ifn DIV_F_F.xst -ofn DIV_F_F.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/div_f_f/DIVF_F/DIVF_F.ise" -intstyle ise -dd _ngo -nt timestamp -uc "DIV_F_F.ucf" -p xc3s500e-pq208-4 "DIV_F_F.ngc" DIV_F_F.ngd
+map -ise "D:/XC3S500E_Verilog/div_f_f/DIVF_F/DIVF_F.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o DIV_F_F_map.ncd DIV_F_F.ngd DIV_F_F.pcf
+par -ise "D:/XC3S500E_Verilog/div_f_f/DIVF_F/DIVF_F.ise" -w -intstyle ise -ol std -t 1 DIV_F_F_map.ncd DIV_F_F.ncd DIV_F_F.pcf
+trce -ise "D:/XC3S500E_Verilog/div_f_f/DIVF_F/DIVF_F.ise" -intstyle ise -e 3 -s 4 -xml DIV_F_F DIV_F_F.ncd -o DIV_F_F.twr DIV_F_F.pcf -ucf DIV_F_F.ucf
+bitgen -ise "D:/XC3S500E_Verilog/div_f_f/DIVF_F/DIVF_F.ise" -intstyle ise -f DIV_F_F.ut DIV_F_F.ncd
+xst -intstyle ise -ifn "D:/X9/Verilog/div_f_f/DIVF_F/DIV_F_F.xst" -ofn "D:/X9/Verilog/div_f_f/DIVF_F/DIV_F_F.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DIV_F_F.ucf -p xc6slx9-tqg144-2 DIV_F_F.ngc DIV_F_F.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DIV_F_F_map.ncd DIV_F_F.ngd DIV_F_F.pcf 
+xst -intstyle ise -ifn "D:/X9/Verilog/div_f_f/DIVF_F/DIV_F_F.xst" -ofn "D:/X9/Verilog/div_f_f/DIVF_F/DIV_F_F.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DIV_F_F.ucf -p xc6slx9-tqg144-2 DIV_F_F.ngc DIV_F_F.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DIV_F_F_map.ncd DIV_F_F.ngd DIV_F_F.pcf 
+par -w -intstyle ise -ol high -mt off DIV_F_F_map.ncd DIV_F_F.ncd DIV_F_F.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml DIV_F_F.twx DIV_F_F.ncd -o DIV_F_F.twr DIV_F_F.pcf -ucf DIV_F_F.ucf 
+bitgen -intstyle ise -f DIV_F_F.ut DIV_F_F.ncd 
+xst -intstyle ise -ifn "D:/X9/Verilog/div_f_f/DIVF_F/DIV_F_F.xst" -ofn "D:/X9/Verilog/div_f_f/DIVF_F/DIV_F_F.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DIV_F_F.ucf -p xc6slx9-tqg144-2 DIV_F_F.ngc DIV_F_F.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DIV_F_F_map.ncd DIV_F_F.ngd DIV_F_F.pcf 
+par -w -intstyle ise -ol high -mt off DIV_F_F_map.ncd DIV_F_F.ncd DIV_F_F.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml DIV_F_F.twx DIV_F_F.ncd -o DIV_F_F.twr DIV_F_F.pcf -ucf DIV_F_F.ucf 
+bitgen -intstyle ise -f DIV_F_F.ut DIV_F_F.ncd 

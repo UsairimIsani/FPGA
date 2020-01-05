@@ -1,0 +1,16 @@
+xst -ise "D:/XC3S500E_Verilog/decoder_38/decoder_38/decoder_38.ise" -intstyle ise -ifn decoder_38.xst -ofn decoder_38.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/decoder_38/decoder_38/decoder_38.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "decoder_38.ngc" decoder_38.ngd
+map -ise "D:/XC3S500E_Verilog/decoder_38/decoder_38/decoder_38.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o decoder_38_map.ncd decoder_38.ngd decoder_38.pcf
+par -ise "D:/XC3S500E_Verilog/decoder_38/decoder_38/decoder_38.ise" -w -intstyle ise -ol std -t 1 decoder_38_map.ncd decoder_38.ncd decoder_38.pcf
+trce -ise "D:/XC3S500E_Verilog/decoder_38/decoder_38/decoder_38.ise" -intstyle ise -e 3 -s 4 -xml decoder_38 decoder_38.ncd -o decoder_38.twr decoder_38.pcf
+ngdbuild -ise "D:/XC3S500E_Verilog/decoder_38/decoder_38/decoder_38.ise" -intstyle ise -dd _ngo -nt timestamp -uc "decoder_38.ucf" -p xc3s500e-pq208-4 "decoder_38.ngc" decoder_38.ngd
+map -ise "D:/XC3S500E_Verilog/decoder_38/decoder_38/decoder_38.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o decoder_38_map.ncd decoder_38.ngd decoder_38.pcf
+par -ise "D:/XC3S500E_Verilog/decoder_38/decoder_38/decoder_38.ise" -w -intstyle ise -ol std -t 1 decoder_38_map.ncd decoder_38.ncd decoder_38.pcf
+trce -ise "D:/XC3S500E_Verilog/decoder_38/decoder_38/decoder_38.ise" -intstyle ise -e 3 -s 4 -xml decoder_38 decoder_38.ncd -o decoder_38.twr decoder_38.pcf -ucf decoder_38.ucf
+bitgen -ise "D:/XC3S500E_Verilog/decoder_38/decoder_38/decoder_38.ise" -intstyle ise -f decoder_38.ut decoder_38.ncd
+xst -intstyle ise -ifn "D:/X9/Verilog/decoder_38/decoder_38/decoder_38.xst" -ofn "D:/X9/Verilog/decoder_38/decoder_38/decoder_38.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc decoder_38.ucf -p xc6slx9-tqg144-2 decoder_38.ngc decoder_38.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decoder_38_map.ncd decoder_38.ngd decoder_38.pcf 
+par -w -intstyle ise -ol high -mt off decoder_38_map.ncd decoder_38.ncd decoder_38.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml decoder_38.twx decoder_38.ncd -o decoder_38.twr decoder_38.pcf -ucf decoder_38.ucf 
+bitgen -intstyle ise -f decoder_38.ut decoder_38.ncd 

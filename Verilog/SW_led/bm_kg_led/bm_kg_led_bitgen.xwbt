@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\X9\Verilog\bm_kg_led\bm_kg_led\bm_kg_led.ncd
+OUTFILE=D:\X9\Verilog\bm_kg_led\bm_kg_led\bm_kg_led.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\X9\Verilog\bm_kg_led\bm_kg_led
+LICENSE=WebPack
+USER_INFO=__0_0_0

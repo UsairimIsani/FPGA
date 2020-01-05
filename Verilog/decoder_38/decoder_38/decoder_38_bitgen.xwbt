@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\X9\Verilog\decoder_38\decoder_38\decoder_38.ncd
+OUTFILE=D:\X9\Verilog\decoder_38\decoder_38\decoder_38.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\X9\Verilog\decoder_38\decoder_38
+LICENSE=WebPack
+USER_INFO=__0_0_0

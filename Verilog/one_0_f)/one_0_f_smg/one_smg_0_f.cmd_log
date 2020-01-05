@@ -1,0 +1,29 @@
+xst -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -ifn one_smg_0_f.xst -ofn one_smg_0_f.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "one_smg_0_f.ngc" one_smg_0_f.ngd
+map -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o one_smg_0_f_map.ncd one_smg_0_f.ngd one_smg_0_f.pcf
+par -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -w -intstyle ise -ol std -t 1 one_smg_0_f_map.ncd one_smg_0_f.ncd one_smg_0_f.pcf
+trce -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -e 3 -s 4 -xml one_smg_0_f one_smg_0_f.ncd -o one_smg_0_f.twr one_smg_0_f.pcf
+bitgen -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -f one_smg_0_f.ut one_smg_0_f.ncd
+xst -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -ifn one_smg_0_f.xst -ofn one_smg_0_f.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -dd _ngo -nt timestamp -uc "one_smg_0_f.ucf" -p xc3s500e-pq208-4 "one_smg_0_f.ngc" one_smg_0_f.ngd
+map -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o one_smg_0_f_map.ncd one_smg_0_f.ngd one_smg_0_f.pcf
+par -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -w -intstyle ise -ol std -t 1 one_smg_0_f_map.ncd one_smg_0_f.ncd one_smg_0_f.pcf
+trce -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -e 3 -s 4 -xml one_smg_0_f one_smg_0_f.ncd -o one_smg_0_f.twr one_smg_0_f.pcf -ucf one_smg_0_f.ucf
+bitgen -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -f one_smg_0_f.ut one_smg_0_f.ncd
+xst -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -ifn one_smg_0_f.xst -ofn one_smg_0_f.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -dd _ngo -nt timestamp -uc "one_smg_0_f.ucf" -p xc3s500e-pq208-4 "one_smg_0_f.ngc" one_smg_0_f.ngd
+map -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o one_smg_0_f_map.ncd one_smg_0_f.ngd one_smg_0_f.pcf
+par -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -w -intstyle ise -ol std -t 1 one_smg_0_f_map.ncd one_smg_0_f.ncd one_smg_0_f.pcf
+trce -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -e 3 -s 4 -xml one_smg_0_f one_smg_0_f.ncd -o one_smg_0_f.twr one_smg_0_f.pcf -ucf one_smg_0_f.ucf
+xst -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -ifn one_smg_0_f.xst -ofn one_smg_0_f.syr
+ngdbuild -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -dd _ngo -nt timestamp -uc "one_smg_0_f.ucf" -p xc3s500e-pq208-4 "one_smg_0_f.ngc" one_smg_0_f.ngd
+map -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o one_smg_0_f_map.ncd one_smg_0_f.ngd one_smg_0_f.pcf
+par -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -w -intstyle ise -ol std -t 1 one_smg_0_f_map.ncd one_smg_0_f.ncd one_smg_0_f.pcf
+trce -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -e 3 -s 4 -xml one_smg_0_f one_smg_0_f.ncd -o one_smg_0_f.twr one_smg_0_f.pcf -ucf one_smg_0_f.ucf
+bitgen -ise "D:/XC3S500E_Verilog/one_0_f)/one_0_f_smg/one_0_f_smg.ise" -intstyle ise -f one_smg_0_f.ut one_smg_0_f.ncd
+xst -intstyle ise -ifn "D:/X9/Verilog/one_0_f)/one_0_f_smg/one_smg_0_f.xst" -ofn "D:/X9/Verilog/one_0_f)/one_0_f_smg/one_smg_0_f.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc one_smg_0_f.ucf -p xc6slx9-tqg144-2 one_smg_0_f.ngc one_smg_0_f.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o one_smg_0_f_map.ncd one_smg_0_f.ngd one_smg_0_f.pcf 
+par -w -intstyle ise -ol high -mt off one_smg_0_f_map.ncd one_smg_0_f.ncd one_smg_0_f.pcf 
+trce -intstyle ise -e 3 -s 2 -n 3 -xml one_smg_0_f.twx one_smg_0_f.ncd -o one_smg_0_f.twr one_smg_0_f.pcf -ucf one_smg_0_f.ucf 
+bitgen -intstyle ise -f one_smg_0_f.ut one_smg_0_f.ncd 

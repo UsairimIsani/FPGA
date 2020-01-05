@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Thu Jun 05 21:26:33 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "dataout<0>" LOCATE = SITE "P81" LEVEL 1;
+COMP "dataout<1>" LOCATE = SITE "P80" LEVEL 1;
+COMP "dataout<2>" LOCATE = SITE "P79" LEVEL 1;
+COMP "dataout<3>" LOCATE = SITE "P78" LEVEL 1;
+COMP "dataout<4>" LOCATE = SITE "P75" LEVEL 1;
+COMP "dataout<5>" LOCATE = SITE "P74" LEVEL 1;
+COMP "dataout<6>" LOCATE = SITE "P12" LEVEL 1;
+COMP "dataout<7>" LOCATE = SITE "P14" LEVEL 1;
+COMP "led_bit" LOCATE = SITE "P82" LEVEL 1;
+SCHEMATIC END;
+

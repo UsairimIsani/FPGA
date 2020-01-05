@@ -1,0 +1,5 @@
+# begin LFP file D:\XC3S500E_Verilog\bm_kg_led\bm_kg_led\bm_kg_led.lfp
+designfile bm_kg_led.v
+parttype xc3s500e-4-pq208
+bus_delimiter 1;
+set_busdelim_onsave 1;
